@@ -1,0 +1,265 @@
+.menuBar {
+    background: url(images/bg_titles.png) no-repeat;
+    color: #11175e;
+    font-family: Arial; font-size: 10pt;
+    height: 28px;
+	line-height: 28px; 
+    vertical-align: middle;
+}
+.bgTitulo {
+    background: url(images/bg_titles.png) no-repeat;
+    color: #11175e;
+    font-family:'Arial Black', Gadget, sans-serif; font-size: 10pt;
+    height: 28px;
+    line-height: 28px; 
+    vertical-align: bottom;
+}
+
+.centrar {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    padding: 0;
+    width: 100%;
+}
+
+#logo {
+    padding: 20px 20px 20px 20px;
+    width: 30%;
+}
+
+#hc2 {
+    float: right;
+    width: 50%;
+    height: 300px;
+    background-color: white;
+}
+
+body {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#content {
+    /*position:absolute;
+    height:100%;*/ 
+    width:991px;
+}
+
+#wrapper {
+    background-color: white;
+    margin: 0 auto 0 auto;
+    width: 991px;
+    min-height: 100%; /* real browsers */
+    height: auto !important; /* real browsers */
+    height: 100%; /* IE6: treated as min-height*/
+}
+
+#Social {
+    /*position: fixed; bottom: 0; left: 0;*/
+    width:100%;
+}
+
+.bgSocialPane {
+    background: url(images/bgSocial.jpg) repeat-x;
+    font-family:'Arial Black', Gadget, sans-serif; font-size: 10pt;
+    height: 40px;
+    line-height: 40px;
+}
+
+#header {
+    background-color: white;
+    width: 100%;
+}
+
+#menu {
+    width: 100%;
+}
+
+#TopPane {
+    padding: 10px;
+    text-align: center;
+}
+
+#BannerPane {
+    padding: 10px;
+    text-align: center;
+}
+
+#LeftPane
+{
+    float: left;
+    width: 170px;
+    padding: 10px;
+}
+
+#ContentPane
+{
+    padding: 10px;
+}
+
+#RightPane
+{
+    float: right;
+    width: 170px;
+    padding: 10px;
+}
+
+#BottomPane
+{
+    padding: 10px;
+    text-align: center;
+}
+
+.footer_style {
+    color: white;
+    width: 100%;
+    background-color: black;
+    font-family: Arial;
+    font-size: 8pt;
+    vertical-align: middle;
+    height: 30px;
+}
+
+a.enlaces:link {color:#11175e; text-decoration:none; }
+a.enlaces:visited {color:#11175e; text-decoration:none; }  
+a.enlaces:hover {color:#11175e; text-decoration:none; } 
+a.enlaces:active {color:#11175e; text-decoration:none;}
+.enlaces { color: #11175e; cursor: pointer; text-decoration:none; }
+
+/* MENU */
+.mainMenu 
+{
+	cursor:pointer;
+	font-size: 11px; 
+	background-color:transparent;
+	width:800px;
+	font-size: 8pt;
+	width: 800px;
+	line-height: 30px;
+}
+
+.mainMenu .root
+{
+	color:#11175e;
+	font-size: 13px;
+	font-weight:bold;
+	text-align:center;
+	padding:12px 12px 12px 12px;
+	text-transform:uppercase;
+	margin-right:1px;
+	white-space:nowrap;
+	margin-right:1px;
+	float:left;
+	font-size: 8pt;
+	font-weight: normal;
+	text-transform: none;
+	margin: 0 0 0 10px;
+	padding: 0 0 0 10px;
+	background-image: url(images/panel_sep_menu.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	line-height: 30px;
+}
+.mainMenu .first
+{
+    margin: 0;
+    padding: 0px;
+    background: none;
+    color: #11175e;
+    line-height: 30px;
+}
+
+.mainMenu .hov
+{
+    color: #11175e;
+    text-decoration: underline;
+}
+
+.mainMenu .sel, .mainMenu .bc
+{
+    color: #11175e;
+    font-weight: bold;
+}
+.mainMenu table{
+	border:1px solid #C0D6E5;
+	z-index: 5000;
+	border:1px solid #676767;
+}
+
+.mainMenu tr.mi{
+	background-color:#F8FAFF;
+	z-index: 1000;
+	font-size: 11px;
+	font-weight:bold;
+	text-align:left;
+	color:#375162;
+	line-height:2em;
+	text-transform:none;
+	background-color: #f0f0f0;
+	color: #676767;
+	font-size: 8pt;
+	font-weight: normal;
+}
+.mainMenu tr.mi td{
+	padding: 0 2px;
+	text-transform:none;
+}
+
+.mainMenu tr.hov { 
+	background: #0077d5 url(images/pie_barra_cen.png) repeat-x top left;
+	color: #fff;
+}
+
+.mainMenu tr.hov td{
+color:#fff;
+}
+
+.mainMenu tr.sel, .mainMenu tr.bc{
+	background: #0077d5 url(images/pie_barra_cen.png) repeat-x top left;
+	color: #fff;
+}
+
+.mainMenu tr.sel td, .mainMenu tr.bc td{
+	color:#fff;
+}
+
+.main_dnnmenu_break{
+	height: 2px;
+	background-color: #D5E0FF;
+}
+
+.ModuleTitle_SubMenu
+{
+	border:1px solid #C0D6E5;
+}
+
+.ModuleTitle_SubMenu td{
+	background-color:#F8FAFF;
+	white-space: nowrap;
+} 
+
+.ModuleTitle_MenuIcon {
+	background-color:#F8FAFF; 
+	border:none;
+	padding: 0px 2px;
+}
+
+.ModuleTitle_MenuItemSel td, .ModuleTitle_MenuItemSel .ModuleTitle_MenuIcon{
+	background: #CE0D0D url(images/submenu_hover.png) repeat-x top left;
+	color: #fff;
+}
+
+.ModuleTitle_MenuBreak td, .ModuleTitle_MenuBreak .ModuleTitle_MenuIcon
+{
+	height: 2px;
+	background-color: #D5E0FF;
+}
+

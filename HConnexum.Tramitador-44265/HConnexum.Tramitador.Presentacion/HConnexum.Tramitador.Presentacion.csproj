@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D15013BE-ABF1-46E2-9619-84C715F12BA7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HConnexum.Tramitador.Presentacion</RootNamespace>
+    <AssemblyName>HConnexum.Tramitador.Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>HC2KEY.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HConnexum.Infraestructura, Version=1.0.4925.29767, Culture=neutral, PublicKeyToken=ee75a6a24f8c4819, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HConnexum.Tramitador.Sitio\bin\HConnexum.Infraestructura.dll</HintPath>
+    </Reference>
+    <Reference Include="HConnexum.Seguridad, Version=1.0.4507.14882, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HConnexum.Tramitador.Sitio\bin\HConnexum.Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="HConnexum.Servicios.Cliente">
+      <HintPath>..\HConnexum.Tramitador.Sitio\bin\HConnexum.Servicios.Cliente.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\HConnexum.Tramitador.Sitio\bin\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\HConnexum.Tramitador.Sitio\bin\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.SqlXml" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Web.Design">
+      <HintPath>..\HConnexum.Tramitador.Sitio\bin\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\HConnexum.Tramitador.Sitio\bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\HConnexum.Tramitador.Sitio\bin\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting, Version=7.2.13.1016, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <HintPath>C:\Program Files (x86)\Telerik\Reporting Q3 2013\bin\Telerik.Reporting.dll</HintPath>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaz\Bloques\IBlqNotRespInmBasicoCAActivacion.cs" />
+    <Compile Include="Interfaz\Bloques\IBlqNotRespInmCAActivacion.cs" />
+    <Compile Include="Interfaz\Bloques\IDatosExpedientesCA.cs" />
+    <Compile Include="Interfaz\Bloques\ISeleccionAseguradoCA.cs" />
+    <Compile Include="Interfaz\Bloques\IBlqNotRespInmBasico.cs" />
+    <Compile Include="Interfaz\Bloques\IBlqNotRespInm.cs" />
+    <Compile Include="Interfaz\Bloques\IAnulacionSM.cs" />
+    <Compile Include="Interfaz\Bloques\ICasosPendientesMedicoPresentador.cs" />
+    <Compile Include="Interfaz\Bloques\IDatosExpedientesCE.cs" />
+    <Compile Include="Interfaz\Bloques\IListadoMovimientos.cs" />
+    <Compile Include="Interfaz\Bloques\IListadoMovimientosCA.cs" />
+    <Compile Include="Interfaz\Bloques\ISeleccionAsegurado.cs" />
+    <Compile Include="Interfaz\Bloques\ISelectorCasos.cs" />
+    <Compile Include="Interfaz\Bloques\ISolicitudNuevoMovimientoCA.cs" />
+    <Compile Include="Interfaz\IConsultaMovPorSus.cs" />
+    <Compile Include="Interfaz\IConsultaCasosOpinionMedica.cs" />
+    <Compile Include="Interfaz\IBuzonChat.cs" />
+    <Compile Include="Interfaz\IPantallaBusquedaFacturas.cs" />
+    <Compile Include="Interfaz\IPantallaDetalleFactura.cs" />
+    <Compile Include="Interfaz\IReimpresionComprobanteMovimiento.cs" />
+    <Compile Include="Interfaz\IReporteCartaAval.cs" />
+    <Compile Include="Interfaz\IReporteCartaAvalSegurosFederal.cs" />
+    <Compile Include="Interfaz\IComprobanteMovimiento.cs" />
+    <Compile Include="Interfaz\IReporteCartaAvalConsultSalud.cs" />
+    <Compile Include="Interfaz\IComprobanteMovimientoCE.cs" />
+    <Compile Include="Interfaz\Bloques\ISolicitudNuevoMovimiento.cs" />
+    <Compile Include="Interfaz\IBusquedaRelaciones.cs" />
+    <Compile Include="Interfaz\IConfiguracionXmlGenerales.cs" />
+    <Compile Include="Interfaz\Bloques\IContactoAlMedico.cs" />
+    <Compile Include="Interfaz\Bloques\IActualizacionDatosMedico.cs" />
+    <Compile Include="Interfaz\Bloques\IAsistenciaCitaMedica.cs" />
+    <Compile Include="Interfaz\Bloques\IActualizacionDeContacto.cs" />
+    <Compile Include="Interfaz\Bloques\IAnulacion.cs" />
+    <Compile Include="Interfaz\Bloques\ICambioMedico.cs" />
+    <Compile Include="Interfaz\Bloques\IContactoInicial.cs" />
+    <Compile Include="Interfaz\Bloques\IDatosGeneralesMedico.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Bloques\IImprimir.cs" />
+    <Compile Include="Interfaz\Bloques\IMedicoAsignado.cs" />
+    <Compile Include="Interfaz\Bloques\IDatosGenerales.cs" />
+    <Compile Include="Interfaz\Bloques\InterfazBaseBloques.cs" />
+    <Compile Include="Interfaz\Bloques\IObservaciones.cs" />
+    <Compile Include="Interfaz\Bloques\IRegistrodeOpinionMedico.cs" />
+    <Compile Include="Interfaz\Bloques\ISeguimientoCita.cs" />
+    <Compile Include="Interfaz\IConsolidadoServicio.cs" />
+    <Compile Include="Interfaz\IConsultaCasosAuditoria.cs" />
+    <Compile Include="Interfaz\IDetalleRemesa.cs" />
+    <Compile Include="Interfaz\IDetalleSolicitud.cs" />
+    <Compile Include="Interfaz\IGestionSupervisadosLista.cs" />
+    <Compile Include="Interfaz\IPantallaConsolidadoMovimiento.cs" />
+    <Compile Include="Interfaz\IPantallaContenedora2.cs" />
+    <Compile Include="Interfaz\IAgrupacionDetalle.cs" />
+    <Compile Include="Interfaz\IAgrupacionLista.cs" />
+    <Compile Include="Interfaz\IAgruparCasoLista.cs" />
+    <Compile Include="Interfaz\IAnularSuspenderCasoMaestroDetalle.cs" />
+    <Compile Include="Interfaz\ICasoAgrupacionDetalle.cs" />
+    <Compile Include="Interfaz\IDatosGeneralesCasoDetalle.cs" />
+    <Compile Include="Interfaz\IIAnularSuspenderCasoLista.cs" />
+    <Compile Include="Interfaz\IConsultaCasos.cs" />
+    <Compile Include="Interfaz\IMensajeCasoLista.cs" />
+    <Compile Include="Interfaz\IMisActividades.cs" />
+    <Compile Include="Interfaz\IMisSolicitudes.cs" />
+    <Compile Include="Interfaz\IObservacionesTabMovimiento.cs" />
+    <Compile Include="Interfaz\IAlcanceGeograficoDetalle.cs" />
+    <Compile Include="Interfaz\IAlcanceGeograficoLista.cs" />
+    <Compile Include="Interfaz\IAuditoriaTabMovimiento.cs" />
+    <Compile Include="Interfaz\IMovimientoDetalle.cs" />
+    <Compile Include="Interfaz\IPantallaContenedora.cs" />
+    <Compile Include="Interfaz\IPantallaDetalleMovimiento.cs" />
+    <Compile Include="Interfaz\IPantallaDetalleMovimientoRemesa.cs" />
+    <Compile Include="Interfaz\IPantallaDetalleRelacion.cs" />
+    <Compile Include="Interfaz\IPasoMaestroDetalleBloques.cs" />
+    <Compile Include="Interfaz\IMovimientoCasoLista.cs" />
+    <Compile Include="Interfaz\IPoteCasos.cs" />
+    <Compile Include="Interfaz\IPriorizarCasoLista.cs" />
+    <Compile Include="Interfaz\IReporteCartaAvalMI.cs" />
+    <Compile Include="Interfaz\IReporteCartaAvalAltamira.cs" />
+    <Compile Include="Interfaz\IReporteConsolidadoMovimiento.cs" />
+    <Compile Include="Interfaz\IReporteConsolidadoServicio.cs" />
+    <Compile Include="Interfaz\IReporteDetalleFactura.cs" />
+    <Compile Include="Interfaz\IReporteDetalleMovimiento.cs" />
+    <Compile Include="Interfaz\IReporteFacturas.cs" />
+    <Compile Include="Interfaz\IReporteOpMed.cs" />
+    <Compile Include="Interfaz\IPantallaReporteCasos.cs" />
+    <Compile Include="Interfaz\IReporteCasos.cs" />
+    <Compile Include="Interfaz\IReporteRelaciones.cs" />
+    <Compile Include="Interfaz\IRespuestaDetalle.cs" />
+    <Compile Include="Interfaz\IRespuestaTabMovimiento.cs" />
+    <Compile Include="Interfaz\IServiciosSimuladoDetalle.cs" />
+    <Compile Include="Interfaz\IServiciosSimuladoLista.cs" />
+    <Compile Include="Interfaz\ISolicitudBloqueDetalle.cs" />
+    <Compile Include="Interfaz\ISolicitudBloqueMaestroDetalle.cs" />
+    <Compile Include="Interfaz\ISolicitudServicio.cs" />
+    <Compile Include="Interfaz\ITiempoDelCasoDetalle.cs" />
+    <Compile Include="Interfaz\ITiemposTabMovimiento.cs" />
+    <Compile Include="Interfaz\ICasoDetalle.cs" />
+    <Compile Include="Interfaz\IConfiguracionPasos.cs" />
+    <Compile Include="Interfaz\IAccionesDelPasoLista.cs" />
+    <Compile Include="Interfaz\IAccionesDelPasoDetalle.cs" />
+    <Compile Include="Interfaz\IBloqueDetalle.cs" />
+    <Compile Include="Interfaz\IBloqueLista.cs" />
+    <Compile Include="Interfaz\IChadePasoDetalle.cs" />
+    <Compile Include="Interfaz\IChadePasoLista.cs" />
+    <Compile Include="Interfaz\IContingenciaLogin.cs" />
+    <Compile Include="Interfaz\IDefault.cs" />
+    <Compile Include="Interfaz\IDocumentosPasoDetalle.cs" />
+    <Compile Include="Interfaz\IDocumentosPasoLista.cs" />
+    <Compile Include="Interfaz\IDocumentosServicioDetalle.cs" />
+    <Compile Include="Interfaz\IDocumentosServicioLista.cs" />
+    <Compile Include="Interfaz\IFlujosServicioLista.cs" />
+    <Compile Include="Interfaz\IFlujosServicioMaestroDetalle.cs" />
+    <Compile Include="Interfaz\IEtapaMaestroDetalle.cs" />
+    <Compile Include="Interfaz\IFlujosEjecucionDetalle.cs" />
+    <Compile Include="Interfaz\IFlujosEjecucionLista.cs" />
+    <Compile Include="Interfaz\IMensajesMetodosDestinatarioCorreoDetalle.cs" />
+    <Compile Include="Interfaz\IMensajesMetodosDestinatarioDetalle.cs" />
+    <Compile Include="Interfaz\InterfazBase.cs" />
+    <Compile Include="Interfaz\IParametrosAgendaDetalle.cs" />
+    <Compile Include="Interfaz\IParametrosAgendaLista.cs" />
+    <Compile Include="Interfaz\IPasoMaestroDetalle.cs" />
+    <Compile Include="Interfaz\IPasosBloqueDetalle.cs" />
+    <Compile Include="Interfaz\IPasosRepuestaDetalle.cs" />
+    <Compile Include="Interfaz\IServicioSucursalDetalle.cs" />
+    <Compile Include="Interfaz\IServicioSucursalLista.cs" />
+    <Compile Include="Interfaz\ISuscriptorLista.cs" />
+    <Compile Include="Interfaz\ITipoPasoDetalle.cs" />
+    <Compile Include="Interfaz\ITipoPasoLista.cs" />
+    <Compile Include="Interfaz\IMisActividadesDetalle.cs" />
+    <Compile Include="Interfaz\ITransporteFlujoServicio.cs" />
+    <Compile Include="Interfaz\IReporteCartaAvalZuma.cs" />
+    <Compile Include="Interfaz\IReporteCartaAvalIbero.cs" />
+    <Compile Include="Interfaz\IUsuariosSucriptor.cs" />
+    <Compile Include="Metadata.cs" />
+    <Compile Include="Presentador\AccionesDelPasoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\AgrupacionPresentadorDetalle.cs" />
+    <Compile Include="Presentador\AgrupacionPresentadorLista.cs" />
+    <Compile Include="Presentador\AgruparCasoPresentadorLista.cs" />
+    <Compile Include="Presentador\AlcanceGeograficoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\AlcanceGeograficoPresentadorLista.cs" />
+    <Compile Include="Presentador\BloquePresentadorDetalle.cs" />
+    <Compile Include="Presentador\BloquePresentadorLista.cs" />
+    <Compile Include="Presentador\AccionesDelPasoPresentadorLista.cs" />
+    <Compile Include="Presentador\AuditoriaMovimientoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\AnularSuspenderCasoLista.cs" />
+    <Compile Include="Presentador\AnularSuspenderCasoPresentadorMaestroDetalle.cs" />
+    <Compile Include="Presentador\Bloques\AnulacionPresentador.cs" />
+    <Compile Include="Presentador\Bloques\AsistenciaCitaMedicaPresentador.cs" />
+    <Compile Include="Presentador\Bloques\BloquesPresentadorBase.cs" />
+    <Compile Include="Presentador\Bloques\BlqNotRespInmCAActivacionPresentador.cs" />
+    <Compile Include="Presentador\Bloques\CambioMedicoPresentador.cs" />
+    <Compile Include="Presentador\Bloques\CasosPendientesMedicoPresentador.cs" />
+    <Compile Include="Presentador\Bloques\BlqNotRespInmPresentador.cs" />
+    <Compile Include="Presentador\Bloques\BlqNotRespInmBasicoPresentador.cs" />
+    <Compile Include="Presentador\Bloques\BlqNotRespInmBasicoCAActivacionPresentador.cs" />
+    <Compile Include="Presentador\Bloques\PresentadorDatosExpedienteCA.cs" />
+    <Compile Include="Presentador\Bloques\SeleccionAseguradoCAPresentador.cs" />
+    <Compile Include="Presentador\Bloques\DatosExpedientesCEPresentador.cs" />
+    <Compile Include="Presentador\Bloques\ListadoMovimientosCAPresentador.cs" />
+    <Compile Include="Presentador\Bloques\ListadoMovimientosPresentador.cs" />
+    <Compile Include="Presentador\Bloques\SeleccionAseguradoPresentador.cs" />
+    <Compile Include="Presentador\Bloques\ContactoInicialPresentador.cs" />
+    <Compile Include="Presentador\Bloques\ActualizacionDatosMedicoPresentador.cs" />
+    <Compile Include="Presentador\Bloques\ContactoAlMedicoPresentador.cs" />
+    <Compile Include="Presentador\Bloques\AnulacionSMPresentador.cs" />
+    <Compile Include="Presentador\Bloques\DatosGeneralesMedicoPresentador.cs" />
+    <Compile Include="Presentador\Bloques\DatosGeneralesPresentador.cs" />
+    <Compile Include="Presentador\Bloques\ActualizacionDeContactoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\Bloques\ImprimirPresentadorDetalle.cs" />
+    <Compile Include="Presentador\Bloques\ObservacionesPresentador.cs" />
+    <Compile Include="Presentador\Bloques\RegistrodeOpinionMedicoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\Bloques\MedicoAsignadoPresentador.cs" />
+    <Compile Include="Presentador\Bloques\SeguimientoCitaPresentador.cs" />
+    <Compile Include="Presentador\Bloques\SelectorCasosPresentador.cs" />
+    <Compile Include="Presentador\Bloques\SolicitudNuevoMovimientoCAPresentador.cs" />
+    <Compile Include="Presentador\Bloques\SolicitudNuevoMovimientoPresentador.cs" />
+    <Compile Include="Presentador\ConsultaCasosOpinionMedicaPresentador.cs" />
+    <Compile Include="Presentador\BuzonChatPresentador.cs" />
+    <Compile Include="Presentador\ConsultaMovPorSusPresentador.cs" />
+    <Compile Include="Presentador\PantallaBusquedaFacturasPresentador.cs" />
+    <Compile Include="Presentador\PantallaDetalleFacturaPresentador.cs" />
+    <Compile Include="Presentador\PresentadorReimpresionComprobanteMovimiento.cs" />
+    <Compile Include="Presentador\PresentadorReporteCartaAval.cs" />
+    <Compile Include="Presentador\ReporteCartaAvalConsultSaludPresentador.cs" />
+    <Compile Include="Presentador\CasoAgrupacionPresentadorDetalle.cs" />
+    <Compile Include="Presentador\ConfiguracionXmlGeneralesPresentador.cs" />
+    <Compile Include="Presentador\ConsultaCasosAuditoriaPresentador.cs" />
+    <Compile Include="Presentador\ConsultaCasosPresentador.cs" />
+    <Compile Include="Presentador\ReporteCartaAvalSegurosFederalPresentadorDetalle.cs" />
+    <Compile Include="Presentador\GestionSupervisadosPresentadorLista.cs" />
+    <Compile Include="Presentador\PantallaConsolidadoServicioPresentador.cs" />
+    <Compile Include="Presentador\PantallaContenedora2Presentador.cs" />
+    <Compile Include="Presentador\DatosGeneralesCasoDetalle.cs" />
+    <Compile Include="Presentador\MensajeCasoPresentadorLista.cs" />
+    <Compile Include="Presentador\MisActividadesPresentador.cs" />
+    <Compile Include="Presentador\MisActividadesPresentadorDetalle.cs" />
+    <Compile Include="Presentador\MisSolicitudesPresentador.cs" />
+    <Compile Include="Presentador\PantallaContenedoraPresentador.cs" />
+    <Compile Include="Presentador\PantallaConsolidadoMovimientoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\PantallaDetalleMovimientoPresentador.cs" />
+    <Compile Include="Presentador\PoteCasosPresentador.cs" />
+    <Compile Include="Presentador\PresentadorBusquedaRelaciones.cs" />
+    <Compile Include="Presentador\PresentadorComprobanteMovimiento.cs" />
+    <Compile Include="Presentador\PresentadorComprobanteMovimientoCE.cs" />
+    <Compile Include="Presentador\PresentadorDetalleMovimientoRemesa.cs" />
+    <Compile Include="Presentador\PresentadorDetalleRelacion.cs" />
+    <Compile Include="Presentador\PresentadorDetalleRemesa.cs" />
+    <Compile Include="Presentador\PresentadorReporteRelaciones.cs" />
+    <Compile Include="Presentador\PresentadorReporteSolicitud.cs" />
+    <Compile Include="Presentador\PriorizarCasoPresentadorLista.cs" />
+    <Compile Include="Presentador\ReporteCartaAvalAltamiraPresentadorDetalle.cs" />
+    <Compile Include="Presentador\ReporteCartaAvalIberoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\ReporteCartaAvalMIPresentadorDetalle.cs" />
+    <Compile Include="Presentador\ReporteCartaAvalZumaPresentadorDetalle.cs" />
+    <Compile Include="Presentador\ReporteConsolidadoMovimientoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\ReporteConsolidadoServicioPresentador.cs" />
+    <Compile Include="Presentador\ReporteDetalleFacturaPresentador.cs" />
+    <Compile Include="Presentador\ReporteDetalleMovimientoPresentador.cs" />
+    <Compile Include="Presentador\ReporteFacturasPresentador.cs" />
+    <Compile Include="Presentador\ReporteOpMedPresentador.cs" />
+    <Compile Include="Presentador\PantallaReporteCasosPresentadorDetalle.cs" />
+    <Compile Include="Presentador\ReporteCasosPresentadorDetalle.cs" />
+    <Compile Include="Presentador\RespuestaPresentadorDetalle.cs" />
+    <Compile Include="Presentador\RespuestaTabMovimientoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\ServiciosSimuladoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\ServiciosSimuladoPresentadorLista.cs" />
+    <Compile Include="Presentador\SolicitudBloquePresentadorDetalle.cs" />
+    <Compile Include="Presentador\SolicitudBloquePresentadorMaestroDetalle.cs" />
+    <Compile Include="Presentador\SolicitudServicioPresentador.cs" />
+    <Compile Include="Presentador\TiemposTabMovimientoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\TiempoDelCasoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\MovimientoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\PasoPresentadorMaestroDetalleBloques.cs" />
+    <Compile Include="Presentador\MovimientoCasoPresentadorLista.cs" />
+    <Compile Include="Presentador\ObservacionesTabMovimientoPresentadorDetalle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Presentador\CasoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\ChadePasoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\ChadePasoPresentadorLista.cs" />
+    <Compile Include="Presentador\ConfiguracionPasosPresentador.cs" />
+    <Compile Include="Presentador\ContingenciaLoginPresentador.cs" />
+    <Compile Include="Presentador\DefaultPresentador.cs" />
+    <Compile Include="Presentador\DocumentosPasoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\DocumentosPasoPresentadorLista.cs" />
+    <Compile Include="Presentador\DocumentosServicioPresentadorDetalle.cs" />
+    <Compile Include="Presentador\DocumentosServicioPresentadorLista.cs" />
+    <Compile Include="Presentador\FlujosServicioPresentadorLista.cs" />
+    <Compile Include="Presentador\FlujosServicioPresentadorMaestroDetalle.cs" />
+    <Compile Include="Presentador\EtapaPresentadorMaestroDetalle.cs" />
+    <Compile Include="Presentador\FlujosEjecucionPresentadorDetalle.cs" />
+    <Compile Include="Presentador\FlujosEjecucionPresentadorLista.cs" />
+    <Compile Include="Presentador\MensajesMetodosDestinatarioCorreoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\MensajesMetodosDestinatarioPresentadorDetalle.cs" />
+    <Compile Include="Presentador\PaginaBasePresentador.cs" />
+    <Compile Include="Presentador\ParametrosAgendaPresentadorDetalle.cs" />
+    <Compile Include="Presentador\ParametrosAgendaPresentadorLista.cs" />
+    <Compile Include="Presentador\PasoPresentadorMaestroDetalle.cs" />
+    <Compile Include="Presentador\PasosBloquePresentadorDetalle.cs" />
+    <Compile Include="Presentador\PasosRepuestaPresentadorDetalle.cs" />
+    <Compile Include="Presentador\PresentadorBase.cs" />
+    <Compile Include="Presentador\PresentadorDetalleBase.cs" />
+    <Compile Include="Presentador\PresentadorListaBase.cs" />
+    <Compile Include="Presentador\ServicioSucursalPresentadorDetalle.cs" />
+    <Compile Include="Presentador\ServicioSucursalPresentadorLista.cs" />
+    <Compile Include="Presentador\SuscriptorPresentadorLista.cs" />
+    <Compile Include="Presentador\TipoPasoPresentadorDetalle.cs" />
+    <Compile Include="Presentador\TipoPasoPresentadorLista.cs" />
+    <Compile Include="Presentador\TransporteFlujoServicioPresentador.cs" />
+    <Compile Include="Presentador\UsuariosSucriptorPresentador.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Presentador\TransaccionesPaginasModulo.cs" />
+    <Compile Include="Rutinas\RutinasChat.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HConnexum.Tramitador.Datos\HConnexum.Tramitador.Datos.csproj">
+      <Project>{5BC6857C-0821-4352-862D-B21A9C280883}</Project>
+      <Name>HConnexum.Tramitador.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HConnexum.Tramitador.Negocio\HConnexum.Tramitador.Negocio.csproj">
+      <Project>{7147D43F-B2FF-4FB2-8710-15364DD2899D}</Project>
+      <Name>HConnexum.Tramitador.Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HC2KEY.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

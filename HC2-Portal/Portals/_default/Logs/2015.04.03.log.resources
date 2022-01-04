@@ -1,0 +1,645 @@
+2015-04-03 23:40:28,111 [ZVE01-202][Thread:373][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 201.209.168.233
+	Port: 44961
+	Referer: http://www.h-connexum.com/portal/loginhc2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0
+	ViewState: sKAOFGhP1EXj6PylnslbwPA2f8PG8HRsV/EthU7yiZG5VELcSnjcZFtrwP0o8+MpKrlpqPfBGYGWJj3KsW210Qw7ReriY8WulpGJVSJGKgiCd0ZIbyKvW+FtP+AmllyqRYupfEIwEe4nsMIV16JjzJJKb94QG/+VLcJ6xRbwzdQ0zkhcZuLEaehnZ5vaBh2FxKNMCRXL7FJUF8STwpUG3AilunHqhwi2eTePe87NSi29Kg8Ro+9qwk+HWdnGE1sP5SbtgCtOzwJSAEVZYoTjgFYTWzQx6yAOMUsvZyjpKIFe7x78HFrNmIVLIjF7FmB8Tyc3lzxlQM8VqvFleKaW4vPXiXsTT9oaxxJ2kDoYY/QZrys7phcdfK4Id1jj7CLhdLS9tvBBC9Np0xDeBxzttiwTmJUC37OBNb+z319SOlXf5FeJSsv1/YhzsnLGeO2HT4o+vaj8ge5MYTl0TOFlGVl78PoTP+D8dHj3E/q9Z8kcUgWHp9Ig+BVsAt2iPujdZu6/OnaHeexWIMV7FlS+IR+rdSs20v4+M7qWQgIK28vX5s0ptoSTVNBi0yInBJoY+rp55bdHBnJgyhZnHTXZRJbsTJd5jiF3SGJj26RR+ESkK0KLQI7nDYBWruoJYLL3MXbPjrlvjntM+MONe3DLovW89/t0b0znKhI1gGYVjPPK4CUCye/1lOcdnh9PvMLnmZtwWSTvs+7UvSRv7zuoGWULRXloyqJy/R05DAMmbp8Rr/04RLzn81bMIIqt7KgyNqcE7LjRuBgrtUhx0h...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2015-04-03 23:40:50,756 [ZVE01-202][Thread:16][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 201.209.168.233
+	Port: 44972
+	Referer: http://www.h-connexum.com/portal/loginhc2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0
+	ViewState: sKAOFGhP1EXj6PylnslbwPA2f8PG8HRsV/EthU7yiZG5VELcSnjcZFtrwP0o8+MpKrlpqPfBGYGWJj3KsW210Qw7ReriY8WulpGJVSJGKgiCd0ZIbyKvW+FtP+AmllyqRYupfEIwEe4nsMIV16JjzJJKb94QG/+VLcJ6xRbwzdQ0zkhcZuLEaehnZ5vaBh2FxKNMCRXL7FJUF8STwpUG3AilunHqhwi2eTePe87NSi29Kg8Ro+9qwk+HWdnGE1sP5SbtgCtOzwJSAEVZYoTjgFYTWzQx6yAOMUsvZyjpKIFe7x78HFrNmIVLIjF7FmB8Tyc3lzxlQM8VqvFleKaW4vPXiXsTT9oaxxJ2kDoYY/QZrys7phcdfK4Id1jj7CLhdLS9tvBBC9Np0xDeBxzttiwTmJUC37OBNb+z319SOlXf5FeJSsv1/YhzsnLGeO2HT4o+vaj8ge5MYTl0TOFlGVl78PoTP+D8dHj3E/q9Z8kcUgWHp9Ig+BVsAt2iPujdZu6/OnaHeexWIMV7FlS+IR+rdSs20v4+M7qWQgIK28vX5s0ptoSTVNBi0yInBJoY+rp55bdHBnJgyhZnHTXZRJbsTJd5jiF3SGJj26RR+ESkK0KLQI7nDYBWruoJYLL3MXbPjrlvjntM+MONe3DLovW89/t0b0znKhI1gGYVjPPK4CUCye/1lOcdnh9PvMLnmZtwWSTvs+7UvSRv7zuoGWULRXloyqJy/R05DAMmbp8Rr/04RLzn81bMIIqt7KgyNqcE7LjRuBgrtUhx0h...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:40:50,865 [ZVE01-202][Thread:16][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 201.209.168.233
+	Port: 44972
+	Referer: http://www.h-connexum.com/portal/loginhc2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0
+	ViewState: sKAOFGhP1EXj6PylnslbwPA2f8PG8HRsV/EthU7yiZG5VELcSnjcZFtrwP0o8+MpKrlpqPfBGYGWJj3KsW210Qw7ReriY8WulpGJVSJGKgiCd0ZIbyKvW+FtP+AmllyqRYupfEIwEe4nsMIV16JjzJJKb94QG/+VLcJ6xRbwzdQ0zkhcZuLEaehnZ5vaBh2FxKNMCRXL7FJUF8STwpUG3AilunHqhwi2eTePe87NSi29Kg8Ro+9qwk+HWdnGE1sP5SbtgCtOzwJSAEVZYoTjgFYTWzQx6yAOMUsvZyjpKIFe7x78HFrNmIVLIjF7FmB8Tyc3lzxlQM8VqvFleKaW4vPXiXsTT9oaxxJ2kDoYY/QZrys7phcdfK4Id1jj7CLhdLS9tvBBC9Np0xDeBxzttiwTmJUC37OBNb+z319SOlXf5FeJSsv1/YhzsnLGeO2HT4o+vaj8ge5MYTl0TOFlGVl78PoTP+D8dHj3E/q9Z8kcUgWHp9Ig+BVsAt2iPujdZu6/OnaHeexWIMV7FlS+IR+rdSs20v4+M7qWQgIK28vX5s0ptoSTVNBi0yInBJoY+rp55bdHBnJgyhZnHTXZRJbsTJd5jiF3SGJj26RR+ESkK0KLQI7nDYBWruoJYLL3MXbPjrlvjntM+MONe3DLovW89/t0b0znKhI1gGYVjPPK4CUCye/1lOcdnh9PvMLnmZtwWSTvs+7UvSRv7zuoGWULRXloyqJy/R05DAMmbp8Rr/04RLzn81bMIIqt7KgyNqcE7LjRuBgrtUhx0h...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2015-04-03 23:41:06,659 [ZVE01-202][Thread:23][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 201.209.168.233
+	Port: 44973
+	Referer: http://www.h-connexum.com/portal/loginhc2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0
+	ViewState: sKAOFGhP1EXj6PylnslbwPA2f8PG8HRsV/EthU7yiZG5VELcSnjcZFtrwP0o8+MpKrlpqPfBGYGWJj3KsW210Qw7ReriY8WulpGJVSJGKgiCd0ZIbyKvW+FtP+AmllyqRYupfEIwEe4nsMIV16JjzJJKb94QG/+VLcJ6xRbwzdQ0zkhcZuLEaehnZ5vaBh2FxKNMCRXL7FJUF8STwpUG3AilunHqhwi2eTePe87NSi29Kg8Ro+9qwk+HWdnGE1sP5SbtgCtOzwJSAEVZYoTjgFYTWzQx6yAOMUsvZyjpKIFe7x78HFrNmIVLIjF7FmB8Tyc3lzxlQM8VqvFleKaW4vPXiXsTT9oaxxJ2kDoYY/QZrys7phcdfK4Id1jj7CLhdLS9tvBBC9Np0xDeBxzttiwTmJUC37OBNb+z319SOlXf5FeJSsv1/YhzsnLGeO2HT4o+vaj8ge5MYTl0TOFlGVl78PoTP+D8dHj3E/q9Z8kcUgWHp9Ig+BVsAt2iPujdZu6/OnaHeexWIMV7FlS+IR+rdSs20v4+M7qWQgIK28vX5s0ptoSTVNBi0yInBJoY+rp55bdHBnJgyhZnHTXZRJbsTJd5jiF3SGJj26RR+ESkK0KLQI7nDYBWruoJYLL3MXbPjrlvjntM+MONe3DLovW89/t0b0znKhI1gGYVjPPK4CUCye/1lOcdnh9PvMLnmZtwWSTvs+7UvSRv7zuoGWULRXloyqJy/R05DAMmbp8Rr/04RLzn81bMIIqt7KgyNqcE7LjRuBgrtUhx0h...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:41:06,659 [ZVE01-202][Thread:23][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 201.209.168.233
+	Port: 44973
+	Referer: http://www.h-connexum.com/portal/loginhc2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0
+	ViewState: sKAOFGhP1EXj6PylnslbwPA2f8PG8HRsV/EthU7yiZG5VELcSnjcZFtrwP0o8+MpKrlpqPfBGYGWJj3KsW210Qw7ReriY8WulpGJVSJGKgiCd0ZIbyKvW+FtP+AmllyqRYupfEIwEe4nsMIV16JjzJJKb94QG/+VLcJ6xRbwzdQ0zkhcZuLEaehnZ5vaBh2FxKNMCRXL7FJUF8STwpUG3AilunHqhwi2eTePe87NSi29Kg8Ro+9qwk+HWdnGE1sP5SbtgCtOzwJSAEVZYoTjgFYTWzQx6yAOMUsvZyjpKIFe7x78HFrNmIVLIjF7FmB8Tyc3lzxlQM8VqvFleKaW4vPXiXsTT9oaxxJ2kDoYY/QZrys7phcdfK4Id1jj7CLhdLS9tvBBC9Np0xDeBxzttiwTmJUC37OBNb+z319SOlXf5FeJSsv1/YhzsnLGeO2HT4o+vaj8ge5MYTl0TOFlGVl78PoTP+D8dHj3E/q9Z8kcUgWHp9Ig+BVsAt2iPujdZu6/OnaHeexWIMV7FlS+IR+rdSs20v4+M7qWQgIK28vX5s0ptoSTVNBi0yInBJoY+rp55bdHBnJgyhZnHTXZRJbsTJd5jiF3SGJj26RR+ESkK0KLQI7nDYBWruoJYLL3MXbPjrlvjntM+MONe3DLovW89/t0b0znKhI1gGYVjPPK4CUCye/1lOcdnh9PvMLnmZtwWSTvs+7UvSRv7zuoGWULRXloyqJy/R05DAMmbp8Rr/04RLzn81bMIIqt7KgyNqcE7LjRuBgrtUhx0h...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2015-04-03 23:41:08,266 [ZVE01-202][Thread:8][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 201.209.168.233
+	Port: 44974
+	Referer: http://www.h-connexum.com/portal/loginhc2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0
+	ViewState: sKAOFGhP1EXj6PylnslbwPA2f8PG8HRsV/EthU7yiZG5VELcSnjcZFtrwP0o8+MpKrlpqPfBGYGWJj3KsW210Qw7ReriY8WulpGJVSJGKgiCd0ZIbyKvW+FtP+AmllyqRYupfEIwEe4nsMIV16JjzJJKb94QG/+VLcJ6xRbwzdQ0zkhcZuLEaehnZ5vaBh2FxKNMCRXL7FJUF8STwpUG3AilunHqhwi2eTePe87NSi29Kg8Ro+9qwk+HWdnGE1sP5SbtgCtOzwJSAEVZYoTjgFYTWzQx6yAOMUsvZyjpKIFe7x78HFrNmIVLIjF7FmB8Tyc3lzxlQM8VqvFleKaW4vPXiXsTT9oaxxJ2kDoYY/QZrys7phcdfK4Id1jj7CLhdLS9tvBBC9Np0xDeBxzttiwTmJUC37OBNb+z319SOlXf5FeJSsv1/YhzsnLGeO2HT4o+vaj8ge5MYTl0TOFlGVl78PoTP+D8dHj3E/q9Z8kcUgWHp9Ig+BVsAt2iPujdZu6/OnaHeexWIMV7FlS+IR+rdSs20v4+M7qWQgIK28vX5s0ptoSTVNBi0yInBJoY+rp55bdHBnJgyhZnHTXZRJbsTJd5jiF3SGJj26RR+ESkK0KLQI7nDYBWruoJYLL3MXbPjrlvjntM+MONe3DLovW89/t0b0znKhI1gGYVjPPK4CUCye/1lOcdnh9PvMLnmZtwWSTvs+7UvSRv7zuoGWULRXloyqJy/R05DAMmbp8Rr/04RLzn81bMIIqt7KgyNqcE7LjRuBgrtUhx0h...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:41:08,282 [ZVE01-202][Thread:8][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 201.209.168.233
+	Port: 44974
+	Referer: http://www.h-connexum.com/portal/loginhc2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0
+	ViewState: sKAOFGhP1EXj6PylnslbwPA2f8PG8HRsV/EthU7yiZG5VELcSnjcZFtrwP0o8+MpKrlpqPfBGYGWJj3KsW210Qw7ReriY8WulpGJVSJGKgiCd0ZIbyKvW+FtP+AmllyqRYupfEIwEe4nsMIV16JjzJJKb94QG/+VLcJ6xRbwzdQ0zkhcZuLEaehnZ5vaBh2FxKNMCRXL7FJUF8STwpUG3AilunHqhwi2eTePe87NSi29Kg8Ro+9qwk+HWdnGE1sP5SbtgCtOzwJSAEVZYoTjgFYTWzQx6yAOMUsvZyjpKIFe7x78HFrNmIVLIjF7FmB8Tyc3lzxlQM8VqvFleKaW4vPXiXsTT9oaxxJ2kDoYY/QZrys7phcdfK4Id1jj7CLhdLS9tvBBC9Np0xDeBxzttiwTmJUC37OBNb+z319SOlXf5FeJSsv1/YhzsnLGeO2HT4o+vaj8ge5MYTl0TOFlGVl78PoTP+D8dHj3E/q9Z8kcUgWHp9Ig+BVsAt2iPujdZu6/OnaHeexWIMV7FlS+IR+rdSs20v4+M7qWQgIK28vX5s0ptoSTVNBi0yInBJoY+rp55bdHBnJgyhZnHTXZRJbsTJd5jiF3SGJj26RR+ESkK0KLQI7nDYBWruoJYLL3MXbPjrlvjntM+MONe3DLovW89/t0b0znKhI1gGYVjPPK4CUCye/1lOcdnh9PvMLnmZtwWSTvs+7UvSRv7zuoGWULRXloyqJy/R05DAMmbp8Rr/04RLzn81bMIIqt7KgyNqcE7LjRuBgrtUhx0h...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2015-04-03 23:41:08,469 [ZVE01-202][Thread:23][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 201.209.168.233
+	Port: 44975
+	Referer: http://www.h-connexum.com/portal/loginhc2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0
+	ViewState: sKAOFGhP1EXj6PylnslbwPA2f8PG8HRsV/EthU7yiZG5VELcSnjcZFtrwP0o8+MpKrlpqPfBGYGWJj3KsW210Qw7ReriY8WulpGJVSJGKgiCd0ZIbyKvW+FtP+AmllyqRYupfEIwEe4nsMIV16JjzJJKb94QG/+VLcJ6xRbwzdQ0zkhcZuLEaehnZ5vaBh2FxKNMCRXL7FJUF8STwpUG3AilunHqhwi2eTePe87NSi29Kg8Ro+9qwk+HWdnGE1sP5SbtgCtOzwJSAEVZYoTjgFYTWzQx6yAOMUsvZyjpKIFe7x78HFrNmIVLIjF7FmB8Tyc3lzxlQM8VqvFleKaW4vPXiXsTT9oaxxJ2kDoYY/QZrys7phcdfK4Id1jj7CLhdLS9tvBBC9Np0xDeBxzttiwTmJUC37OBNb+z319SOlXf5FeJSsv1/YhzsnLGeO2HT4o+vaj8ge5MYTl0TOFlGVl78PoTP+D8dHj3E/q9Z8kcUgWHp9Ig+BVsAt2iPujdZu6/OnaHeexWIMV7FlS+IR+rdSs20v4+M7qWQgIK28vX5s0ptoSTVNBi0yInBJoY+rp55bdHBnJgyhZnHTXZRJbsTJd5jiF3SGJj26RR+ESkK0KLQI7nDYBWruoJYLL3MXbPjrlvjntM+MONe3DLovW89/t0b0znKhI1gGYVjPPK4CUCye/1lOcdnh9PvMLnmZtwWSTvs+7UvSRv7zuoGWULRXloyqJy/R05DAMmbp8Rr/04RLzn81bMIIqt7KgyNqcE7LjRuBgrtUhx0h...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:41:08,469 [ZVE01-202][Thread:23][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 201.209.168.233
+	Port: 44975
+	Referer: http://www.h-connexum.com/portal/loginhc2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0
+	ViewState: sKAOFGhP1EXj6PylnslbwPA2f8PG8HRsV/EthU7yiZG5VELcSnjcZFtrwP0o8+MpKrlpqPfBGYGWJj3KsW210Qw7ReriY8WulpGJVSJGKgiCd0ZIbyKvW+FtP+AmllyqRYupfEIwEe4nsMIV16JjzJJKb94QG/+VLcJ6xRbwzdQ0zkhcZuLEaehnZ5vaBh2FxKNMCRXL7FJUF8STwpUG3AilunHqhwi2eTePe87NSi29Kg8Ro+9qwk+HWdnGE1sP5SbtgCtOzwJSAEVZYoTjgFYTWzQx6yAOMUsvZyjpKIFe7x78HFrNmIVLIjF7FmB8Tyc3lzxlQM8VqvFleKaW4vPXiXsTT9oaxxJ2kDoYY/QZrys7phcdfK4Id1jj7CLhdLS9tvBBC9Np0xDeBxzttiwTmJUC37OBNb+z319SOlXf5FeJSsv1/YhzsnLGeO2HT4o+vaj8ge5MYTl0TOFlGVl78PoTP+D8dHj3E/q9Z8kcUgWHp9Ig+BVsAt2iPujdZu6/OnaHeexWIMV7FlS+IR+rdSs20v4+M7qWQgIK28vX5s0ptoSTVNBi0yInBJoY+rp55bdHBnJgyhZnHTXZRJbsTJd5jiF3SGJj26RR+ESkK0KLQI7nDYBWruoJYLL3MXbPjrlvjntM+MONe3DLovW89/t0b0znKhI1gGYVjPPK4CUCye/1lOcdnh9PvMLnmZtwWSTvs+7UvSRv7zuoGWULRXloyqJy/R05DAMmbp8Rr/04RLzn81bMIIqt7KgyNqcE7LjRuBgrtUhx0h...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2015-04-03 23:41:08,984 [ZVE01-202][Thread:6][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 201.209.168.233
+	Port: 44976
+	Referer: http://www.h-connexum.com/portal/loginhc2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0
+	ViewState: sKAOFGhP1EXj6PylnslbwPA2f8PG8HRsV/EthU7yiZG5VELcSnjcZFtrwP0o8+MpKrlpqPfBGYGWJj3KsW210Qw7ReriY8WulpGJVSJGKgiCd0ZIbyKvW+FtP+AmllyqRYupfEIwEe4nsMIV16JjzJJKb94QG/+VLcJ6xRbwzdQ0zkhcZuLEaehnZ5vaBh2FxKNMCRXL7FJUF8STwpUG3AilunHqhwi2eTePe87NSi29Kg8Ro+9qwk+HWdnGE1sP5SbtgCtOzwJSAEVZYoTjgFYTWzQx6yAOMUsvZyjpKIFe7x78HFrNmIVLIjF7FmB8Tyc3lzxlQM8VqvFleKaW4vPXiXsTT9oaxxJ2kDoYY/QZrys7phcdfK4Id1jj7CLhdLS9tvBBC9Np0xDeBxzttiwTmJUC37OBNb+z319SOlXf5FeJSsv1/YhzsnLGeO2HT4o+vaj8ge5MYTl0TOFlGVl78PoTP+D8dHj3E/q9Z8kcUgWHp9Ig+BVsAt2iPujdZu6/OnaHeexWIMV7FlS+IR+rdSs20v4+M7qWQgIK28vX5s0ptoSTVNBi0yInBJoY+rp55bdHBnJgyhZnHTXZRJbsTJd5jiF3SGJj26RR+ESkK0KLQI7nDYBWruoJYLL3MXbPjrlvjntM+MONe3DLovW89/t0b0znKhI1gGYVjPPK4CUCye/1lOcdnh9PvMLnmZtwWSTvs+7UvSRv7zuoGWULRXloyqJy/R05DAMmbp8Rr/04RLzn81bMIIqt7KgyNqcE7LjRuBgrtUhx0h...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:41:08,984 [ZVE01-202][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 201.209.168.233
+	Port: 44976
+	Referer: http://www.h-connexum.com/portal/loginhc2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0
+	ViewState: sKAOFGhP1EXj6PylnslbwPA2f8PG8HRsV/EthU7yiZG5VELcSnjcZFtrwP0o8+MpKrlpqPfBGYGWJj3KsW210Qw7ReriY8WulpGJVSJGKgiCd0ZIbyKvW+FtP+AmllyqRYupfEIwEe4nsMIV16JjzJJKb94QG/+VLcJ6xRbwzdQ0zkhcZuLEaehnZ5vaBh2FxKNMCRXL7FJUF8STwpUG3AilunHqhwi2eTePe87NSi29Kg8Ro+9qwk+HWdnGE1sP5SbtgCtOzwJSAEVZYoTjgFYTWzQx6yAOMUsvZyjpKIFe7x78HFrNmIVLIjF7FmB8Tyc3lzxlQM8VqvFleKaW4vPXiXsTT9oaxxJ2kDoYY/QZrys7phcdfK4Id1jj7CLhdLS9tvBBC9Np0xDeBxzttiwTmJUC37OBNb+z319SOlXf5FeJSsv1/YhzsnLGeO2HT4o+vaj8ge5MYTl0TOFlGVl78PoTP+D8dHj3E/q9Z8kcUgWHp9Ig+BVsAt2iPujdZu6/OnaHeexWIMV7FlS+IR+rdSs20v4+M7qWQgIK28vX5s0ptoSTVNBi0yInBJoY+rp55bdHBnJgyhZnHTXZRJbsTJd5jiF3SGJj26RR+ESkK0KLQI7nDYBWruoJYLL3MXbPjrlvjntM+MONe3DLovW89/t0b0znKhI1gGYVjPPK4CUCye/1lOcdnh9PvMLnmZtwWSTvs+7UvSRv7zuoGWULRXloyqJy/R05DAMmbp8Rr/04RLzn81bMIIqt7KgyNqcE7LjRuBgrtUhx0h...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2015-04-03 23:46:25,642 [ZVE01-202][Thread:46][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:46:25,673 [ZVE01-202][Thread:46][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=An unexpected error has occurred&content=0
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:46:41,525 [ZVE01-202][Thread:6][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:46:41,525 [ZVE01-202][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=An unexpected error has occurred&content=0
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:46:53,149 [ZVE01-202][Thread:46][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:46:53,149 [ZVE01-202][Thread:46][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=An unexpected error has occurred&content=0
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:47:09,516 [ZVE01-202][Thread:6][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:47:09,516 [ZVE01-202][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=An unexpected error has occurred&content=0
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:47:26,663 [ZVE01-202][Thread:6][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:47:26,663 [ZVE01-202][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=An unexpected error has occurred&content=0
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:48:08,602 [ZVE01-202][Thread:21][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:48:08,602 [ZVE01-202][Thread:21][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=An unexpected error has occurred&content=0
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:49:38,918 [ZVE01-202][Thread:34][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:49:38,918 [ZVE01-202][Thread:34][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=An unexpected error has occurred&content=0
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:50:02,289 [ZVE01-202][Thread:34][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:50:02,289 [ZVE01-202][Thread:34][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=An unexpected error has occurred&content=0
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:52:42,291 [ZVE01-202][Thread:47][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:52:42,291 [ZVE01-202][Thread:47][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=An unexpected error has occurred&content=0
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:58:35,736 [ZVE01-202][Thread:20][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-04-03 23:58:35,736 [ZVE01-202][Thread:20][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=An unexpected error has occurred&content=0
+System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en HC.GadgetAplicacion.AplicacionGadget.Page_Load(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

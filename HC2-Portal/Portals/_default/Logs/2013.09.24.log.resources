@@ -1,0 +1,18 @@
+2013-09-24 21:06:27,369 [ZVE01-202][Thread:102][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=110&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): El cliente está desconectado. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 186.91.254.170
+	Port: 51278
+	Referer: http://www.h-connexum.com/PORTAL/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)
+	ViewState: U+jJcPsYgNCb4ldlg5Gy+3hhUdHMNJMj/fbwUroU1gW+oUM0nOVGsptXnYkhdY0UG3THXBKwNgGBoKvO1X8ZONQVYygdDUYitn3lLGxpNr9Z0Q0ASKTphHWnLFNi1C8Oii0awnyV6q548B4PVo2zGlrAOQlz/C2atfaPQaDPsH3h/mqSN3+PxlIQNGYaHGglXAp1iyEHRtCrO7YV5+13zHisNNvHFx91kX0yKya5ZF7gD0ABCUAzkU469eP28xh5cSc2u0a6F0ZhzxfA1R6tn1+iu96nRScnzQxHinvKbqRsOKfVX/TBenTfTgqi/Xf0PnmYk93uoFpYsp6Mu5RaNjl3gLFosVTcMBfIPRL6uDlZqqSRF9VSzFhrQstUKmE/ZGBzwvggW+1ziZjXQ+Ajhn6HzI4z1a6+a4PaesWLjVOe3DCy6FPdKiTs88n0bYBY+vY3d5ewmsnMSWPx3SYzf1iQMkqgKCA+nw8iOCP+i0nwm0mjexpiv3cZGwpKpbQvr2oCB66nNAljPtipt66FpN2pc+S18CDnKoGjQUk6ahfVPoQ0g26UdQMHIuW1WAM8aWILRNPl4rIMWnjZqK/HwMHSnA7ErWXCE2KorTJqU0r9+bYQ+2KUfMQStOg6xiVLfsM7xXgx1xdI0YHwpRIK6nwIrcKq3Qrc0R2eoXVyiIvGu8tmy1oFYGDyNi2isNy79WhfLrbu2UHPs5SqLgayGFOkv38+/Q9ET5kbGUM/SLI35zPOBxRu71zkCqrEiYRaXRGYLWfI4FBPz... ---> System.FormatException: Longitud no válida para una matriz de caracteres Base-64.
+   en System.Convert.FromBase64String(String s)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

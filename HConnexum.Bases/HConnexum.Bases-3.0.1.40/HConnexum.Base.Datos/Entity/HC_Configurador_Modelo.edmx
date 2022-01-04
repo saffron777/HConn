@@ -1,0 +1,1839 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="HC_CONFIGURADORModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="HC_CONFIGURADORModelStoreContainer">
+          <EntitySet Name="TB_Aplicaciones" EntityType="HC_CONFIGURADORModel.Store.TB_Aplicaciones" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_DatosBase" EntityType="HC_CONFIGURADORModel.Store.TB_DatosBase" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_DatosParticulares" EntityType="HC_CONFIGURADORModel.Store.TB_DatosParticulares" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_Idiomas" EntityType="HC_CONFIGURADORModel.Store.TB_Idiomas" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_Listas" EntityType="HC_CONFIGURADORModel.Store.TB_Listas" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_ListasValores" EntityType="HC_CONFIGURADORModel.Store.TB_ListasValores" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_PaginasModulos" EntityType="HC_CONFIGURADORModel.Store.TB_PaginasModulos" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_Roles" EntityType="HC_CONFIGURADORModel.Store.TB_Roles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_SesionesUsuarios" EntityType="HC_CONFIGURADORModel.Store.TB_SesionesUsuarios" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_Sucursales" EntityType="HC_CONFIGURADORModel.Store.TB_Sucursales" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_Suscriptores" EntityType="HC_CONFIGURADORModel.Store.TB_Suscriptores" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_TipoTransacciones" EntityType="HC_CONFIGURADORModel.Store.TB_TipoTransacciones" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_TraModAppPagModAppTraModApp" EntityType="HC_CONFIGURADORModel.Store.TB_TraModAppPagModAppTraModApp" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_TransaccionesModulosAplicaciones" EntityType="HC_CONFIGURADORModel.Store.TB_TransaccionesModulosAplicaciones" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_TransaccionesModulosAplicacionesRolAplicaciones" EntityType="HC_CONFIGURADORModel.Store.TB_TransaccionesModulosAplicacionesRolAplicaciones" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_Usuarios" EntityType="HC_CONFIGURADORModel.Store.TB_Usuarios" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_UsuariosLocalidades" EntityType="HC_CONFIGURADORModel.Store.TB_UsuariosLocalidades" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_UsuariosSucriptores" EntityType="HC_CONFIGURADORModel.Store.TB_UsuariosSucriptores" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_ValoresDatosParticulares" EntityType="HC_CONFIGURADORModel.Store.TB_ValoresDatosParticulares" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Vw_PaginaPermitidaUsuarioSuscriptor" EntityType="HC_CONFIGURADORModel.Store.Vw_PaginaPermitidaUsuarioSuscriptor" store:Type="Views" store:Schema="dbo" store:Name="Vw_PaginaPermitidaUsuarioSuscriptor">
+            <DefiningQuery>SELECT 
+      [Vw_PaginaPermitidaUsuarioSuscriptor].[UsuarioSuscriptor] AS [UsuarioSuscriptor], 
+      [Vw_PaginaPermitidaUsuarioSuscriptor].[IdPagina] AS [IdPagina], 
+      [Vw_PaginaPermitidaUsuarioSuscriptor].[IdTransaccion] AS [IdTransaccion]
+      FROM [dbo].[Vw_PaginaPermitidaUsuarioSuscriptor] AS [Vw_PaginaPermitidaUsuarioSuscriptor]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK__TB_Sesion__IdSus__7834CCDD" Association="HC_CONFIGURADORModel.Store.FK__TB_Sesion__IdSus__7834CCDD">
+            <End Role="TB_Suscriptores" EntitySet="TB_Suscriptores" />
+            <End Role="TB_SesionesUsuarios" EntitySet="TB_SesionesUsuarios" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SesionesUsuarios_Usuarios__IdUsuario_Id" Association="HC_CONFIGURADORModel.Store.FK_SesionesUsuarios_Usuarios__IdUsuario_Id">
+            <End Role="TB_Usuarios" EntitySet="TB_Usuarios" />
+            <End Role="TB_SesionesUsuarios" EntitySet="TB_SesionesUsuarios" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sucursales_Suscriptores__IdSuscriptor_Id" Association="HC_CONFIGURADORModel.Store.FK_Sucursales_Suscriptores__IdSuscriptor_Id">
+            <End Role="TB_Suscriptores" EntitySet="TB_Suscriptores" />
+            <End Role="TB_Sucursales" EntitySet="TB_Sucursales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TraModAppPagModAppTraModApp_PaginasModulos__IdPaginaModulo_Id" Association="HC_CONFIGURADORModel.Store.FK_TraModAppPagModAppTraModApp_PaginasModulos__IdPaginaModulo_Id">
+            <End Role="TB_PaginasModulos" EntitySet="TB_PaginasModulos" />
+            <End Role="TB_TraModAppPagModAppTraModApp" EntitySet="TB_TraModAppPagModAppTraModApp" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TraModAppPagModAppTraModApp_TransaccionesModulosAplicaciones__IdTransaccionModuloAplicacion_Id" Association="HC_CONFIGURADORModel.Store.FK_TraModAppPagModAppTraModApp_TransaccionesModulosAplicaciones__IdTransaccionModuloAplicacion_Id">
+            <End Role="TB_TransaccionesModulosAplicaciones" EntitySet="TB_TransaccionesModulosAplicaciones" />
+            <End Role="TB_TraModAppPagModAppTraModApp" EntitySet="TB_TraModAppPagModAppTraModApp" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TransaccionesModulosAplicaciones_TipoTransacciones__IdTipoTransaccion_Id" Association="HC_CONFIGURADORModel.Store.FK_TransaccionesModulosAplicaciones_TipoTransacciones__IdTipoTransaccion_Id">
+            <End Role="TB_TipoTransacciones" EntitySet="TB_TipoTransacciones" />
+            <End Role="TB_TransaccionesModulosAplicaciones" EntitySet="TB_TransaccionesModulosAplicaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TransaccionesModulosAplicacionesRolAplicaciones_Roles__IdRol_Id" Association="HC_CONFIGURADORModel.Store.FK_TransaccionesModulosAplicacionesRolAplicaciones_Roles__IdRol_Id">
+            <End Role="TB_Roles" EntitySet="TB_Roles" />
+            <End Role="TB_TransaccionesModulosAplicacionesRolAplicaciones" EntitySet="TB_TransaccionesModulosAplicacionesRolAplicaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TransaccionesModulosAplicacionesRolAplicaciones_TraModAppPagModAppTraModApp__IdTraModAppPagModAppTraModApp_Id" Association="HC_CONFIGURADORModel.Store.FK_TransaccionesModulosAplicacionesRolAplicaciones_TraModAppPagModAppTraModApp__IdTraModAppPagModAppTraModApp_Id">
+            <End Role="TB_TraModAppPagModAppTraModApp" EntitySet="TB_TraModAppPagModAppTraModApp" />
+            <End Role="TB_TransaccionesModulosAplicacionesRolAplicaciones" EntitySet="TB_TransaccionesModulosAplicacionesRolAplicaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuariosLocalidades_Sucursales__IdSucursal_Id" Association="HC_CONFIGURADORModel.Store.FK_UsuariosLocalidades_Sucursales__IdSucursal_Id">
+            <End Role="TB_Sucursales" EntitySet="TB_Sucursales" />
+            <End Role="TB_UsuariosLocalidades" EntitySet="TB_UsuariosLocalidades" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuariosLocalidades_UsuariosSucriptores__IdUsuarioSuscriptor_Id" Association="HC_CONFIGURADORModel.Store.FK_UsuariosLocalidades_UsuariosSucriptores__IdUsuarioSuscriptor_Id">
+            <End Role="TB_UsuariosSucriptores" EntitySet="TB_UsuariosSucriptores" />
+            <End Role="TB_UsuariosLocalidades" EntitySet="TB_UsuariosLocalidades" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuariosSucriptores_Suscriptores__IdSuscriptor_Id" Association="HC_CONFIGURADORModel.Store.FK_UsuariosSucriptores_Suscriptores__IdSuscriptor_Id">
+            <End Role="TB_Suscriptores" EntitySet="TB_Suscriptores" />
+            <End Role="TB_UsuariosSucriptores" EntitySet="TB_UsuariosSucriptores" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuariosSucriptores_Usuarios__IdUsuario_Id" Association="HC_CONFIGURADORModel.Store.FK_UsuariosSucriptores_Usuarios__IdUsuario_Id">
+            <End Role="TB_Usuarios" EntitySet="TB_Usuarios" />
+            <End Role="TB_UsuariosSucriptores" EntitySet="TB_UsuariosSucriptores" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuariosSucriptores_UsuariosSucriptores__IdJefeInmediato_Id" Association="HC_CONFIGURADORModel.Store.FK_UsuariosSucriptores_UsuariosSucriptores__IdJefeInmediato_Id">
+            <End Role="TB_UsuariosSucriptores" EntitySet="TB_UsuariosSucriptores" />
+            <End Role="TB_UsuariosSucriptores1" EntitySet="TB_UsuariosSucriptores" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ValoresDatosParticulares_DatosParticulares__IdDatoParticular_Id" Association="HC_CONFIGURADORModel.Store.FK_ValoresDatosParticulares_DatosParticulares__IdDatoParticular_Id">
+            <End Role="TB_DatosParticulares" EntitySet="TB_DatosParticulares" />
+            <End Role="TB_ValoresDatosParticulares" EntitySet="TB_ValoresDatosParticulares" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="TB_Aplicaciones">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NombreAplicacion" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="DescripcionAplicacion" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="UrlAplicacion" Type="varchar" MaxLength="255" />
+          <Property Name="Logo" Type="varchar" MaxLength="255" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndVigente" Type="bit" Nullable="false" />
+          <Property Name="IndEliminado" Type="bit" />
+        </EntityType>
+        <EntityType Name="TB_DatosBase">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre1" Type="varchar" Nullable="false" MaxLength="80" />
+          <Property Name="Nombre2" Type="varchar" MaxLength="80" />
+          <Property Name="Apellido1" Type="varchar" Nullable="false" MaxLength="80" />
+          <Property Name="Apellido2" Type="varchar" MaxLength="80" />
+          <Property Name="IndTipDoc" Type="int" Nullable="false" />
+          <Property Name="NumDoc" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="NumSeguridad" Type="int" />
+          <Property Name="Email" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="Celular" Type="varchar" MaxLength="25" />
+          <Property Name="PIN" Type="varchar" MaxLength="10" />
+          <Property Name="FechaNacimiento" Type="datetime" Nullable="false" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="IndVigente" Type="bit" Nullable="false" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndEliminado" Type="bit" Nullable="false" />
+          <Property Name="IdUsuario" Type="int" />
+          <Property Name="Sexo" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="Foto" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="TB_DatosParticulares">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="80" />
+          <Property Name="IdTablaPropietaria" Type="int" Nullable="false" />
+          <Property Name="CampoTablaPropietaria" Type="varchar" MaxLength="80" />
+          <Property Name="OrigenValor" Type="char" MaxLength="2" />
+          <Property Name="IdTablaMaestra" Type="int" />
+          <Property Name="IdListaOrigenValor" Type="int" />
+          <Property Name="ValorTablaPropietaria" Type="varchar" MaxLength="255" />
+          <Property Name="Posicion" Type="int" Nullable="false" />
+          <Property Name="TipoCampo" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="IdLista" Type="int" />
+          <Property Name="TamanoCampo" Type="int" Nullable="false" />
+          <Property Name="IndObligatorio" Type="bit" />
+          <Property Name="IdPrgValidacion" Type="int" />
+          <Property Name="ValorInicial" Type="varchar" MaxLength="100" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndVigente" Type="bit" Nullable="false" />
+          <Property Name="IndEliminado" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_Idiomas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="500" />
+          <Property Name="NombreCorto" Type="varchar" MaxLength="50" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FecCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndVigente" Type="bit" Nullable="false" />
+          <Property Name="IndEliminado" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_Listas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Descripcion" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="IndVigente" Type="bit" Nullable="false" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndEliminado" Type="bit" Nullable="false" />
+          <Property Name="IdSuscriptor" Type="int" />
+          <Property Name="Nombre" Type="varchar" MaxLength="150" />
+          <Property Name="IndSistemas" Type="bit" />
+        </EntityType>
+        <EntityType Name="TB_ListasValores">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdLista" Type="int" Nullable="false" />
+          <Property Name="NombreValor" Type="varchar" Nullable="false" MaxLength="80" />
+          <Property Name="NombreValorCorto" Type="varchar" MaxLength="10" />
+          <Property Name="Posicion" Type="int" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndVigente" Type="bit" Nullable="false" />
+          <Property Name="IndEliminado" Type="bit" Nullable="false" />
+          <Property Name="Valor" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="TB_PaginasModulos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdModuloAplicacion" Type="int" Nullable="false" />
+          <Property Name="NombrePagina" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="Observacion" Type="varchar" MaxLength="150" />
+          <Property Name="UrlAyuda" Type="varchar" MaxLength="255" />
+          <Property Name="UrlPagina" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="IndVisibleMenu" Type="bit" Nullable="false" />
+          <Property Name="PosicionIndex" Type="int" Nullable="false" />
+          <Property Name="CantidadAcceso" Type="int" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndEliminado" Type="bit" Nullable="false" />
+          <Property Name="IndVigente" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_Roles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdSuscriptorAplicacion" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Observacion" Type="varchar" MaxLength="150" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndVigente" Type="bit" Nullable="false" />
+          <Property Name="IndEliminado" Type="bit" Nullable="false" />
+          <Property Name="IdPlantilla" Type="int" />
+        </EntityType>
+        <EntityType Name="TB_SesionesUsuarios">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdUsuario" Type="int" Nullable="false" />
+          <Property Name="FechaInicio" Type="datetime" Nullable="false" />
+          <Property Name="FechaFin" Type="datetime" />
+          <Property Name="IndActiva" Type="bit" Nullable="false" />
+          <Property Name="IpConexion" Type="varchar" MaxLength="30" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="IndVigente" Type="bit" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndEliminado" Type="bit" />
+          <Property Name="NumActivas" Type="int" />
+          <Property Name="IdSuscriptor" Type="int" />
+          <Property Name="SessionId" Type="nvarchar" MaxLength="88" />
+        </EntityType>
+        <EntityType Name="TB_Sucursales">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdSuscriptor" Type="int" Nullable="false" />
+          <Property Name="IdPais" Type="int" Nullable="false" />
+          <Property Name="IdDivisionTerritorial1" Type="int" Nullable="false" />
+          <Property Name="IdDivisionTerritorial2" Type="int" Nullable="false" />
+          <Property Name="IdDivisionTerritorial3" Type="int" />
+          <Property Name="IndTipDoc" Type="int" />
+          <Property Name="NumDoc" Type="varchar" MaxLength="20" />
+          <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="RazonSocial" Type="varchar" MaxLength="250" />
+          <Property Name="Direccion" Type="varchar" Nullable="false" MaxLength="500" />
+          <Property Name="Fax" Type="varchar" MaxLength="20" />
+          <Property Name="Telefono" Type="varchar" MaxLength="20" />
+          <Property Name="IndTipoSucursal" Type="varchar" Nullable="false" MaxLength="1" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndEliminado" Type="bit" Nullable="false" />
+          <Property Name="IndVigente" Type="bit" Nullable="false" />
+          <Property Name="CodIdExterno" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TB_Suscriptores">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="IdPais" Type="int" Nullable="false" />
+          <Property Name="IdDivisionTerritorial2" Type="int" />
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdDivisionTerritorial3" Type="int" />
+          <Property Name="IdDivisionTerritorial1" Type="int" />
+          <Property Name="IdSolicitudSuscripcion" Type="int" />
+          <Property Name="IndTipDoc" Type="int" Nullable="false" />
+          <Property Name="NumDoc" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="RazonSocial" Type="varchar" MaxLength="100" />
+          <Property Name="FechaInactivacion" Type="datetime" />
+          <Property Name="FechaNacimiento" Type="datetime" />
+          <Property Name="Direccion" Type="varchar" Nullable="false" MaxLength="500" />
+          <Property Name="TxtEmail" Type="varchar" MaxLength="80" />
+          <Property Name="Telefono" Type="varchar" MaxLength="50" />
+          <Property Name="Fax" Type="varchar" MaxLength="50" />
+          <Property Name="IndSolitudInactivacion" Type="bit" Nullable="false" />
+          <Property Name="FechaSolicitudInactivacion" Type="datetime" />
+          <Property Name="TxtObservacion" Type="varchar(max)" />
+          <Property Name="Estatus" Type="int" Nullable="false" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndVigente" Type="bit" Nullable="false" />
+          <Property Name="IndEliminado" Type="bit" Nullable="false" />
+          <Property Name="CodIdExterno" Type="varchar" MaxLength="50" />
+          <Property Name="Logo" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="TB_TipoTransacciones">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UrlIcon" Type="varchar" MaxLength="10" />
+          <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="80" />
+          <Property Name="Observacion" Type="varchar" MaxLength="150" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndEliminado" Type="bit" Nullable="false" />
+          <Property Name="IndVigente" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_TraModAppPagModAppTraModApp">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdTransaccionModuloAplicacion" Type="int" Nullable="false" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndEliminado" Type="bit" Nullable="false" />
+          <Property Name="IndVigente" Type="bit" Nullable="false" />
+          <Property Name="IdPaginaModulo" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_TransaccionesModulosAplicaciones">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdTipoTransaccion" Type="int" Nullable="false" />
+          <Property Name="IdModuloAplicacion" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndEliminado" Type="bit" Nullable="false" />
+          <Property Name="IndVigente" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_TransaccionesModulosAplicacionesRolAplicaciones">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdRol" Type="int" Nullable="false" />
+          <Property Name="IdTraModAppPagModAppTraModApp" Type="int" Nullable="false" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndVigente" Type="bit" Nullable="false" />
+          <Property Name="IndEliminado" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_Usuarios">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PregSeg1" Type="varchar" Nullable="false" MaxLength="150" />
+          <Property Name="RespSeg1" Type="varchar" Nullable="false" MaxLength="150" />
+          <Property Name="PregSeg2" Type="varchar" Nullable="false" MaxLength="150" />
+          <Property Name="RespSeg2" Type="varchar" Nullable="false" MaxLength="150" />
+          <Property Name="IntentoAccesos" Type="int" Nullable="false" />
+          <Property Name="LoginUsuario" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Clave" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="FechaUltimoLogin" Type="datetime" Nullable="false" />
+          <Property Name="FechaUltimoCambioClave" Type="datetime" Nullable="false" />
+          <Property Name="IndBloqueo" Type="bit" />
+          <Property Name="DiasAutoBloqueo" Type="int" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="IndVigente" Type="bit" Nullable="false" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndEliminado" Type="bit" Nullable="false" />
+          <Property Name="UsuarioCms" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="ClaveCms" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="IdTipoUsuario" Type="int" />
+        </EntityType>
+        <EntityType Name="TB_UsuariosLocalidades">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdSucursal" Type="int" />
+          <Property Name="IdArea" Type="int" />
+          <Property Name="IndPpal" Type="bit" Nullable="false" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndVigente" Type="bit" Nullable="false" />
+          <Property Name="IndEliminado" Type="bit" Nullable="false" />
+          <Property Name="IdSuplencia" Type="int" />
+          <Property Name="IdUsuarioSuscriptor" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_UsuariosSucriptores">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdSuscriptor" Type="int" Nullable="false" />
+          <Property Name="IdUsuario" Type="int" Nullable="false" />
+          <Property Name="Estatus" Type="int" Nullable="false" />
+          <Property Name="Telefofi" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="Extension" Type="varchar" MaxLength="10" />
+          <Property Name="ECorreo" Type="varchar" Nullable="false" MaxLength="80" />
+          <Property Name="IdJefeInmediato" Type="int" />
+          <Property Name="IndSuplantado" Type="bit" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="IndVigente" Type="bit" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndEliminado" Type="bit" />
+          <Property Name="IndHeredaCasos" Type="bit" Nullable="false" />
+          <Property Name="TelefonoCelular" Type="varchar" MaxLength="25" />
+          <Property Name="IdMetodoAtencion" Type="int" />
+          <Property Name="NumMaxSesiones" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_ValoresDatosParticulares">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdDatoParticular" Type="int" Nullable="false" />
+          <Property Name="IdRegistroTablaPropietaria" Type="int" Nullable="false" />
+          <Property Name="Valor" Type="varchar(max)" Nullable="false" />
+          <Property Name="IdTablaPropietaria" Type="int" Nullable="false" />
+          <Property Name="CreadoPor" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="int" />
+          <Property Name="FechaModificacion" Type="datetime" />
+          <Property Name="FechaValidez" Type="datetime" />
+          <Property Name="IndVigente" Type="bit" Nullable="false" />
+          <Property Name="IndEliminado" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'HC_CONFIGURADOR.dbo.Vw_PaginaPermitidaUsuarioSuscriptor' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="Vw_PaginaPermitidaUsuarioSuscriptor">
+          <Key>
+            <PropertyRef Name="UsuarioSuscriptor" />
+            <PropertyRef Name="IdPagina" />
+            <PropertyRef Name="IdTransaccion" />
+          </Key>
+          <Property Name="UsuarioSuscriptor" Type="int" Nullable="false" />
+          <Property Name="IdPagina" Type="int" Nullable="false" />
+          <Property Name="IdTransaccion" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__TB_Sesion__IdSus__7834CCDD">
+          <End Role="TB_Suscriptores" Type="HC_CONFIGURADORModel.Store.TB_Suscriptores" Multiplicity="0..1" />
+          <End Role="TB_SesionesUsuarios" Type="HC_CONFIGURADORModel.Store.TB_SesionesUsuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_Suscriptores">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_SesionesUsuarios">
+              <PropertyRef Name="IdSuscriptor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SesionesUsuarios_Usuarios__IdUsuario_Id">
+          <End Role="TB_Usuarios" Type="HC_CONFIGURADORModel.Store.TB_Usuarios" Multiplicity="1" />
+          <End Role="TB_SesionesUsuarios" Type="HC_CONFIGURADORModel.Store.TB_SesionesUsuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_Usuarios">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_SesionesUsuarios">
+              <PropertyRef Name="IdUsuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sucursales_Suscriptores__IdSuscriptor_Id">
+          <End Role="TB_Suscriptores" Type="HC_CONFIGURADORModel.Store.TB_Suscriptores" Multiplicity="1" />
+          <End Role="TB_Sucursales" Type="HC_CONFIGURADORModel.Store.TB_Sucursales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_Suscriptores">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_Sucursales">
+              <PropertyRef Name="IdSuscriptor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TraModAppPagModAppTraModApp_PaginasModulos__IdPaginaModulo_Id">
+          <End Role="TB_PaginasModulos" Type="HC_CONFIGURADORModel.Store.TB_PaginasModulos" Multiplicity="1" />
+          <End Role="TB_TraModAppPagModAppTraModApp" Type="HC_CONFIGURADORModel.Store.TB_TraModAppPagModAppTraModApp" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_PaginasModulos">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_TraModAppPagModAppTraModApp">
+              <PropertyRef Name="IdPaginaModulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TraModAppPagModAppTraModApp_TransaccionesModulosAplicaciones__IdTransaccionModuloAplicacion_Id">
+          <End Role="TB_TransaccionesModulosAplicaciones" Type="HC_CONFIGURADORModel.Store.TB_TransaccionesModulosAplicaciones" Multiplicity="1" />
+          <End Role="TB_TraModAppPagModAppTraModApp" Type="HC_CONFIGURADORModel.Store.TB_TraModAppPagModAppTraModApp" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_TransaccionesModulosAplicaciones">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_TraModAppPagModAppTraModApp">
+              <PropertyRef Name="IdTransaccionModuloAplicacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TransaccionesModulosAplicaciones_TipoTransacciones__IdTipoTransaccion_Id">
+          <End Role="TB_TipoTransacciones" Type="HC_CONFIGURADORModel.Store.TB_TipoTransacciones" Multiplicity="1" />
+          <End Role="TB_TransaccionesModulosAplicaciones" Type="HC_CONFIGURADORModel.Store.TB_TransaccionesModulosAplicaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_TipoTransacciones">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_TransaccionesModulosAplicaciones">
+              <PropertyRef Name="IdTipoTransaccion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TransaccionesModulosAplicacionesRolAplicaciones_Roles__IdRol_Id">
+          <End Role="TB_Roles" Type="HC_CONFIGURADORModel.Store.TB_Roles" Multiplicity="1" />
+          <End Role="TB_TransaccionesModulosAplicacionesRolAplicaciones" Type="HC_CONFIGURADORModel.Store.TB_TransaccionesModulosAplicacionesRolAplicaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_Roles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_TransaccionesModulosAplicacionesRolAplicaciones">
+              <PropertyRef Name="IdRol" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TransaccionesModulosAplicacionesRolAplicaciones_TraModAppPagModAppTraModApp__IdTraModAppPagModAppTraModApp_Id">
+          <End Role="TB_TraModAppPagModAppTraModApp" Type="HC_CONFIGURADORModel.Store.TB_TraModAppPagModAppTraModApp" Multiplicity="1" />
+          <End Role="TB_TransaccionesModulosAplicacionesRolAplicaciones" Type="HC_CONFIGURADORModel.Store.TB_TransaccionesModulosAplicacionesRolAplicaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_TraModAppPagModAppTraModApp">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_TransaccionesModulosAplicacionesRolAplicaciones">
+              <PropertyRef Name="IdTraModAppPagModAppTraModApp" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuariosLocalidades_Sucursales__IdSucursal_Id">
+          <End Role="TB_Sucursales" Type="HC_CONFIGURADORModel.Store.TB_Sucursales" Multiplicity="0..1" />
+          <End Role="TB_UsuariosLocalidades" Type="HC_CONFIGURADORModel.Store.TB_UsuariosLocalidades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_Sucursales">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_UsuariosLocalidades">
+              <PropertyRef Name="IdSucursal" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuariosLocalidades_UsuariosSucriptores__IdUsuarioSuscriptor_Id">
+          <End Role="TB_UsuariosSucriptores" Type="HC_CONFIGURADORModel.Store.TB_UsuariosSucriptores" Multiplicity="1" />
+          <End Role="TB_UsuariosLocalidades" Type="HC_CONFIGURADORModel.Store.TB_UsuariosLocalidades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_UsuariosSucriptores">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_UsuariosLocalidades">
+              <PropertyRef Name="IdUsuarioSuscriptor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuariosSucriptores_Suscriptores__IdSuscriptor_Id">
+          <End Role="TB_Suscriptores" Type="HC_CONFIGURADORModel.Store.TB_Suscriptores" Multiplicity="1" />
+          <End Role="TB_UsuariosSucriptores" Type="HC_CONFIGURADORModel.Store.TB_UsuariosSucriptores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_Suscriptores">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_UsuariosSucriptores">
+              <PropertyRef Name="IdSuscriptor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuariosSucriptores_Usuarios__IdUsuario_Id">
+          <End Role="TB_Usuarios" Type="HC_CONFIGURADORModel.Store.TB_Usuarios" Multiplicity="1" />
+          <End Role="TB_UsuariosSucriptores" Type="HC_CONFIGURADORModel.Store.TB_UsuariosSucriptores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_Usuarios">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_UsuariosSucriptores">
+              <PropertyRef Name="IdUsuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuariosSucriptores_UsuariosSucriptores__IdJefeInmediato_Id">
+          <End Role="TB_UsuariosSucriptores" Type="HC_CONFIGURADORModel.Store.TB_UsuariosSucriptores" Multiplicity="0..1" />
+          <End Role="TB_UsuariosSucriptores1" Type="HC_CONFIGURADORModel.Store.TB_UsuariosSucriptores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_UsuariosSucriptores">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_UsuariosSucriptores1">
+              <PropertyRef Name="IdJefeInmediato" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ValoresDatosParticulares_DatosParticulares__IdDatoParticular_Id">
+          <End Role="TB_DatosParticulares" Type="HC_CONFIGURADORModel.Store.TB_DatosParticulares" Multiplicity="1" />
+          <End Role="TB_ValoresDatosParticulares" Type="HC_CONFIGURADORModel.Store.TB_ValoresDatosParticulares" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_DatosParticulares">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_ValoresDatosParticulares">
+              <PropertyRef Name="IdDatoParticular" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HC_CONFIGURADORModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="HC_CONFIGURADOREntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TB_DatosBase" EntityType="HC_CONFIGURADORModel.TB_DatosBase" />
+          <EntitySet Name="TB_PaginasModulos" EntityType="HC_CONFIGURADORModel.TB_PaginasModulos" />
+          <EntitySet Name="TB_Roles" EntityType="HC_CONFIGURADORModel.TB_Roles" />
+          <EntitySet Name="TB_SesionesUsuarios" EntityType="HC_CONFIGURADORModel.TB_SesionesUsuarios" />
+          <EntitySet Name="TB_TipoTransacciones" EntityType="HC_CONFIGURADORModel.TB_TipoTransacciones" />
+          <EntitySet Name="TB_TraModAppPagModAppTraModApp" EntityType="HC_CONFIGURADORModel.TB_TraModAppPagModAppTraModApp" />
+          <EntitySet Name="TB_TransaccionesModulosAplicaciones" EntityType="HC_CONFIGURADORModel.TB_TransaccionesModulosAplicaciones" />
+          <EntitySet Name="TB_TransaccionesModulosAplicacionesRolAplicaciones" EntityType="HC_CONFIGURADORModel.TB_TransaccionesModulosAplicacionesRolAplicaciones" />
+          <EntitySet Name="TB_Usuarios" EntityType="HC_CONFIGURADORModel.TB_Usuarios" />
+          <EntitySet Name="TB_UsuariosSucriptores" EntityType="HC_CONFIGURADORModel.TB_UsuariosSucriptores" />
+          <AssociationSet Name="FK_TraModAppPagModAppTraModApp_PaginasModulos__IdPaginaModulo_Id" Association="HC_CONFIGURADORModel.FK_TraModAppPagModAppTraModApp_PaginasModulos__IdPaginaModulo_Id">
+            <End Role="TB_PaginasModulos" EntitySet="TB_PaginasModulos" />
+            <End Role="TB_TraModAppPagModAppTraModApp" EntitySet="TB_TraModAppPagModAppTraModApp" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TransaccionesModulosAplicacionesRolAplicaciones_Roles__IdRol_Id" Association="HC_CONFIGURADORModel.FK_TransaccionesModulosAplicacionesRolAplicaciones_Roles__IdRol_Id">
+            <End Role="TB_Roles" EntitySet="TB_Roles" />
+            <End Role="TB_TransaccionesModulosAplicacionesRolAplicaciones" EntitySet="TB_TransaccionesModulosAplicacionesRolAplicaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SesionesUsuarios_Usuarios__IdUsuario_Id" Association="HC_CONFIGURADORModel.FK_SesionesUsuarios_Usuarios__IdUsuario_Id">
+            <End Role="TB_Usuarios" EntitySet="TB_Usuarios" />
+            <End Role="TB_SesionesUsuarios" EntitySet="TB_SesionesUsuarios" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TransaccionesModulosAplicaciones_TipoTransacciones__IdTipoTransaccion_Id" Association="HC_CONFIGURADORModel.FK_TransaccionesModulosAplicaciones_TipoTransacciones__IdTipoTransaccion_Id">
+            <End Role="TB_TipoTransacciones" EntitySet="TB_TipoTransacciones" />
+            <End Role="TB_TransaccionesModulosAplicaciones" EntitySet="TB_TransaccionesModulosAplicaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TraModAppPagModAppTraModApp_TransaccionesModulosAplicaciones__IdTransaccionModuloAplicacion_Id" Association="HC_CONFIGURADORModel.FK_TraModAppPagModAppTraModApp_TransaccionesModulosAplicaciones__IdTransaccionModuloAplicacion_Id">
+            <End Role="TB_TransaccionesModulosAplicaciones" EntitySet="TB_TransaccionesModulosAplicaciones" />
+            <End Role="TB_TraModAppPagModAppTraModApp" EntitySet="TB_TraModAppPagModAppTraModApp" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TransaccionesModulosAplicacionesRolAplicaciones_TraModAppPagModAppTraModApp__IdTraModAppPagModAppTraModApp_Id" Association="HC_CONFIGURADORModel.FK_TransaccionesModulosAplicacionesRolAplicaciones_TraModAppPagModAppTraModApp__IdTraModAppPagModAppTraModApp_Id">
+            <End Role="TB_TraModAppPagModAppTraModApp" EntitySet="TB_TraModAppPagModAppTraModApp" />
+            <End Role="TB_TransaccionesModulosAplicacionesRolAplicaciones" EntitySet="TB_TransaccionesModulosAplicacionesRolAplicaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuariosSucriptores_Usuarios__IdUsuario_Id" Association="HC_CONFIGURADORModel.FK_UsuariosSucriptores_Usuarios__IdUsuario_Id">
+            <End Role="TB_Usuarios" EntitySet="TB_Usuarios" />
+            <End Role="TB_UsuariosSucriptores" EntitySet="TB_UsuariosSucriptores" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuariosSucriptores_UsuariosSucriptores__IdJefeInmediato_Id" Association="HC_CONFIGURADORModel.FK_UsuariosSucriptores_UsuariosSucriptores__IdJefeInmediato_Id">
+            <End Role="TB_UsuariosSucriptores" EntitySet="TB_UsuariosSucriptores" />
+            <End Role="TB_UsuariosSucriptores1" EntitySet="TB_UsuariosSucriptores" />
+          </AssociationSet>
+          <EntitySet Name="TB_DatosParticulares" EntityType="HC_CONFIGURADORModel.TB_DatosParticulares" />
+          <EntitySet Name="TB_ListasValores" EntityType="HC_CONFIGURADORModel.TB_ListasValores" />
+          <EntitySet Name="TB_ValoresDatosParticulares" EntityType="HC_CONFIGURADORModel.TB_ValoresDatosParticulares" />
+          <AssociationSet Name="FK_ValoresDatosParticulares_DatosParticulares__IdDatoParticular_Id" Association="HC_CONFIGURADORModel.FK_ValoresDatosParticulares_DatosParticulares__IdDatoParticular_Id">
+            <End Role="TB_DatosParticulares" EntitySet="TB_DatosParticulares" />
+            <End Role="TB_ValoresDatosParticulares" EntitySet="TB_ValoresDatosParticulares" />
+          </AssociationSet>
+          <EntitySet Name="TB_Suscriptores" EntityType="HC_CONFIGURADORModel.TB_Suscriptores" />
+          <AssociationSet Name="FK__TB_Sesion__IdSus__7834CCDD" Association="HC_CONFIGURADORModel.FK__TB_Sesion__IdSus__7834CCDD">
+            <End Role="TB_Suscriptores" EntitySet="TB_Suscriptores" />
+            <End Role="TB_SesionesUsuarios" EntitySet="TB_SesionesUsuarios" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuariosSucriptores_Suscriptores__IdSuscriptor_Id" Association="HC_CONFIGURADORModel.FK_UsuariosSucriptores_Suscriptores__IdSuscriptor_Id">
+            <End Role="TB_Suscriptores" EntitySet="TB_Suscriptores" />
+            <End Role="TB_UsuariosSucriptores" EntitySet="TB_UsuariosSucriptores" />
+          </AssociationSet>
+          <EntitySet Name="Vw_PaginaPermitidaUsuarioSuscriptor" EntityType="HC_CONFIGURADORModel.Vw_PaginaPermitidaUsuarioSuscriptor" />
+          <EntitySet Name="TB_Aplicaciones" EntityType="HC_CONFIGURADORModel.TB_Aplicaciones" />
+          <EntitySet Name="TB_Idiomas" EntityType="HC_CONFIGURADORModel.TB_Idiomas" />
+          <EntitySet Name="TB_Listas" EntityType="HC_CONFIGURADORModel.TB_Listas" />
+          <EntitySet Name="TB_Sucursales" EntityType="HC_CONFIGURADORModel.TB_Sucursales" />
+          <EntitySet Name="TB_UsuariosLocalidades" EntityType="HC_CONFIGURADORModel.TB_UsuariosLocalidades" />
+          <AssociationSet Name="FK_Sucursales_Suscriptores__IdSuscriptor_Id" Association="HC_CONFIGURADORModel.FK_Sucursales_Suscriptores__IdSuscriptor_Id">
+            <End Role="TB_Suscriptores" EntitySet="TB_Suscriptores" />
+            <End Role="TB_Sucursales" EntitySet="TB_Sucursales" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuariosLocalidades_Sucursales__IdSucursal_Id" Association="HC_CONFIGURADORModel.FK_UsuariosLocalidades_Sucursales__IdSucursal_Id">
+            <End Role="TB_Sucursales" EntitySet="TB_Sucursales" />
+            <End Role="TB_UsuariosLocalidades" EntitySet="TB_UsuariosLocalidades" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuariosLocalidades_UsuariosSucriptores__IdUsuarioSuscriptor_Id" Association="HC_CONFIGURADORModel.FK_UsuariosLocalidades_UsuariosSucriptores__IdUsuarioSuscriptor_Id">
+            <End Role="TB_UsuariosSucriptores" EntitySet="TB_UsuariosSucriptores" />
+            <End Role="TB_UsuariosLocalidades" EntitySet="TB_UsuariosLocalidades" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="TB_DatosBase">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre1" Type="String" Nullable="false" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="Nombre2" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="Apellido1" Type="String" Nullable="false" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="Apellido2" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="IndTipDoc" Type="Int32" Nullable="false" />
+          <Property Name="NumDoc" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="NumSeguridad" Type="Int32" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Celular" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="PIN" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="FechaNacimiento" Type="DateTime" Nullable="false" />
+          <Property Name="CreadoPor" Type="Int32" Nullable="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="Int32" />
+          <Property Name="FechaModificacion" Type="DateTime" />
+          <Property Name="IndVigente" Type="Boolean" Nullable="false" />
+          <Property Name="FechaValidez" Type="DateTime" />
+          <Property Name="IndEliminado" Type="Boolean" Nullable="false" />
+          <Property Name="IdUsuario" Type="Int32" />
+          <Property Name="Sexo" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TB_PaginasModulos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdModuloAplicacion" Type="Int32" Nullable="false" />
+          <Property Name="NombrePagina" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Observacion" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="UrlAyuda" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="UrlPagina" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="IndVisibleMenu" Type="Boolean" Nullable="false" />
+          <Property Name="PosicionIndex" Type="Int32" Nullable="false" />
+          <Property Name="CantidadAcceso" Type="Int32" />
+          <Property Name="CreadoPor" Type="Int32" Nullable="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="Int32" />
+          <Property Name="FechaModificacion" Type="DateTime" />
+          <Property Name="FechaValidez" Type="DateTime" />
+          <Property Name="IndEliminado" Type="Boolean" Nullable="false" />
+          <Property Name="IndVigente" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="TB_TraModAppPagModAppTraModApp" Relationship="HC_CONFIGURADORModel.FK_TraModAppPagModAppTraModApp_PaginasModulos__IdPaginaModulo_Id" FromRole="TB_PaginasModulos" ToRole="TB_TraModAppPagModAppTraModApp" />
+        </EntityType>
+        <EntityType Name="TB_Roles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdSuscriptorAplicacion" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Observacion" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="CreadoPor" Type="Int32" Nullable="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="Int32" />
+          <Property Name="FechaModificacion" Type="DateTime" />
+          <Property Name="FechaValidez" Type="DateTime" />
+          <Property Name="IndVigente" Type="Boolean" Nullable="false" />
+          <Property Name="IndEliminado" Type="Boolean" Nullable="false" />
+          <Property Name="IdPlantilla" Type="Int32" />
+          <NavigationProperty Name="TB_TransaccionesModulosAplicacionesRolAplicaciones" Relationship="HC_CONFIGURADORModel.FK_TransaccionesModulosAplicacionesRolAplicaciones_Roles__IdRol_Id" FromRole="TB_Roles" ToRole="TB_TransaccionesModulosAplicacionesRolAplicaciones" />
+        </EntityType>
+        <EntityType Name="TB_SesionesUsuarios">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdUsuario" Type="Int32" Nullable="false" />
+          <Property Name="FechaInicio" Type="DateTime" Nullable="false" />
+          <Property Name="FechaFin" Type="DateTime" />
+          <Property Name="IndActiva" Type="Boolean" Nullable="false" />
+          <Property Name="IpConexion" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="CreadoPor" Type="Int32" Nullable="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="Int32" />
+          <Property Name="FechaModificacion" Type="DateTime" />
+          <Property Name="IndVigente" Type="Boolean" />
+          <Property Name="FechaValidez" Type="DateTime" />
+          <Property Name="IndEliminado" Type="Boolean" />
+          <Property Name="NumActivas" Type="Int32" />
+          <Property Name="IdSuscriptor" Type="Int32" />
+          <Property Name="SessionId" Type="String" MaxLength="88" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="TB_Usuarios" Relationship="HC_CONFIGURADORModel.FK_SesionesUsuarios_Usuarios__IdUsuario_Id" FromRole="TB_SesionesUsuarios" ToRole="TB_Usuarios" />
+          <NavigationProperty Name="TB_Suscriptores" Relationship="HC_CONFIGURADORModel.FK__TB_Sesion__IdSus__7834CCDD" FromRole="TB_SesionesUsuarios" ToRole="TB_Suscriptores" />
+        </EntityType>
+        <EntityType Name="TB_TipoTransacciones">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UrlIcon" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="Observacion" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="CreadoPor" Type="Int32" Nullable="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="Int32" />
+          <Property Name="FechaModificacion" Type="DateTime" />
+          <Property Name="FechaValidez" Type="DateTime" />
+          <Property Name="IndEliminado" Type="Boolean" Nullable="false" />
+          <Property Name="IndVigente" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="TB_TransaccionesModulosAplicaciones" Relationship="HC_CONFIGURADORModel.FK_TransaccionesModulosAplicaciones_TipoTransacciones__IdTipoTransaccion_Id" FromRole="TB_TipoTransacciones" ToRole="TB_TransaccionesModulosAplicaciones" />
+        </EntityType>
+        <EntityType Name="TB_TraModAppPagModAppTraModApp">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdTransaccionModuloAplicacion" Type="Int32" Nullable="false" />
+          <Property Name="CreadoPor" Type="Int32" Nullable="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="Int32" Nullable="false" />
+          <Property Name="FechaModificacion" Type="DateTime" />
+          <Property Name="FechaValidez" Type="DateTime" />
+          <Property Name="IndEliminado" Type="Boolean" Nullable="false" />
+          <Property Name="IndVigente" Type="Boolean" Nullable="false" />
+          <Property Name="IdPaginaModulo" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TB_PaginasModulos" Relationship="HC_CONFIGURADORModel.FK_TraModAppPagModAppTraModApp_PaginasModulos__IdPaginaModulo_Id" FromRole="TB_TraModAppPagModAppTraModApp" ToRole="TB_PaginasModulos" />
+          <NavigationProperty Name="TB_TransaccionesModulosAplicaciones" Relationship="HC_CONFIGURADORModel.FK_TraModAppPagModAppTraModApp_TransaccionesModulosAplicaciones__IdTransaccionModuloAplicacion_Id" FromRole="TB_TraModAppPagModAppTraModApp" ToRole="TB_TransaccionesModulosAplicaciones" />
+          <NavigationProperty Name="TB_TransaccionesModulosAplicacionesRolAplicaciones" Relationship="HC_CONFIGURADORModel.FK_TransaccionesModulosAplicacionesRolAplicaciones_TraModAppPagModAppTraModApp__IdTraModAppPagModAppTraModApp_Id" FromRole="TB_TraModAppPagModAppTraModApp" ToRole="TB_TransaccionesModulosAplicacionesRolAplicaciones" />
+        </EntityType>
+        <EntityType Name="TB_TransaccionesModulosAplicaciones">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdTipoTransaccion" Type="Int32" Nullable="false" />
+          <Property Name="IdModuloAplicacion" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CreadoPor" Type="Int32" Nullable="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="Int32" />
+          <Property Name="FechaModificacion" Type="DateTime" />
+          <Property Name="FechaValidez" Type="DateTime" />
+          <Property Name="IndEliminado" Type="Boolean" Nullable="false" />
+          <Property Name="IndVigente" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="TB_TipoTransacciones" Relationship="HC_CONFIGURADORModel.FK_TransaccionesModulosAplicaciones_TipoTransacciones__IdTipoTransaccion_Id" FromRole="TB_TransaccionesModulosAplicaciones" ToRole="TB_TipoTransacciones" />
+          <NavigationProperty Name="TB_TraModAppPagModAppTraModApp" Relationship="HC_CONFIGURADORModel.FK_TraModAppPagModAppTraModApp_TransaccionesModulosAplicaciones__IdTransaccionModuloAplicacion_Id" FromRole="TB_TransaccionesModulosAplicaciones" ToRole="TB_TraModAppPagModAppTraModApp" />
+        </EntityType>
+        <EntityType Name="TB_TransaccionesModulosAplicacionesRolAplicaciones">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdRol" Type="Int32" Nullable="false" />
+          <Property Name="IdTraModAppPagModAppTraModApp" Type="Int32" Nullable="false" />
+          <Property Name="CreadoPor" Type="Int32" Nullable="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="Int32" />
+          <Property Name="FechaModificacion" Type="DateTime" />
+          <Property Name="FechaValidez" Type="DateTime" />
+          <Property Name="IndVigente" Type="Boolean" Nullable="false" />
+          <Property Name="IndEliminado" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="TB_Roles" Relationship="HC_CONFIGURADORModel.FK_TransaccionesModulosAplicacionesRolAplicaciones_Roles__IdRol_Id" FromRole="TB_TransaccionesModulosAplicacionesRolAplicaciones" ToRole="TB_Roles" />
+          <NavigationProperty Name="TB_TraModAppPagModAppTraModApp" Relationship="HC_CONFIGURADORModel.FK_TransaccionesModulosAplicacionesRolAplicaciones_TraModAppPagModAppTraModApp__IdTraModAppPagModAppTraModApp_Id" FromRole="TB_TransaccionesModulosAplicacionesRolAplicaciones" ToRole="TB_TraModAppPagModAppTraModApp" />
+        </EntityType>
+        <EntityType Name="TB_Usuarios">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PregSeg1" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="RespSeg1" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="PregSeg2" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="RespSeg2" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="IntentoAccesos" Type="Int32" Nullable="false" />
+          <Property Name="LoginUsuario" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Clave" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FechaUltimoLogin" Type="DateTime" Nullable="false" />
+          <Property Name="FechaUltimoCambioClave" Type="DateTime" Nullable="false" />
+          <Property Name="IndBloqueo" Type="Boolean" />
+          <Property Name="DiasAutoBloqueo" Type="Int32" />
+          <Property Name="CreadoPor" Type="Int32" Nullable="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="Int32" />
+          <Property Name="FechaModificacion" Type="DateTime" />
+          <Property Name="IndVigente" Type="Boolean" Nullable="false" />
+          <Property Name="FechaValidez" Type="DateTime" />
+          <Property Name="IndEliminado" Type="Boolean" Nullable="false" />
+          <Property Name="UsuarioCms" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ClaveCms" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="TB_SesionesUsuarios" Relationship="HC_CONFIGURADORModel.FK_SesionesUsuarios_Usuarios__IdUsuario_Id" FromRole="TB_Usuarios" ToRole="TB_SesionesUsuarios" />
+          <NavigationProperty Name="TB_UsuariosSucriptores" Relationship="HC_CONFIGURADORModel.FK_UsuariosSucriptores_Usuarios__IdUsuario_Id" FromRole="TB_Usuarios" ToRole="TB_UsuariosSucriptores" />
+          <Property Type="Int32" Name="IdTipoUsuario" />
+        </EntityType>
+        <EntityType Name="TB_UsuariosSucriptores">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdSuscriptor" Type="Int32" Nullable="false" />
+          <Property Name="IdUsuario" Type="Int32" Nullable="false" />
+          <Property Name="Estatus" Type="Int32" Nullable="false" />
+          <Property Name="Telefofi" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="Extension" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="ECorreo" Type="String" Nullable="false" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="IdJefeInmediato" Type="Int32" />
+          <Property Name="IndSuplantado" Type="Boolean" />
+          <Property Name="CreadoPor" Type="Int32" Nullable="false" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" />
+          <Property Name="ModificadoPor" Type="Int32" />
+          <Property Name="FechaModificacion" Type="DateTime" />
+          <Property Name="IndVigente" Type="Boolean" />
+          <Property Name="FechaValidez" Type="DateTime" />
+          <Property Name="IndEliminado" Type="Boolean" />
+          <Property Name="IndHeredaCasos" Type="Boolean" Nullable="false" />
+          <Property Name="TelefonoCelular" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="IdMetodoAtencion" Type="Int32" />
+          <Property Name="NumMaxSesiones" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TB_Usuarios" Relationship="HC_CONFIGURADORModel.FK_UsuariosSucriptores_Usuarios__IdUsuario_Id" FromRole="TB_UsuariosSucriptores" ToRole="TB_Usuarios" />
+          <NavigationProperty Name="TB_UsuariosSucriptores1" Relationship="HC_CONFIGURADORModel.FK_UsuariosSucriptores_UsuariosSucriptores__IdJefeInmediato_Id" FromRole="TB_UsuariosSucriptores" ToRole="TB_UsuariosSucriptores1" />
+          <NavigationProperty Name="TB_UsuariosSucriptores2" Relationship="HC_CONFIGURADORModel.FK_UsuariosSucriptores_UsuariosSucriptores__IdJefeInmediato_Id" FromRole="TB_UsuariosSucriptores1" ToRole="TB_UsuariosSucriptores" />
+          <NavigationProperty Name="TB_Suscriptores" Relationship="HC_CONFIGURADORModel.FK_UsuariosSucriptores_Suscriptores__IdSuscriptor_Id" FromRole="TB_UsuariosSucriptores" ToRole="TB_Suscriptores" />
+          <NavigationProperty Name="TB_UsuariosLocalidades" Relationship="HC_CONFIGURADORModel.FK_UsuariosLocalidades_UsuariosSucriptores__IdUsuarioSuscriptor_Id" FromRole="TB_UsuariosSucriptores" ToRole="TB_UsuariosLocalidades" />
+        </EntityType>
+        <Association Name="FK_TraModAppPagModAppTraModApp_PaginasModulos__IdPaginaModulo_Id">
+          <End Role="TB_PaginasModulos" Type="HC_CONFIGURADORModel.TB_PaginasModulos" Multiplicity="1" />
+          <End Role="TB_TraModAppPagModAppTraModApp" Type="HC_CONFIGURADORModel.TB_TraModAppPagModAppTraModApp" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_PaginasModulos">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_TraModAppPagModAppTraModApp">
+              <PropertyRef Name="IdPaginaModulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TransaccionesModulosAplicacionesRolAplicaciones_Roles__IdRol_Id">
+          <End Role="TB_Roles" Type="HC_CONFIGURADORModel.TB_Roles" Multiplicity="1" />
+          <End Role="TB_TransaccionesModulosAplicacionesRolAplicaciones" Type="HC_CONFIGURADORModel.TB_TransaccionesModulosAplicacionesRolAplicaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_Roles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_TransaccionesModulosAplicacionesRolAplicaciones">
+              <PropertyRef Name="IdRol" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SesionesUsuarios_Usuarios__IdUsuario_Id">
+          <End Role="TB_Usuarios" Type="HC_CONFIGURADORModel.TB_Usuarios" Multiplicity="1" />
+          <End Role="TB_SesionesUsuarios" Type="HC_CONFIGURADORModel.TB_SesionesUsuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_Usuarios">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_SesionesUsuarios">
+              <PropertyRef Name="IdUsuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TransaccionesModulosAplicaciones_TipoTransacciones__IdTipoTransaccion_Id">
+          <End Role="TB_TipoTransacciones" Type="HC_CONFIGURADORModel.TB_TipoTransacciones" Multiplicity="1" />
+          <End Role="TB_TransaccionesModulosAplicaciones" Type="HC_CONFIGURADORModel.TB_TransaccionesModulosAplicaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_TipoTransacciones">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_TransaccionesModulosAplicaciones">
+              <PropertyRef Name="IdTipoTransaccion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TraModAppPagModAppTraModApp_TransaccionesModulosAplicaciones__IdTransaccionModuloAplicacion_Id">
+          <End Role="TB_TransaccionesModulosAplicaciones" Type="HC_CONFIGURADORModel.TB_TransaccionesModulosAplicaciones" Multiplicity="1" />
+          <End Role="TB_TraModAppPagModAppTraModApp" Type="HC_CONFIGURADORModel.TB_TraModAppPagModAppTraModApp" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_TransaccionesModulosAplicaciones">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_TraModAppPagModAppTraModApp">
+              <PropertyRef Name="IdTransaccionModuloAplicacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TransaccionesModulosAplicacionesRolAplicaciones_TraModAppPagModAppTraModApp__IdTraModAppPagModAppTraModApp_Id">
+          <End Role="TB_TraModAppPagModAppTraModApp" Type="HC_CONFIGURADORModel.TB_TraModAppPagModAppTraModApp" Multiplicity="1" />
+          <End Role="TB_TransaccionesModulosAplicacionesRolAplicaciones" Type="HC_CONFIGURADORModel.TB_TransaccionesModulosAplicacionesRolAplicaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_TraModAppPagModAppTraModApp">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_TransaccionesModulosAplicacionesRolAplicaciones">
+              <PropertyRef Name="IdTraModAppPagModAppTraModApp" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuariosSucriptores_Usuarios__IdUsuario_Id">
+          <End Role="TB_Usuarios" Type="HC_CONFIGURADORModel.TB_Usuarios" Multiplicity="1" />
+          <End Role="TB_UsuariosSucriptores" Type="HC_CONFIGURADORModel.TB_UsuariosSucriptores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_Usuarios">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_UsuariosSucriptores">
+              <PropertyRef Name="IdUsuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuariosSucriptores_UsuariosSucriptores__IdJefeInmediato_Id">
+          <End Role="TB_UsuariosSucriptores" Type="HC_CONFIGURADORModel.TB_UsuariosSucriptores" Multiplicity="0..1" />
+          <End Role="TB_UsuariosSucriptores1" Type="HC_CONFIGURADORModel.TB_UsuariosSucriptores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_UsuariosSucriptores">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_UsuariosSucriptores1">
+              <PropertyRef Name="IdJefeInmediato" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="TB_DatosParticulares">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="IdTablaPropietaria" Nullable="false" />
+          <Property Type="String" Name="CampoTablaPropietaria" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="OrigenValor" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Type="Int32" Name="IdTablaMaestra" />
+          <Property Type="Int32" Name="IdListaOrigenValor" />
+          <Property Type="String" Name="ValorTablaPropietaria" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Posicion" Nullable="false" />
+          <Property Type="String" Name="TipoCampo" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="IdLista" />
+          <Property Type="Int32" Name="TamanoCampo" Nullable="false" />
+          <Property Type="Boolean" Name="IndObligatorio" />
+          <Property Type="Int32" Name="IdPrgValidacion" />
+          <Property Type="String" Name="ValorInicial" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="CreadoPor" Nullable="false" />
+          <Property Type="DateTime" Name="FechaCreacion" Nullable="false" />
+          <Property Type="Int32" Name="ModificadoPor" />
+          <Property Type="DateTime" Name="FechaModificacion" />
+          <Property Type="DateTime" Name="FechaValidez" />
+          <Property Type="Boolean" Name="IndVigente" Nullable="false" />
+          <Property Type="Boolean" Name="IndEliminado" Nullable="false" />
+          <NavigationProperty Name="TB_ValoresDatosParticulares" Relationship="HC_CONFIGURADORModel.FK_ValoresDatosParticulares_DatosParticulares__IdDatoParticular_Id" FromRole="TB_DatosParticulares" ToRole="TB_ValoresDatosParticulares" />
+        </EntityType>
+        <EntityType Name="TB_ListasValores">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IdLista" Nullable="false" />
+          <Property Type="String" Name="NombreValor" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NombreValorCorto" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Posicion" />
+          <Property Type="Int32" Name="CreadoPor" Nullable="false" />
+          <Property Type="DateTime" Name="FechaCreacion" Nullable="false" />
+          <Property Type="Int32" Name="ModificadoPor" />
+          <Property Type="DateTime" Name="FechaModificacion" />
+          <Property Type="DateTime" Name="FechaValidez" />
+          <Property Type="Boolean" Name="IndVigente" Nullable="false" />
+          <Property Type="Boolean" Name="IndEliminado" Nullable="false" />
+          <Property Type="String" Name="Valor" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TB_ValoresDatosParticulares">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IdDatoParticular" Nullable="false" />
+          <Property Type="Int32" Name="IdRegistroTablaPropietaria" Nullable="false" />
+          <Property Type="String" Name="Valor" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="IdTablaPropietaria" Nullable="false" />
+          <Property Type="Int32" Name="CreadoPor" Nullable="false" />
+          <Property Type="DateTime" Name="FechaCreacion" Nullable="false" />
+          <Property Type="Int32" Name="ModificadoPor" />
+          <Property Type="DateTime" Name="FechaModificacion" />
+          <Property Type="DateTime" Name="FechaValidez" />
+          <Property Type="Boolean" Name="IndVigente" Nullable="false" />
+          <Property Type="Boolean" Name="IndEliminado" Nullable="false" />
+          <NavigationProperty Name="TB_DatosParticulares" Relationship="HC_CONFIGURADORModel.FK_ValoresDatosParticulares_DatosParticulares__IdDatoParticular_Id" FromRole="TB_ValoresDatosParticulares" ToRole="TB_DatosParticulares" />
+        </EntityType>
+        <Association Name="FK_ValoresDatosParticulares_DatosParticulares__IdDatoParticular_Id">
+          <End Type="HC_CONFIGURADORModel.TB_DatosParticulares" Role="TB_DatosParticulares" Multiplicity="1" />
+          <End Type="HC_CONFIGURADORModel.TB_ValoresDatosParticulares" Role="TB_ValoresDatosParticulares" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_DatosParticulares">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_ValoresDatosParticulares">
+              <PropertyRef Name="IdDatoParticular" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="TB_Suscriptores">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="IdPais" Nullable="false" />
+          <Property Type="Int32" Name="IdDivisionTerritorial2" />
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IdDivisionTerritorial3" />
+          <Property Type="Int32" Name="IdDivisionTerritorial1" />
+          <Property Type="Int32" Name="IdSolicitudSuscripcion" />
+          <Property Type="Int32" Name="IndTipDoc" Nullable="false" />
+          <Property Type="String" Name="NumDoc" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="RazonSocial" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="FechaInactivacion" />
+          <Property Type="DateTime" Name="FechaNacimiento" />
+          <Property Type="String" Name="Direccion" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TxtEmail" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Telefono" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Fax" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IndSolitudInactivacion" Nullable="false" />
+          <Property Type="DateTime" Name="FechaSolicitudInactivacion" />
+          <Property Type="String" Name="TxtObservacion" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Estatus" Nullable="false" />
+          <Property Type="Int32" Name="CreadoPor" Nullable="false" />
+          <Property Type="DateTime" Name="FechaCreacion" Nullable="false" />
+          <Property Type="Int32" Name="ModificadoPor" />
+          <Property Type="DateTime" Name="FechaModificacion" />
+          <Property Type="DateTime" Name="FechaValidez" />
+          <Property Type="Boolean" Name="IndVigente" Nullable="false" />
+          <Property Type="Boolean" Name="IndEliminado" Nullable="false" />
+          <Property Type="String" Name="CodIdExterno" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Logo" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="TB_SesionesUsuarios" Relationship="HC_CONFIGURADORModel.FK__TB_Sesion__IdSus__7834CCDD" FromRole="TB_Suscriptores" ToRole="TB_SesionesUsuarios" />
+          <NavigationProperty Name="TB_UsuariosSucriptores" Relationship="HC_CONFIGURADORModel.FK_UsuariosSucriptores_Suscriptores__IdSuscriptor_Id" FromRole="TB_Suscriptores" ToRole="TB_UsuariosSucriptores" />
+          <NavigationProperty Name="TB_Sucursales" Relationship="HC_CONFIGURADORModel.FK_Sucursales_Suscriptores__IdSuscriptor_Id" FromRole="TB_Suscriptores" ToRole="TB_Sucursales" />
+        </EntityType>
+        <Association Name="FK__TB_Sesion__IdSus__7834CCDD">
+          <End Type="HC_CONFIGURADORModel.TB_Suscriptores" Role="TB_Suscriptores" Multiplicity="0..1" />
+          <End Type="HC_CONFIGURADORModel.TB_SesionesUsuarios" Role="TB_SesionesUsuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_Suscriptores">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_SesionesUsuarios">
+              <PropertyRef Name="IdSuscriptor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuariosSucriptores_Suscriptores__IdSuscriptor_Id">
+          <End Type="HC_CONFIGURADORModel.TB_Suscriptores" Role="TB_Suscriptores" Multiplicity="1" />
+          <End Type="HC_CONFIGURADORModel.TB_UsuariosSucriptores" Role="TB_UsuariosSucriptores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_Suscriptores">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_UsuariosSucriptores">
+              <PropertyRef Name="IdSuscriptor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Vw_PaginaPermitidaUsuarioSuscriptor">
+          <Key>
+            <PropertyRef Name="UsuarioSuscriptor" />
+            <PropertyRef Name="IdPagina" />
+            <PropertyRef Name="IdTransaccion" />
+          </Key>
+          <Property Type="Int32" Name="UsuarioSuscriptor" Nullable="false" />
+          <Property Type="Int32" Name="IdPagina" Nullable="false" />
+          <Property Type="Int32" Name="IdTransaccion" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_Aplicaciones">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="NombreAplicacion" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DescripcionAplicacion" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="UrlAplicacion" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Logo" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="CreadoPor" Nullable="false" />
+          <Property Type="DateTime" Name="FechaCreacion" Nullable="false" />
+          <Property Type="Int32" Name="ModificadoPor" />
+          <Property Type="DateTime" Name="FechaModificacion" />
+          <Property Type="DateTime" Name="FechaValidez" />
+          <Property Type="Boolean" Name="IndVigente" Nullable="false" />
+          <Property Type="Boolean" Name="IndEliminado" />
+        </EntityType>
+        <EntityType Name="TB_Idiomas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NombreCorto" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="CreadoPor" Nullable="false" />
+          <Property Type="DateTime" Name="FecCreacion" Nullable="false" />
+          <Property Type="Int32" Name="ModificadoPor" />
+          <Property Type="DateTime" Name="FechaModificacion" />
+          <Property Type="DateTime" Name="FechaValidez" />
+          <Property Type="Boolean" Name="IndVigente" Nullable="false" />
+          <Property Type="Boolean" Name="IndEliminado" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TB_Listas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Descripcion" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="CreadoPor" Nullable="false" />
+          <Property Type="DateTime" Name="FechaCreacion" Nullable="false" />
+          <Property Type="Int32" Name="ModificadoPor" />
+          <Property Type="DateTime" Name="FechaModificacion" />
+          <Property Type="Boolean" Name="IndVigente" Nullable="false" />
+          <Property Type="DateTime" Name="FechaValidez" />
+          <Property Type="Boolean" Name="IndEliminado" Nullable="false" />
+          <Property Type="Int32" Name="IdSuscriptor" />
+          <Property Type="String" Name="Nombre" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IndSistemas" />
+        </EntityType>
+        <EntityType Name="TB_Sucursales">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IdSuscriptor" Nullable="false" />
+          <Property Type="Int32" Name="IdPais" Nullable="false" />
+          <Property Type="Int32" Name="IdDivisionTerritorial1" Nullable="false" />
+          <Property Type="Int32" Name="IdDivisionTerritorial2" Nullable="false" />
+          <Property Type="Int32" Name="IdDivisionTerritorial3" />
+          <Property Type="Int32" Name="IndTipDoc" />
+          <Property Type="String" Name="NumDoc" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="RazonSocial" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Direccion" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Fax" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Telefono" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="IndTipoSucursal" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="CreadoPor" Nullable="false" />
+          <Property Type="DateTime" Name="FechaCreacion" Nullable="false" />
+          <Property Type="Int32" Name="ModificadoPor" />
+          <Property Type="DateTime" Name="FechaModificacion" />
+          <Property Type="DateTime" Name="FechaValidez" />
+          <Property Type="Boolean" Name="IndEliminado" Nullable="false" />
+          <Property Type="Boolean" Name="IndVigente" Nullable="false" />
+          <Property Type="String" Name="CodIdExterno" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="TB_Suscriptores" Relationship="HC_CONFIGURADORModel.FK_Sucursales_Suscriptores__IdSuscriptor_Id" FromRole="TB_Sucursales" ToRole="TB_Suscriptores" />
+          <NavigationProperty Name="TB_UsuariosLocalidades" Relationship="HC_CONFIGURADORModel.FK_UsuariosLocalidades_Sucursales__IdSucursal_Id" FromRole="TB_Sucursales" ToRole="TB_UsuariosLocalidades" />
+        </EntityType>
+        <EntityType Name="TB_UsuariosLocalidades">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IdSucursal" />
+          <Property Type="Int32" Name="IdArea" />
+          <Property Type="Boolean" Name="IndPpal" Nullable="false" />
+          <Property Type="Int32" Name="CreadoPor" Nullable="false" />
+          <Property Type="DateTime" Name="FechaCreacion" Nullable="false" />
+          <Property Type="Int32" Name="ModificadoPor" />
+          <Property Type="DateTime" Name="FechaModificacion" />
+          <Property Type="DateTime" Name="FechaValidez" />
+          <Property Type="Boolean" Name="IndVigente" Nullable="false" />
+          <Property Type="Boolean" Name="IndEliminado" Nullable="false" />
+          <Property Type="Int32" Name="IdSuplencia" />
+          <Property Type="Int32" Name="IdUsuarioSuscriptor" Nullable="false" />
+          <NavigationProperty Name="TB_Sucursales" Relationship="HC_CONFIGURADORModel.FK_UsuariosLocalidades_Sucursales__IdSucursal_Id" FromRole="TB_UsuariosLocalidades" ToRole="TB_Sucursales" />
+          <NavigationProperty Name="TB_UsuariosSucriptores" Relationship="HC_CONFIGURADORModel.FK_UsuariosLocalidades_UsuariosSucriptores__IdUsuarioSuscriptor_Id" FromRole="TB_UsuariosLocalidades" ToRole="TB_UsuariosSucriptores" />
+        </EntityType>
+        <Association Name="FK_Sucursales_Suscriptores__IdSuscriptor_Id">
+          <End Type="HC_CONFIGURADORModel.TB_Suscriptores" Role="TB_Suscriptores" Multiplicity="1" />
+          <End Type="HC_CONFIGURADORModel.TB_Sucursales" Role="TB_Sucursales" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_Suscriptores">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_Sucursales">
+              <PropertyRef Name="IdSuscriptor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuariosLocalidades_Sucursales__IdSucursal_Id">
+          <End Type="HC_CONFIGURADORModel.TB_Sucursales" Role="TB_Sucursales" Multiplicity="0..1" />
+          <End Type="HC_CONFIGURADORModel.TB_UsuariosLocalidades" Role="TB_UsuariosLocalidades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_Sucursales">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_UsuariosLocalidades">
+              <PropertyRef Name="IdSucursal" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuariosLocalidades_UsuariosSucriptores__IdUsuarioSuscriptor_Id">
+          <End Type="HC_CONFIGURADORModel.TB_UsuariosSucriptores" Role="TB_UsuariosSucriptores" Multiplicity="1" />
+          <End Type="HC_CONFIGURADORModel.TB_UsuariosLocalidades" Role="TB_UsuariosLocalidades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_UsuariosSucriptores">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TB_UsuariosLocalidades">
+              <PropertyRef Name="IdUsuarioSuscriptor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HC_CONFIGURADORModelStoreContainer" CdmEntityContainer="HC_CONFIGURADOREntities">
+          <EntitySetMapping Name="TB_DatosBase"><EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_DatosBase"><MappingFragment StoreEntitySet="TB_DatosBase">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="Nombre1" ColumnName="Nombre1" />
+            <ScalarProperty Name="Nombre2" ColumnName="Nombre2" />
+            <ScalarProperty Name="Apellido1" ColumnName="Apellido1" />
+            <ScalarProperty Name="Apellido2" ColumnName="Apellido2" />
+            <ScalarProperty Name="IndTipDoc" ColumnName="IndTipDoc" />
+            <ScalarProperty Name="NumDoc" ColumnName="NumDoc" />
+            <ScalarProperty Name="NumSeguridad" ColumnName="NumSeguridad" />
+            <ScalarProperty Name="Email" ColumnName="Email" />
+            <ScalarProperty Name="Celular" ColumnName="Celular" />
+            <ScalarProperty Name="PIN" ColumnName="PIN" />
+            <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+            <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+            <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+            <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+            <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+            <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+            <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+            <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+            <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+            <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+            <ScalarProperty Name="Foto" ColumnName="Foto" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TB_PaginasModulos"><EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_PaginasModulos"><MappingFragment StoreEntitySet="TB_PaginasModulos">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="IdModuloAplicacion" ColumnName="IdModuloAplicacion" />
+            <ScalarProperty Name="NombrePagina" ColumnName="NombrePagina" />
+            <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+            <ScalarProperty Name="UrlAyuda" ColumnName="UrlAyuda" />
+            <ScalarProperty Name="UrlPagina" ColumnName="UrlPagina" />
+            <ScalarProperty Name="IndVisibleMenu" ColumnName="IndVisibleMenu" />
+            <ScalarProperty Name="PosicionIndex" ColumnName="PosicionIndex" />
+            <ScalarProperty Name="CantidadAcceso" ColumnName="CantidadAcceso" />
+            <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+            <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+            <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+            <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+            <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+            <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+            <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TB_Roles"><EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_Roles"><MappingFragment StoreEntitySet="TB_Roles">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="IdSuscriptorAplicacion" ColumnName="IdSuscriptorAplicacion" />
+            <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+            <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+            <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+            <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+            <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+            <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+            <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+            <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+            <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+            <ScalarProperty Name="IdPlantilla" ColumnName="IdPlantilla" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TB_SesionesUsuarios"><EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_SesionesUsuarios"><MappingFragment StoreEntitySet="TB_SesionesUsuarios">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+            <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+            <ScalarProperty Name="FechaFin" ColumnName="FechaFin" />
+            <ScalarProperty Name="IndActiva" ColumnName="IndActiva" />
+            <ScalarProperty Name="IpConexion" ColumnName="IpConexion" />
+            <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+            <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+            <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+            <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+            <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+            <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+            <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+            <ScalarProperty Name="NumActivas" ColumnName="NumActivas" />
+            <ScalarProperty Name="IdSuscriptor" ColumnName="IdSuscriptor" />
+            <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TB_TipoTransacciones"><EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_TipoTransacciones"><MappingFragment StoreEntitySet="TB_TipoTransacciones">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="UrlIcon" ColumnName="UrlIcon" />
+            <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+            <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+            <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+            <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+            <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+            <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+            <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+            <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+            <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TB_TraModAppPagModAppTraModApp"><EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_TraModAppPagModAppTraModApp"><MappingFragment StoreEntitySet="TB_TraModAppPagModAppTraModApp">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="IdTransaccionModuloAplicacion" ColumnName="IdTransaccionModuloAplicacion" />
+            <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+            <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+            <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+            <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+            <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+            <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+            <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+            <ScalarProperty Name="IdPaginaModulo" ColumnName="IdPaginaModulo" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TB_TransaccionesModulosAplicaciones"><EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_TransaccionesModulosAplicaciones"><MappingFragment StoreEntitySet="TB_TransaccionesModulosAplicaciones">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="IdTipoTransaccion" ColumnName="IdTipoTransaccion" />
+            <ScalarProperty Name="IdModuloAplicacion" ColumnName="IdModuloAplicacion" />
+            <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+            <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+            <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+            <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+            <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+            <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+            <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+            <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TB_TransaccionesModulosAplicacionesRolAplicaciones"><EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_TransaccionesModulosAplicacionesRolAplicaciones"><MappingFragment StoreEntitySet="TB_TransaccionesModulosAplicacionesRolAplicaciones">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="IdRol" ColumnName="IdRol" />
+            <ScalarProperty Name="IdTraModAppPagModAppTraModApp" ColumnName="IdTraModAppPagModAppTraModApp" />
+            <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+            <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+            <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+            <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+            <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+            <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+            <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TB_Usuarios"><EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_Usuarios"><MappingFragment StoreEntitySet="TB_Usuarios">
+            <ScalarProperty Name="IdTipoUsuario" ColumnName="IdTipoUsuario" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="PregSeg1" ColumnName="PregSeg1" />
+            <ScalarProperty Name="RespSeg1" ColumnName="RespSeg1" />
+            <ScalarProperty Name="PregSeg2" ColumnName="PregSeg2" />
+            <ScalarProperty Name="RespSeg2" ColumnName="RespSeg2" />
+            <ScalarProperty Name="IntentoAccesos" ColumnName="IntentoAccesos" />
+            <ScalarProperty Name="LoginUsuario" ColumnName="LoginUsuario" />
+            <ScalarProperty Name="Clave" ColumnName="Clave" />
+            <ScalarProperty Name="FechaUltimoLogin" ColumnName="FechaUltimoLogin" />
+            <ScalarProperty Name="FechaUltimoCambioClave" ColumnName="FechaUltimoCambioClave" />
+            <ScalarProperty Name="IndBloqueo" ColumnName="IndBloqueo" />
+            <ScalarProperty Name="DiasAutoBloqueo" ColumnName="DiasAutoBloqueo" />
+            <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+            <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+            <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+            <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+            <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+            <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+            <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+            <ScalarProperty Name="UsuarioCms" ColumnName="UsuarioCms" />
+            <ScalarProperty Name="ClaveCms" ColumnName="ClaveCms" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TB_UsuariosSucriptores"><EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_UsuariosSucriptores"><MappingFragment StoreEntitySet="TB_UsuariosSucriptores">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="IdSuscriptor" ColumnName="IdSuscriptor" />
+            <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+            <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+            <ScalarProperty Name="Telefofi" ColumnName="Telefofi" />
+            <ScalarProperty Name="Extension" ColumnName="Extension" />
+            <ScalarProperty Name="ECorreo" ColumnName="ECorreo" />
+            <ScalarProperty Name="IdJefeInmediato" ColumnName="IdJefeInmediato" />
+            <ScalarProperty Name="IndSuplantado" ColumnName="IndSuplantado" />
+            <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+            <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+            <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+            <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+            <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+            <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+            <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+            <ScalarProperty Name="IndHeredaCasos" ColumnName="IndHeredaCasos" />
+            <ScalarProperty Name="TelefonoCelular" ColumnName="TelefonoCelular" />
+            <ScalarProperty Name="IdMetodoAtencion" ColumnName="IdMetodoAtencion" />
+            <ScalarProperty Name="NumMaxSesiones" ColumnName="NumMaxSesiones" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TB_DatosParticulares">
+            <EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_DatosParticulares">
+              <MappingFragment StoreEntitySet="TB_DatosParticulares">
+                <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+                <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+                <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+                <ScalarProperty Name="ValorInicial" ColumnName="ValorInicial" />
+                <ScalarProperty Name="IdPrgValidacion" ColumnName="IdPrgValidacion" />
+                <ScalarProperty Name="IndObligatorio" ColumnName="IndObligatorio" />
+                <ScalarProperty Name="TamanoCampo" ColumnName="TamanoCampo" />
+                <ScalarProperty Name="IdLista" ColumnName="IdLista" />
+                <ScalarProperty Name="TipoCampo" ColumnName="TipoCampo" />
+                <ScalarProperty Name="Posicion" ColumnName="Posicion" />
+                <ScalarProperty Name="ValorTablaPropietaria" ColumnName="ValorTablaPropietaria" />
+                <ScalarProperty Name="IdListaOrigenValor" ColumnName="IdListaOrigenValor" />
+                <ScalarProperty Name="IdTablaMaestra" ColumnName="IdTablaMaestra" />
+                <ScalarProperty Name="OrigenValor" ColumnName="OrigenValor" />
+                <ScalarProperty Name="CampoTablaPropietaria" ColumnName="CampoTablaPropietaria" />
+                <ScalarProperty Name="IdTablaPropietaria" ColumnName="IdTablaPropietaria" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_ListasValores">
+            <EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_ListasValores">
+              <MappingFragment StoreEntitySet="TB_ListasValores">
+                <ScalarProperty Name="Valor" ColumnName="Valor" />
+                <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+                <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+                <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+                <ScalarProperty Name="Posicion" ColumnName="Posicion" />
+                <ScalarProperty Name="NombreValorCorto" ColumnName="NombreValorCorto" />
+                <ScalarProperty Name="NombreValor" ColumnName="NombreValor" />
+                <ScalarProperty Name="IdLista" ColumnName="IdLista" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_ValoresDatosParticulares">
+            <EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_ValoresDatosParticulares">
+              <MappingFragment StoreEntitySet="TB_ValoresDatosParticulares">
+                <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+                <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+                <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+                <ScalarProperty Name="IdTablaPropietaria" ColumnName="IdTablaPropietaria" />
+                <ScalarProperty Name="Valor" ColumnName="Valor" />
+                <ScalarProperty Name="IdRegistroTablaPropietaria" ColumnName="IdRegistroTablaPropietaria" />
+                <ScalarProperty Name="IdDatoParticular" ColumnName="IdDatoParticular" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_Suscriptores">
+            <EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_Suscriptores">
+              <MappingFragment StoreEntitySet="TB_Suscriptores">
+                <ScalarProperty Name="Logo" ColumnName="Logo" />
+                <ScalarProperty Name="CodIdExterno" ColumnName="CodIdExterno" />
+                <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+                <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+                <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+                <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+                <ScalarProperty Name="TxtObservacion" ColumnName="TxtObservacion" />
+                <ScalarProperty Name="FechaSolicitudInactivacion" ColumnName="FechaSolicitudInactivacion" />
+                <ScalarProperty Name="IndSolitudInactivacion" ColumnName="IndSolitudInactivacion" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="TxtEmail" ColumnName="TxtEmail" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+                <ScalarProperty Name="FechaInactivacion" ColumnName="FechaInactivacion" />
+                <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="NumDoc" ColumnName="NumDoc" />
+                <ScalarProperty Name="IndTipDoc" ColumnName="IndTipDoc" />
+                <ScalarProperty Name="IdSolicitudSuscripcion" ColumnName="IdSolicitudSuscripcion" />
+                <ScalarProperty Name="IdDivisionTerritorial1" ColumnName="IdDivisionTerritorial1" />
+                <ScalarProperty Name="IdDivisionTerritorial3" ColumnName="IdDivisionTerritorial3" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IdDivisionTerritorial2" ColumnName="IdDivisionTerritorial2" />
+                <ScalarProperty Name="IdPais" ColumnName="IdPais" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Vw_PaginaPermitidaUsuarioSuscriptor">
+            <EntityTypeMapping TypeName="HC_CONFIGURADORModel.Vw_PaginaPermitidaUsuarioSuscriptor">
+              <MappingFragment StoreEntitySet="Vw_PaginaPermitidaUsuarioSuscriptor">
+                <ScalarProperty Name="IdTransaccion" ColumnName="IdTransaccion" />
+                <ScalarProperty Name="IdPagina" ColumnName="IdPagina" />
+                <ScalarProperty Name="UsuarioSuscriptor" ColumnName="UsuarioSuscriptor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_Aplicaciones">
+            <EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_Aplicaciones">
+              <MappingFragment StoreEntitySet="TB_Aplicaciones">
+                <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+                <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+                <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+                <ScalarProperty Name="Logo" ColumnName="Logo" />
+                <ScalarProperty Name="UrlAplicacion" ColumnName="UrlAplicacion" />
+                <ScalarProperty Name="DescripcionAplicacion" ColumnName="DescripcionAplicacion" />
+                <ScalarProperty Name="NombreAplicacion" ColumnName="NombreAplicacion" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_Idiomas">
+            <EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_Idiomas">
+              <MappingFragment StoreEntitySet="TB_Idiomas">
+                <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+                <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+                <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+                <ScalarProperty Name="FecCreacion" ColumnName="FecCreacion" />
+                <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+                <ScalarProperty Name="NombreCorto" ColumnName="NombreCorto" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_Listas">
+            <EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_Listas">
+              <MappingFragment StoreEntitySet="TB_Listas">
+                <ScalarProperty Name="IndSistemas" ColumnName="IndSistemas" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="IdSuscriptor" ColumnName="IdSuscriptor" />
+                <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+                <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+                <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_Sucursales">
+            <EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_Sucursales">
+              <MappingFragment StoreEntitySet="TB_Sucursales">
+                <ScalarProperty Name="CodIdExterno" ColumnName="CodIdExterno" />
+                <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+                <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+                <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+                <ScalarProperty Name="IndTipoSucursal" ColumnName="IndTipoSucursal" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="NumDoc" ColumnName="NumDoc" />
+                <ScalarProperty Name="IndTipDoc" ColumnName="IndTipDoc" />
+                <ScalarProperty Name="IdDivisionTerritorial3" ColumnName="IdDivisionTerritorial3" />
+                <ScalarProperty Name="IdDivisionTerritorial2" ColumnName="IdDivisionTerritorial2" />
+                <ScalarProperty Name="IdDivisionTerritorial1" ColumnName="IdDivisionTerritorial1" />
+                <ScalarProperty Name="IdPais" ColumnName="IdPais" />
+                <ScalarProperty Name="IdSuscriptor" ColumnName="IdSuscriptor" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_UsuariosLocalidades">
+            <EntityTypeMapping TypeName="HC_CONFIGURADORModel.TB_UsuariosLocalidades">
+              <MappingFragment StoreEntitySet="TB_UsuariosLocalidades">
+                <ScalarProperty Name="IdUsuarioSuscriptor" ColumnName="IdUsuarioSuscriptor" />
+                <ScalarProperty Name="IdSuplencia" ColumnName="IdSuplencia" />
+                <ScalarProperty Name="IndEliminado" ColumnName="IndEliminado" />
+                <ScalarProperty Name="IndVigente" ColumnName="IndVigente" />
+                <ScalarProperty Name="FechaValidez" ColumnName="FechaValidez" />
+                <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+                <ScalarProperty Name="ModificadoPor" ColumnName="ModificadoPor" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+                <ScalarProperty Name="IndPpal" ColumnName="IndPpal" />
+                <ScalarProperty Name="IdArea" ColumnName="IdArea" />
+                <ScalarProperty Name="IdSucursal" ColumnName="IdSucursal" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="HC_Configurador_Modelo" ZoomLevel="74">
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_DatosBase" Width="1.5" PointX="10.75" PointY="10.75" Height="5.2494108072916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_PaginasModulos" Width="1.5" PointX="7.625" PointY="5" Height="4.2879036458333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_Roles" Width="1.5" PointX="10.25" PointY="6" Height="3.5186979166666648" IsExpanded="true" />
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_SesionesUsuarios" Width="1.5" PointX="3" PointY="1.375" Height="4.2879036458333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_TipoTransacciones" Width="1.5" PointX="5.75" PointY="1.125" Height="3.3263964843749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_TraModAppPagModAppTraModApp" Width="1.5" PointX="10.25" PointY="1" Height="3.518697916666667" IsExpanded="true" />
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_TransaccionesModulosAplicaciones" Width="1.5" PointX="8" PointY="1" Height="3.5186979166666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_TransaccionesModulosAplicacionesRolAplicaciones" Width="1.5" PointX="12.5" PointY="1.125" Height="3.3263964843749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_Usuarios" Width="1.5" PointX="0.75" PointY="3.875" Height="5.4417122395833362" IsExpanded="true" />
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_UsuariosSucriptores" Width="1.5" PointX="3" PointY="6.375" Height="5.4417122395833317" IsExpanded="true" />
+        <AssociationConnector Association="HC_CONFIGURADORModel.FK_TraModAppPagModAppTraModApp_PaginasModulos__IdPaginaModulo_Id" ManuallyRouted="false">
+          <ConnectorPoint PointX="8.375" PointY="5" />
+          <ConnectorPoint PointX="8.375" PointY="4.7686979166666674" />
+          <ConnectorPoint PointX="9.75" PointY="4.7686979166666674" />
+          <ConnectorPoint PointX="9.75" PointY="2.7593489583333337" />
+          <ConnectorPoint PointX="10.25" PointY="2.7593489583333337" />
+        </AssociationConnector>
+        <AssociationConnector Association="HC_CONFIGURADORModel.FK_TransaccionesModulosAplicacionesRolAplicaciones_Roles__IdRol_Id" ManuallyRouted="false">
+          <ConnectorPoint PointX="11.75" PointY="9.4249479166666656" />
+          <ConnectorPoint PointX="12.78125" PointY="9.4249479166666656" />
+          <ConnectorPoint PointX="12.78125" PointY="4.451396484375" />
+        </AssociationConnector>
+        <AssociationConnector Association="HC_CONFIGURADORModel.FK_SesionesUsuarios_Usuarios__IdUsuario_Id" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="4.8651025390625" />
+          <ConnectorPoint PointX="3" PointY="4.8651025390625" />
+        </AssociationConnector>
+        <AssociationConnector Association="HC_CONFIGURADORModel.FK_TransaccionesModulosAplicaciones_TipoTransacciones__IdTipoTransaccion_Id" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.25" PointY="2.7881982421875" />
+          <ConnectorPoint PointX="8" PointY="2.7881982421875" />
+        </AssociationConnector>
+        <AssociationConnector Association="HC_CONFIGURADORModel.FK_TraModAppPagModAppTraModApp_TransaccionesModulosAplicaciones__IdTransaccionModuloAplicacion_Id" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.5" PointY="1.8171744791666669" />
+          <ConnectorPoint PointX="10.25" PointY="1.8171744791666669" />
+        </AssociationConnector>
+        <AssociationConnector Association="HC_CONFIGURADORModel.FK_TransaccionesModulosAplicacionesRolAplicaciones_TraModAppPagModAppTraModApp__IdTraModAppPagModAppTraModApp_Id" ManuallyRouted="false">
+          <ConnectorPoint PointX="11.75" PointY="2.7881982421875" />
+          <ConnectorPoint PointX="12.5" PointY="2.7881982421875" />
+        </AssociationConnector>
+        <AssociationConnector Association="HC_CONFIGURADORModel.FK_UsuariosSucriptores_Usuarios__IdUsuario_Id" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="7.9420068359374989" />
+          <ConnectorPoint PointX="3" PointY="7.9420068359374989" />
+        </AssociationConnector>
+        <AssociationConnector Association="HC_CONFIGURADORModel.FK_UsuariosSucriptores_UsuariosSucriptores__IdJefeInmediato_Id" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.5319230769230767" PointY="12.201315104166666" />
+          <ConnectorPoint PointX="3.5319230769230767" PointY="12.451315104166667" />
+          <ConnectorPoint PointX="3.9784615384615383" PointY="12.451315104166667" />
+          <ConnectorPoint PointX="3.9784615384615383" PointY="12.201315104166666" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_DatosParticulares" Width="1.5" PointX="0.75" PointY="13.125" Height="5.4417122395833317" />
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_ListasValores" Width="1.5" PointX="13.125" PointY="5.75" Height="3.5186979166666674" />
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_ValoresDatosParticulares" Width="1.5" PointX="3" PointY="14" Height="3.5186979166666674" />
+        <AssociationConnector Association="HC_CONFIGURADORModel.FK_ValoresDatosParticulares_DatosParticulares__IdDatoParticular_Id" >
+          <ConnectorPoint PointX="2.25" PointY="15.759348958333334" />
+          <ConnectorPoint PointX="3" PointY="15.759348958333334" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_Suscriptores" Width="1.5" PointX="5.375" PointY="14.125" Height="6.9801236979166674" />
+        <AssociationConnector Association="HC_CONFIGURADORModel.FK__TB_Sesion__IdSus__7834CCDD" >
+          <ConnectorPoint PointX="5.53125" PointY="14.125" />
+          <ConnectorPoint PointX="5.53125" PointY="5.18455078125" />
+          <ConnectorPoint PointX="4.5" PointY="5.18455078125" />
+        </AssociationConnector>
+        <AssociationConnector Association="HC_CONFIGURADORModel.FK_UsuariosSucriptores_Suscriptores__IdSuscriptor_Id" >
+          <ConnectorPoint PointX="6.1406275" PointY="14.125" />
+          <ConnectorPoint PointX="6.1406275" PointY="7.96875" />
+          <ConnectorPoint PointX="5.614583333333333" PointY="7.9687499999999991" />
+          <ConnectorPoint PointX="5.447916666666667" PointY="7.96875" />
+          <ConnectorPoint PointX="4.5" PointY="7.96875" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.Vw_PaginaPermitidaUsuarioSuscriptor" Width="1.5" PointX="12" PointY="16.625" Height="1.5956835937499996" />
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_Aplicaciones" Width="1.5" PointX="13.375" PointY="10.75" Height="3.3263964843750031" />
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_Idiomas" Width="1.5" PointX="15.375" PointY="0.75" Height="2.9417936197916674" />
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_Listas" Width="1.5" PointX="15.375" PointY="4.75" Height="3.3263964843750031" />
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_Sucursales" Width="1.5" PointX="8" PointY="14.375" Height="5.6340136718750031" />
+        <EntityTypeShape EntityType="HC_CONFIGURADORModel.TB_UsuariosLocalidades" Width="1.5" PointX="7.875" PointY="9.625" Height="3.9033007812500031" />
+        <AssociationConnector Association="HC_CONFIGURADORModel.FK_Sucursales_Suscriptores__IdSuscriptor_Id" >
+          <ConnectorPoint PointX="6.875" PointY="17.1920068359375" />
+          <ConnectorPoint PointX="8" PointY="17.1920068359375" />
+        </AssociationConnector>
+        <AssociationConnector Association="HC_CONFIGURADORModel.FK_UsuariosLocalidades_Sucursales__IdSucursal_Id" >
+          <ConnectorPoint PointX="8.6875" PointY="14.375" />
+          <ConnectorPoint PointX="8.6875" PointY="13.528300781250003" />
+        </AssociationConnector>
+        <AssociationConnector Association="HC_CONFIGURADORModel.FK_UsuariosLocalidades_UsuariosSucriptores__IdUsuarioSuscriptor_Id" >
+          <ConnectorPoint PointX="4.5" PointY="10.913157552083334" />
+          <ConnectorPoint PointX="5.447916666666667" PointY="10.913157552083334" />
+          <ConnectorPoint PointX="5.614583333333333" PointY="10.913157552083334" />
+          <ConnectorPoint PointX="6.0572941666666669" PointY="10.913157552083334" />
+          <ConnectorPoint PointX="6.2239608333333329" PointY="10.913157552083334" />
+          <ConnectorPoint PointX="7.875" PointY="10.913157552083334" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

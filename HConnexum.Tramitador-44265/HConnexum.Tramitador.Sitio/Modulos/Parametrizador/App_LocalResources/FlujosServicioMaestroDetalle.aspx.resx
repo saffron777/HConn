@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApplyButtonResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ApplyButtonResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ApplyButtonResource2.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ApplyButtonResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnConfiguracionPasoResource1.Text" xml:space="preserve">
+    <value>Configuración en XML</value>
+  </data>
+  <data name="btnConfiguracionPasoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnDocumentosServicioResource1.Text" xml:space="preserve">
+    <value>Documentos</value>
+  </data>
+  <data name="btnDocumentosServicioResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnMenosResource1.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="btnMenosResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSuscriptorResource1.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="btnSuscriptorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button1Resource1.Text" xml:space="preserve">
+    <value>Voy</value>
+  </data>
+  <data name="Button1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkIndCmsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkIndCmsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkIndPublicoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkIndPublicoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmdAccionesPasoResource1.Text" xml:space="preserve">
+    <value>Acciones de Paso</value>
+  </data>
+  <data name="cmdAccionesPasoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmdCerrarResource1.Text" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+  <data name="cmdCerrarResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmdGuardarResource1.Text" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="cmdGuardarResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmdGuardaryAgregarResource1.Text" xml:space="preserve">
+    <value>Guardar y Agregar Otro</value>
+  </data>
+  <data name="cmdGuardaryAgregarResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmdLimpiarResource1.Text" xml:space="preserve">
+    <value>Limpiar</value>
+  </data>
+  <data name="cmdLimpiarResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cmdOperacionalizarResource1.Text" xml:space="preserve">
+    <value>Sucursales</value>
+  </data>
+  <data name="cmdOperacionalizarResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlIdPasoInicialResource1.EmptyMessage" xml:space="preserve">
+    <value>Seleccione...</value>
+  </data>
+  <data name="ddlIdPasoInicialResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="ddlIdPasoInicialResource1.Localization.AllItemsCheckedString" xml:space="preserve">
+    <value>All items checked</value>
+  </data>
+  <data name="ddlIdPasoInicialResource1.Localization.CheckAllString" xml:space="preserve">
+    <value>Check All</value>
+  </data>
+  <data name="ddlIdPasoInicialResource1.Localization.ItemsCheckedString" xml:space="preserve">
+    <value>items checked</value>
+  </data>
+  <data name="ddlIdPasoInicialResource1.Localization.NoMatches" xml:space="preserve">
+    <value>No matches</value>
+  </data>
+  <data name="ddlIdPasoInicialResource1.Localization.ShowMoreFormatString" xml:space="preserve">
+    <value>Items &lt;b&gt;1&lt;/b&gt;-&lt;b&gt;{0}&lt;/b&gt; out of &lt;b&gt;{1}&lt;/b&gt;</value>
+  </data>
+  <data name="ddlIdPasoInicialResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlIdServicioSuscriptorResource1.EmptyMessage" xml:space="preserve">
+    <value>Seleccione...</value>
+  </data>
+  <data name="ddlIdServicioSuscriptorResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="ddlIdServicioSuscriptorResource1.Localization.AllItemsCheckedString" xml:space="preserve">
+    <value>All items checked</value>
+  </data>
+  <data name="ddlIdServicioSuscriptorResource1.Localization.CheckAllString" xml:space="preserve">
+    <value>Check All</value>
+  </data>
+  <data name="ddlIdServicioSuscriptorResource1.Localization.ItemsCheckedString" xml:space="preserve">
+    <value>items checked</value>
+  </data>
+  <data name="ddlIdServicioSuscriptorResource1.Localization.NoMatches" xml:space="preserve">
+    <value>No matches</value>
+  </data>
+  <data name="ddlIdServicioSuscriptorResource1.Localization.ShowMoreFormatString" xml:space="preserve">
+    <value>Items &lt;b&gt;1&lt;/b&gt;-&lt;b&gt;{0}&lt;/b&gt; out of &lt;b&gt;{1}&lt;/b&gt;</value>
+  </data>
+  <data name="ddlIdServicioSuscriptorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource1.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource1.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource1.DataFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource1.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridBoundColumnResource1.EmptyDataText" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="GridBoundColumnResource1.FooterAggregateFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource1.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource1.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource1.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource1.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource1.HeaderText" xml:space="preserve">
+    <value>Etapa</value>
+  </data>
+  <data name="GridBoundColumnResource1.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GridBoundColumnResource1.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GridBoundColumnResource1.Selected" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GridBoundColumnResource1.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource2.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource2.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource2.DataFormatString" xml:space="preserve">
+    <value>{0:d}</value>
+  </data>
+  <data name="GridBoundColumnResource2.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridBoundColumnResource2.EmptyDataText" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="GridBoundColumnResource2.FooterAggregateFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource2.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource2.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource2.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource2.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource2.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource2.HeaderText" xml:space="preserve">
+    <value>Fecha de Validez</value>
+  </data>
+  <data name="GridBoundColumnResource2.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource2.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GridBoundColumnResource2.Selected" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GridBoundColumnResource2.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridCheckBoxColumnResource1.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridCheckBoxColumnResource1.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridCheckBoxColumnResource1.DataField" xml:space="preserve">
+    <value>IndVigente</value>
+  </data>
+  <data name="GridCheckBoxColumnResource1.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridCheckBoxColumnResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridCheckBoxColumnResource1.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridCheckBoxColumnResource1.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridCheckBoxColumnResource1.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridCheckBoxColumnResource1.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridCheckBoxColumnResource1.HeaderText" xml:space="preserve">
+    <value>Publicar</value>
+  </data>
+  <data name="GridCheckBoxColumnResource1.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridCheckBoxColumnResource1.Selected" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GridCheckBoxColumnResource1.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>Sla Tolerancia:</value>
+  </data>
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource1.Text" xml:space="preserve">
+    <value>Tipo:</value>
+  </data>
+  <data name="Label2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIdServicioSuscriptorResource1.Text" xml:space="preserve">
+    <value>Servicio:</value>
+  </data>
+  <data name="lblIdServicioSuscriptorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIdSuscriptorResource1.Text" xml:space="preserve">
+    <value>Suscriptor:</value>
+  </data>
+  <data name="lblIdSuscriptorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIndCmsResource1.Text" xml:space="preserve">
+    <value>CMS:</value>
+  </data>
+  <data name="lblIndCmsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblIndSimulableResource1.Text" xml:space="preserve">
+    <value>IndSimulable:</value>
+  </data>
+  <data name="lblIndSimulableResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+    <data name="lblIndPublicoResource1.Text" xml:space="preserve">
+    <value>Publico:</value>
+  </data>
+  <data name="lblIndPublicoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LblMessegeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LblMessegeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LblMessegeResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LblMessegeResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPrioridadResource1.Text" xml:space="preserve">
+    <value>Prioridad:</value>
+  </data>
+  <data name="lblPrioridadResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LblResource1.Text" xml:space="preserve">
+    <value>Paso Inicial:</value>
+  </data>
+  <data name="LblResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSlaPromedioResource1.Text" xml:space="preserve">
+    <value>Sla Promedio:</value>
+  </data>
+  <data name="lblSlaPromedioResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblVersionResource1.Text" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="lblVersionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lgLegendBusquedaAvanzadaResource1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lgLegendFlujosServicioResource1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Detalle de FlujosServicio</value>
+  </data>
+  <data name="PanelMasterResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PanelMasterResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadAjaxManager1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGridMasterResource1.MasterTableView.EditFormSettings.EditColumn.Selected" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RadGridMasterResource1.MasterTableView.ExpandCollapseColumn.Selected" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RadGridMasterResource1.MasterTableView.RowIndicatorColumn.Selected" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RadToolBar1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource1.AccessKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource1.Text" xml:space="preserve">
+    <value>Refrescar</value>
+  </data>
+  <data name="RadToolBarButtonResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource1.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource2.AccessKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource2.Text" xml:space="preserve">
+    <value>Mostrar Filtro</value>
+  </data>
+  <data name="RadToolBarButtonResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource2.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource3.AccessKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource3.Text" xml:space="preserve">
+    <value>Ver Detalle</value>
+  </data>
+  <data name="RadToolBarButtonResource3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource3.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource4.AccessKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource4.Text" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="RadToolBarButtonResource4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource4.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource5.AccessKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource5.Text" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="RadToolBarButtonResource5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource5.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource6.AccessKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource6.Text" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="RadToolBarButtonResource6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadToolBarButtonResource6.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator1Resource1.ErrorMessage" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="RequiredFieldValidator1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator2Resource1.ErrorMessage" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="RequiredFieldValidator2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvIdTipoTransaccionResource1.ErrorMessage" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="rfvIdTipoTransaccionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rfvIdTipoTransaccionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TxtIdSuscriptorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TxtIdSuscriptorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPrioridadResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPrioridadResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TxtTipoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TxtTipoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVersionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVersionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

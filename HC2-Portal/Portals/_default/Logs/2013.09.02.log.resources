@@ -1,0 +1,991 @@
+2013-09-02 08:29:20,631 [ZVE01-202][Thread:257][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.77.30.187
+	Port: 49355
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.57 Safari/537.36
+	ViewState: /k6XibWO+01YFLv7G48nSkO2OWEqVd8tz7Buh3K/LVdiSsMUM3FVgnWhe1EuEDrjeXigct9Waf1zpAku/IxHDfDp9cZBz1N9U0cHYNYRu0U0bYJPYYT/gr7ViXL+ObWR3goqCFnzFTxC1BW+bMoalJ5ZV3wxl70s9gw05qLm5tpWLkSReastBoPWy30ooVxt5f9ezzL/qoyBABan1CzZEfAdwiXq9RdTp8M07BRhsTRqhB0EIN+IiKjqJCZKITaf/dazWN7mtH46d1g0gvvKx0fRfKvPalezPnXAvXOXMll1MDL1DMv99N5SI8v0lgQVsk48Ze9W7ZvdY+S6kGGQMexvdtEgt/2wC++k0XWgPSmHIlYZeg8Y+enw0qN4fO3jtAOsI6VdffBLUwdyapaZx5QWtygchgJQe0kFh/BtMisRhDZocghFgm0mcIdFFccJNbnOWFcWnH9fpvdDdQEEqazftBnlzGjgmUWQu81rxN7k9aJGkw2LLPegDrWEHldSRgSi51iOh1Glr2XlIYLdKqHWQzigHDbElwx1IByckHixF4R1zXlN8TzQWheqkN+K7T9N5dqBUt+sDbDGC3ekM2BegzHcwLZcc0IfxtPbFeVNFBetqUvM5lCagBCMjuf+rGLUprtX8DaXgrnq75AF8+8MPhEfVLeIUTo7VxjlGGi3cL0FozOCg/Nm4QyPaoR18f5gOnAYMalGR6Oecb0t3jTJG+EeV+PewB5pfsfgGB/utggowa2GvsHwTt/bc5+37GztsgMK...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 08:29:20,849 [ZVE01-202][Thread:257][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.77.30.187
+	Port: 49355
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.57 Safari/537.36
+	ViewState: /k6XibWO+01YFLv7G48nSkO2OWEqVd8tz7Buh3K/LVdiSsMUM3FVgnWhe1EuEDrjeXigct9Waf1zpAku/IxHDfDp9cZBz1N9U0cHYNYRu0U0bYJPYYT/gr7ViXL+ObWR3goqCFnzFTxC1BW+bMoalJ5ZV3wxl70s9gw05qLm5tpWLkSReastBoPWy30ooVxt5f9ezzL/qoyBABan1CzZEfAdwiXq9RdTp8M07BRhsTRqhB0EIN+IiKjqJCZKITaf/dazWN7mtH46d1g0gvvKx0fRfKvPalezPnXAvXOXMll1MDL1DMv99N5SI8v0lgQVsk48Ze9W7ZvdY+S6kGGQMexvdtEgt/2wC++k0XWgPSmHIlYZeg8Y+enw0qN4fO3jtAOsI6VdffBLUwdyapaZx5QWtygchgJQe0kFh/BtMisRhDZocghFgm0mcIdFFccJNbnOWFcWnH9fpvdDdQEEqazftBnlzGjgmUWQu81rxN7k9aJGkw2LLPegDrWEHldSRgSi51iOh1Glr2XlIYLdKqHWQzigHDbElwx1IByckHixF4R1zXlN8TzQWheqkN+K7T9N5dqBUt+sDbDGC3ekM2BegzHcwLZcc0IfxtPbFeVNFBetqUvM5lCagBCMjuf+rGLUprtX8DaXgrnq75AF8+8MPhEfVLeIUTo7VxjlGGi3cL0FozOCg/Nm4QyPaoR18f5gOnAYMalGR6Oecb0t3jTJG+EeV+PewB5pfsfgGB/utggowa2GvsHwTt/bc5+37GztsgMK...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 09:09:36,962 [ZVE01-202][Thread:242][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 186.88.130.134
+	Port: 48150
+	Referer: http://www.h-connexum.com/PORTAL/inicio.aspx
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:23.0) Gecko/20100101 Firefox/23.0
+	ViewState: kzfrqHyIwJeAdUY3JGEo0I7RbaSTL7buIEhtaxhj4Y13Zld2Kn0k9OkoFoQZxzJgL8HkwdBGu9r9MIp8vRLw8l1p0Ce7lzgfxz4okivywTNvzESNJ0aL/8DGqaWlE/0VU6A+8V04GwsCqu6GbgZERzn9c2XtnLSXO/BfxVJ2ikXjX3cZ6Kz4YoAAqApwY2lfuVfg8CcAYkkTLbHT2JGSkJtsnOBEcyAq685a+8EZAlUFgrettm3YSGbx9s2nuvsXX5yifqhknUSvDc54C3jakRPvCCVT6cl1DqwbT0235BvwVSM1dCWwuz4NAIEPBYhYBM4jTdFVAOeieEG/ufMD/74pZtqa9/wM4zUV5dcu3DSj5eXHyMBctTxx54fmqA9LKs68oA/A+Ikj2JDzeAjmNkd+/yRjkVcqL1UcQf3ADZYjO9utx7Og49HuxsI1oIeHTJm79qEWsAg+/bsbNcrZCNkRKQnNk/BjRKaf/H9teKpX/o4E6Rt3wFfUYkjcqbqcZVL5+koS3LbOHTmfepfqqHKxL+Lilf3s2h1puq8cliyYKViUd+X1Oxjz+w/tEXqud9zd5fmUJrhCl7S08bdpl/RIWwPeFkUdUpEnzy5AalrbOYxa+JBYdh+7mKVOQ9k+EvB9sfw+q3XIuFdsragtm0wFYrKunmuPKaXwR5HLvpLRNxe1jbUs5+nsr7Mh1K1kvKbCs26z6NiRMt/BoyfTUvsupVuhuK6LnxF579RTsDimVlDXtV+q+N6y5R1hlw6SOuekiiQ1nc4iHKg6Dl+1vN7KgyF1yY/A...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 09:09:36,962 [ZVE01-202][Thread:242][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 186.88.130.134
+	Port: 48150
+	Referer: http://www.h-connexum.com/PORTAL/inicio.aspx
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:23.0) Gecko/20100101 Firefox/23.0
+	ViewState: kzfrqHyIwJeAdUY3JGEo0I7RbaSTL7buIEhtaxhj4Y13Zld2Kn0k9OkoFoQZxzJgL8HkwdBGu9r9MIp8vRLw8l1p0Ce7lzgfxz4okivywTNvzESNJ0aL/8DGqaWlE/0VU6A+8V04GwsCqu6GbgZERzn9c2XtnLSXO/BfxVJ2ikXjX3cZ6Kz4YoAAqApwY2lfuVfg8CcAYkkTLbHT2JGSkJtsnOBEcyAq685a+8EZAlUFgrettm3YSGbx9s2nuvsXX5yifqhknUSvDc54C3jakRPvCCVT6cl1DqwbT0235BvwVSM1dCWwuz4NAIEPBYhYBM4jTdFVAOeieEG/ufMD/74pZtqa9/wM4zUV5dcu3DSj5eXHyMBctTxx54fmqA9LKs68oA/A+Ikj2JDzeAjmNkd+/yRjkVcqL1UcQf3ADZYjO9utx7Og49HuxsI1oIeHTJm79qEWsAg+/bsbNcrZCNkRKQnNk/BjRKaf/H9teKpX/o4E6Rt3wFfUYkjcqbqcZVL5+koS3LbOHTmfepfqqHKxL+Lilf3s2h1puq8cliyYKViUd+X1Oxjz+w/tEXqud9zd5fmUJrhCl7S08bdpl/RIWwPeFkUdUpEnzy5AalrbOYxa+JBYdh+7mKVOQ9k+EvB9sfw+q3XIuFdsragtm0wFYrKunmuPKaXwR5HLvpLRNxe1jbUs5+nsr7Mh1K1kvKbCs26z6NiRMt/BoyfTUvsupVuhuK6LnxF579RTsDimVlDXtV+q+N6y5R1hlw6SOuekiiQ1nc4iHKg6Dl+1vN7KgyF1yY/A...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 09:30:39,220 [ZVE01-202][Thread:219][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 201.243.155.224
+	Port: 1617
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:23.0) Gecko/20100101 Firefox/23.0
+	ViewState: mDO2zc2ThOeWlvawEiNh1qj46UQ7JZ5vH6tXw8QiHLsQ2GHbj6rZw3P4NCeMmzlMVu5GLKYiGKj8IoWwCxMvHiIiJ/E2wRFCTktostg940YnpLHres75yngr+Fh3rQMXdae+aKLa+RwSSagteFIMKomu6L+ZLVPh3jZKaPr2LNGLjvPkxQeWUWRc5h6WAI5FxpOn5MsJjBN3DklDN/Y6UeAoKSuZ3yrdL2SkRAzLEJcJ/w+v4QBVBMrOZpcu86u8cBEQnvCCfOILish8YYlv+h4YCgvu6CMJiqZ5PR4VwH0RKY5sK1KoI7byLEqiXggYQdTO3bzdI+lVQ1hj+kJ7WDS2BsQol52AXM1B0dHIj2zuNQXm2sfNRnk7Vl7olqZ3QfHmkZ0wil1vbrQlHYl+HCyZkSmk13t+LS7LSPp0Mjptymjmk45KWpkwu5lweB3QHj4voF6yziOeYZR7DxZ3bHEPDC1yRn+nv/o8MlLgMR0qyjaSZNpJZtZkgIe1LZGaUCSIsQZQkBJH53ZcYfR1TW8azdSIwtDmIHwFcmCxEonHNs0zPoEIZU10CtlYBMR/7SNRSXxEj5/l6XwCzYsR9SkRk7R6Yb5FjGBfc3IhOmZW7hp09ynRoIJvrIGTCRa0V8K+6dD9xwMAc6Vtq+tZGXEhpb9alw9vEir7QtLypwIuxZxORS6YVAhPZrU/5fvBab/O4S2l503Qcu0HwqFJdD177FL743d9/mlCKIUU1Xhoy2gvQ3mLXtP8V2a29LZtl7e7cIkGqj9ZHU2PGbpY6SwiYYFEQhZPCFvHoGFA6MH...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 09:30:39,220 [ZVE01-202][Thread:219][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=109&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 201.243.155.224
+	Port: 1617
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:23.0) Gecko/20100101 Firefox/23.0
+	ViewState: mDO2zc2ThOeWlvawEiNh1qj46UQ7JZ5vH6tXw8QiHLsQ2GHbj6rZw3P4NCeMmzlMVu5GLKYiGKj8IoWwCxMvHiIiJ/E2wRFCTktostg940YnpLHres75yngr+Fh3rQMXdae+aKLa+RwSSagteFIMKomu6L+ZLVPh3jZKaPr2LNGLjvPkxQeWUWRc5h6WAI5FxpOn5MsJjBN3DklDN/Y6UeAoKSuZ3yrdL2SkRAzLEJcJ/w+v4QBVBMrOZpcu86u8cBEQnvCCfOILish8YYlv+h4YCgvu6CMJiqZ5PR4VwH0RKY5sK1KoI7byLEqiXggYQdTO3bzdI+lVQ1hj+kJ7WDS2BsQol52AXM1B0dHIj2zuNQXm2sfNRnk7Vl7olqZ3QfHmkZ0wil1vbrQlHYl+HCyZkSmk13t+LS7LSPp0Mjptymjmk45KWpkwu5lweB3QHj4voF6yziOeYZR7DxZ3bHEPDC1yRn+nv/o8MlLgMR0qyjaSZNpJZtZkgIe1LZGaUCSIsQZQkBJH53ZcYfR1TW8azdSIwtDmIHwFcmCxEonHNs0zPoEIZU10CtlYBMR/7SNRSXxEj5/l6XwCzYsR9SkRk7R6Yb5FjGBfc3IhOmZW7hp09ynRoIJvrIGTCRa0V8K+6dD9xwMAc6Vtq+tZGXEhpb9alw9vEir7QtLypwIuxZxORS6YVAhPZrU/5fvBab/O4S2l503Qcu0HwqFJdD177FL743d9/mlCKIUU1Xhoy2gvQ3mLXtP8V2a29LZtl7e7cIkGqj9ZHU2PGbpY6SwiYYFEQhZPCFvHoGFA6MH...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 09:36:50,219 [ZVE01-202][Thread:218][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-09-02 09:59:36,264 [ZVE01-202][Thread:219][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.201.194.39
+	Port: 33353
+	Referer: http://www.h-connexum.com/PORTAL/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET CLR 1.0.3705)
+	ViewState: n68yFCBbTCUUkxRhZcnmsez3B4VYeaQyQdYtWQNqi3XuNakBr3Z+hfDmsuGB9JG5zNzh/K83Ysj3Co1eKoRZ17fJNww3ImctOWBPzxn/cvX5o9x6bzDQyDz/epXBD9VZ7LvjpC160TP2FBgzVq7knBF0MMZfATa151fGOee2xWoLq+pz36jhwPJl76JfVf2dHPqi0JEmu5cuAqqzjXxdeyFG5qAX3S4Cv7/p1dmVVyJk9PIkQYG7jQX6m4QuVxLjPlkCwDV73CPOnvbqbEqc1CdPzGYMrpZlRavVLqPl7EQQTyOYpeZVIs3AKmJLeFlFeChWkyv3aPu3X5ZKg62azOjlWgQbB64yF3YsGVTf6Gwa8UCGQ1AsCj+J8fPNFJL5pH2kD3I0yJBh16aad3NYSOsosEwVfDJ52LUux/qFtnWDbYU+EydRD8W3rd7+DCCCtpi0G8pAgu27Bg7run+O95KCP4BR3NUJqWAFQJaIFuk9eWPbBptUNjlOVOSes8eoup/xV/+t2xFr0m+8F6TqNEWzTeFgcTDW2zGZRvyl4U9rHGSdL1w1OaxECsxXRjtTdL+VW9V+q56naECHTPjiEe90F3q8TWcXuKwaaBbXd3JKf/u5LKw26cwNqL7eZ8DoHq4txxK4BH1F97xjqVgCnCnxMwCA8wOYQA0Hqojua4woWQR...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 09:59:36,327 [ZVE01-202][Thread:219][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.201.194.39
+	Port: 33353
+	Referer: http://www.h-connexum.com/PORTAL/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET CLR 1.0.3705)
+	ViewState: n68yFCBbTCUUkxRhZcnmsez3B4VYeaQyQdYtWQNqi3XuNakBr3Z+hfDmsuGB9JG5zNzh/K83Ysj3Co1eKoRZ17fJNww3ImctOWBPzxn/cvX5o9x6bzDQyDz/epXBD9VZ7LvjpC160TP2FBgzVq7knBF0MMZfATa151fGOee2xWoLq+pz36jhwPJl76JfVf2dHPqi0JEmu5cuAqqzjXxdeyFG5qAX3S4Cv7/p1dmVVyJk9PIkQYG7jQX6m4QuVxLjPlkCwDV73CPOnvbqbEqc1CdPzGYMrpZlRavVLqPl7EQQTyOYpeZVIs3AKmJLeFlFeChWkyv3aPu3X5ZKg62azOjlWgQbB64yF3YsGVTf6Gwa8UCGQ1AsCj+J8fPNFJL5pH2kD3I0yJBh16aad3NYSOsosEwVfDJ52LUux/qFtnWDbYU+EydRD8W3rd7+DCCCtpi0G8pAgu27Bg7run+O95KCP4BR3NUJqWAFQJaIFuk9eWPbBptUNjlOVOSes8eoup/xV/+t2xFr0m+8F6TqNEWzTeFgcTDW2zGZRvyl4U9rHGSdL1w1OaxECsxXRjtTdL+VW9V+q56naECHTPjiEe90F3q8TWcXuKwaaBbXd3JKf/u5LKw26cwNqL7eZ8DoHq4txxK4BH1F97xjqVgCnCnxMwCA8wOYQA0Hqojua4woWQR...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 09:59:42,645 [ZVE01-202][Thread:235][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.201.194.39
+	Port: 33354
+	Referer: http://www.h-connexum.com/PORTAL/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET CLR 1.0.3705)
+	ViewState: n68yFCBbTCUUkxRhZcnmsez3B4VYeaQyQdYtWQNqi3XuNakBr3Z+hfDmsuGB9JG5zNzh/K83Ysj3Co1eKoRZ17fJNww3ImctOWBPzxn/cvX5o9x6bzDQyDz/epXBD9VZ7LvjpC160TP2FBgzVq7knBF0MMZfATa151fGOee2xWoLq+pz36jhwPJl76JfVf2dHPqi0JEmu5cuAqqzjXxdeyFG5qAX3S4Cv7/p1dmVVyJk9PIkQYG7jQX6m4QuVxLjPlkCwDV73CPOnvbqbEqc1CdPzGYMrpZlRavVLqPl7EQQTyOYpeZVIs3AKmJLeFlFeChWkyv3aPu3X5ZKg62azOjlWgQbB64yF3YsGVTf6Gwa8UCGQ1AsCj+J8fPNFJL5pH2kD3I0yJBh16aad3NYSOsosEwVfDJ52LUux/qFtnWDbYU+EydRD8W3rd7+DCCCtpi0G8pAgu27Bg7run+O95KCP4BR3NUJqWAFQJaIFuk9eWPbBptUNjlOVOSes8eoup/xV/+t2xFr0m+8F6TqNEWzTeFgcTDW2zGZRvyl4U9rHGSdL1w1OaxECsxXRjtTdL+VW9V+q56naECHTPjiEe90F3q8TWcXuKwaaBbXd3JKf/u5LKw26cwNqL7eZ8DoHq4txxK4BH1F97xjqVgCnCnxMwCA8wOYQA0Hqojua4woWQR...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 09:59:42,645 [ZVE01-202][Thread:235][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.201.194.39
+	Port: 33354
+	Referer: http://www.h-connexum.com/PORTAL/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET CLR 1.0.3705)
+	ViewState: n68yFCBbTCUUkxRhZcnmsez3B4VYeaQyQdYtWQNqi3XuNakBr3Z+hfDmsuGB9JG5zNzh/K83Ysj3Co1eKoRZ17fJNww3ImctOWBPzxn/cvX5o9x6bzDQyDz/epXBD9VZ7LvjpC160TP2FBgzVq7knBF0MMZfATa151fGOee2xWoLq+pz36jhwPJl76JfVf2dHPqi0JEmu5cuAqqzjXxdeyFG5qAX3S4Cv7/p1dmVVyJk9PIkQYG7jQX6m4QuVxLjPlkCwDV73CPOnvbqbEqc1CdPzGYMrpZlRavVLqPl7EQQTyOYpeZVIs3AKmJLeFlFeChWkyv3aPu3X5ZKg62azOjlWgQbB64yF3YsGVTf6Gwa8UCGQ1AsCj+J8fPNFJL5pH2kD3I0yJBh16aad3NYSOsosEwVfDJ52LUux/qFtnWDbYU+EydRD8W3rd7+DCCCtpi0G8pAgu27Bg7run+O95KCP4BR3NUJqWAFQJaIFuk9eWPbBptUNjlOVOSes8eoup/xV/+t2xFr0m+8F6TqNEWzTeFgcTDW2zGZRvyl4U9rHGSdL1w1OaxECsxXRjtTdL+VW9V+q56naECHTPjiEe90F3q8TWcXuKwaaBbXd3JKf/u5LKw26cwNqL7eZ8DoHq4txxK4BH1F97xjqVgCnCnxMwCA8wOYQA0Hqojua4woWQR...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 09:59:58,113 [ZVE01-202][Thread:18][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.201.194.39
+	Port: 33357
+	Referer: http://www.h-connexum.com/PORTAL/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET CLR 1.0.3705)
+	ViewState: n68yFCBbTCUUkxRhZcnmsez3B4VYeaQyQdYtWQNqi3XuNakBr3Z+hfDmsuGB9JG5zNzh/K83Ysj3Co1eKoRZ17fJNww3ImctOWBPzxn/cvX5o9x6bzDQyDz/epXBD9VZ7LvjpC160TP2FBgzVq7knBF0MMZfATa151fGOee2xWoLq+pz36jhwPJl76JfVf2dHPqi0JEmu5cuAqqzjXxdeyFG5qAX3S4Cv7/p1dmVVyJk9PIkQYG7jQX6m4QuVxLjPlkCwDV73CPOnvbqbEqc1CdPzGYMrpZlRavVLqPl7EQQTyOYpeZVIs3AKmJLeFlFeChWkyv3aPu3X5ZKg62azOjlWgQbB64yF3YsGVTf6Gwa8UCGQ1AsCj+J8fPNFJL5pH2kD3I0yJBh16aad3NYSOsosEwVfDJ52LUux/qFtnWDbYU+EydRD8W3rd7+DCCCtpi0G8pAgu27Bg7run+O95KCP4BR3NUJqWAFQJaIFuk9eWPbBptUNjlOVOSes8eoup/xV/+t2xFr0m+8F6TqNEWzTeFgcTDW2zGZRvyl4U9rHGSdL1w1OaxECsxXRjtTdL+VW9V+q56naECHTPjiEe90F3q8TWcXuKwaaBbXd3JKf/u5LKw26cwNqL7eZ8DoHq4txxK4BH1F97xjqVgCnCnxMwCA8wOYQA0Hqojua4woWQR...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 09:59:58,113 [ZVE01-202][Thread:18][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.201.194.39
+	Port: 33357
+	Referer: http://www.h-connexum.com/PORTAL/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET CLR 1.0.3705)
+	ViewState: n68yFCBbTCUUkxRhZcnmsez3B4VYeaQyQdYtWQNqi3XuNakBr3Z+hfDmsuGB9JG5zNzh/K83Ysj3Co1eKoRZ17fJNww3ImctOWBPzxn/cvX5o9x6bzDQyDz/epXBD9VZ7LvjpC160TP2FBgzVq7knBF0MMZfATa151fGOee2xWoLq+pz36jhwPJl76JfVf2dHPqi0JEmu5cuAqqzjXxdeyFG5qAX3S4Cv7/p1dmVVyJk9PIkQYG7jQX6m4QuVxLjPlkCwDV73CPOnvbqbEqc1CdPzGYMrpZlRavVLqPl7EQQTyOYpeZVIs3AKmJLeFlFeChWkyv3aPu3X5ZKg62azOjlWgQbB64yF3YsGVTf6Gwa8UCGQ1AsCj+J8fPNFJL5pH2kD3I0yJBh16aad3NYSOsosEwVfDJ52LUux/qFtnWDbYU+EydRD8W3rd7+DCCCtpi0G8pAgu27Bg7run+O95KCP4BR3NUJqWAFQJaIFuk9eWPbBptUNjlOVOSes8eoup/xV/+t2xFr0m+8F6TqNEWzTeFgcTDW2zGZRvyl4U9rHGSdL1w1OaxECsxXRjtTdL+VW9V+q56naECHTPjiEe90F3q8TWcXuKwaaBbXd3JKf/u5LKw26cwNqL7eZ8DoHq4txxK4BH1F97xjqVgCnCnxMwCA8wOYQA0Hqojua4woWQR...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 10:00:08,736 [ZVE01-202][Thread:220][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.201.194.39
+	Port: 33358
+	Referer: http://www.h-connexum.com/PORTAL/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET CLR 1.0.3705)
+	ViewState: n68yFCBbTCUUkxRhZcnmsez3B4VYeaQyQdYtWQNqi3XuNakBr3Z+hfDmsuGB9JG5zNzh/K83Ysj3Co1eKoRZ17fJNww3ImctOWBPzxn/cvX5o9x6bzDQyDz/epXBD9VZ7LvjpC160TP2FBgzVq7knBF0MMZfATa151fGOee2xWoLq+pz36jhwPJl76JfVf2dHPqi0JEmu5cuAqqzjXxdeyFG5qAX3S4Cv7/p1dmVVyJk9PIkQYG7jQX6m4QuVxLjPlkCwDV73CPOnvbqbEqc1CdPzGYMrpZlRavVLqPl7EQQTyOYpeZVIs3AKmJLeFlFeChWkyv3aPu3X5ZKg62azOjlWgQbB64yF3YsGVTf6Gwa8UCGQ1AsCj+J8fPNFJL5pH2kD3I0yJBh16aad3NYSOsosEwVfDJ52LUux/qFtnWDbYU+EydRD8W3rd7+DCCCtpi0G8pAgu27Bg7run+O95KCP4BR3NUJqWAFQJaIFuk9eWPbBptUNjlOVOSes8eoup/xV/+t2xFr0m+8F6TqNEWzTeFgcTDW2zGZRvyl4U9rHGSdL1w1OaxECsxXRjtTdL+VW9V+q56naECHTPjiEe90F3q8TWcXuKwaaBbXd3JKf/u5LKw26cwNqL7eZ8DoHq4txxK4BH1F97xjqVgCnCnxMwCA8wOYQA0Hqojua4woWQR...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 10:00:08,736 [ZVE01-202][Thread:220][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.201.194.39
+	Port: 33358
+	Referer: http://www.h-connexum.com/PORTAL/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET CLR 1.0.3705)
+	ViewState: n68yFCBbTCUUkxRhZcnmsez3B4VYeaQyQdYtWQNqi3XuNakBr3Z+hfDmsuGB9JG5zNzh/K83Ysj3Co1eKoRZ17fJNww3ImctOWBPzxn/cvX5o9x6bzDQyDz/epXBD9VZ7LvjpC160TP2FBgzVq7knBF0MMZfATa151fGOee2xWoLq+pz36jhwPJl76JfVf2dHPqi0JEmu5cuAqqzjXxdeyFG5qAX3S4Cv7/p1dmVVyJk9PIkQYG7jQX6m4QuVxLjPlkCwDV73CPOnvbqbEqc1CdPzGYMrpZlRavVLqPl7EQQTyOYpeZVIs3AKmJLeFlFeChWkyv3aPu3X5ZKg62azOjlWgQbB64yF3YsGVTf6Gwa8UCGQ1AsCj+J8fPNFJL5pH2kD3I0yJBh16aad3NYSOsosEwVfDJ52LUux/qFtnWDbYU+EydRD8W3rd7+DCCCtpi0G8pAgu27Bg7run+O95KCP4BR3NUJqWAFQJaIFuk9eWPbBptUNjlOVOSes8eoup/xV/+t2xFr0m+8F6TqNEWzTeFgcTDW2zGZRvyl4U9rHGSdL1w1OaxECsxXRjtTdL+VW9V+q56naECHTPjiEe90F3q8TWcXuKwaaBbXd3JKf/u5LKw26cwNqL7eZ8DoHq4txxK4BH1F97xjqVgCnCnxMwCA8wOYQA0Hqojua4woWQR...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 10:00:13,531 [ZVE01-202][Thread:14][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.201.194.39
+	Port: 33359
+	Referer: http://www.h-connexum.com/PORTAL/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET CLR 1.0.3705)
+	ViewState: n68yFCBbTCUUkxRhZcnmsez3B4VYeaQyQdYtWQNqi3XuNakBr3Z+hfDmsuGB9JG5zNzh/K83Ysj3Co1eKoRZ17fJNww3ImctOWBPzxn/cvX5o9x6bzDQyDz/epXBD9VZ7LvjpC160TP2FBgzVq7knBF0MMZfATa151fGOee2xWoLq+pz36jhwPJl76JfVf2dHPqi0JEmu5cuAqqzjXxdeyFG5qAX3S4Cv7/p1dmVVyJk9PIkQYG7jQX6m4QuVxLjPlkCwDV73CPOnvbqbEqc1CdPzGYMrpZlRavVLqPl7EQQTyOYpeZVIs3AKmJLeFlFeChWkyv3aPu3X5ZKg62azOjlWgQbB64yF3YsGVTf6Gwa8UCGQ1AsCj+J8fPNFJL5pH2kD3I0yJBh16aad3NYSOsosEwVfDJ52LUux/qFtnWDbYU+EydRD8W3rd7+DCCCtpi0G8pAgu27Bg7run+O95KCP4BR3NUJqWAFQJaIFuk9eWPbBptUNjlOVOSes8eoup/xV/+t2xFr0m+8F6TqNEWzTeFgcTDW2zGZRvyl4U9rHGSdL1w1OaxECsxXRjtTdL+VW9V+q56naECHTPjiEe90F3q8TWcXuKwaaBbXd3JKf/u5LKw26cwNqL7eZ8DoHq4txxK4BH1F97xjqVgCnCnxMwCA8wOYQA0Hqojua4woWQR...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 10:00:13,531 [ZVE01-202][Thread:14][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.201.194.39
+	Port: 33359
+	Referer: http://www.h-connexum.com/PORTAL/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; .NET CLR 1.0.3705)
+	ViewState: n68yFCBbTCUUkxRhZcnmsez3B4VYeaQyQdYtWQNqi3XuNakBr3Z+hfDmsuGB9JG5zNzh/K83Ysj3Co1eKoRZ17fJNww3ImctOWBPzxn/cvX5o9x6bzDQyDz/epXBD9VZ7LvjpC160TP2FBgzVq7knBF0MMZfATa151fGOee2xWoLq+pz36jhwPJl76JfVf2dHPqi0JEmu5cuAqqzjXxdeyFG5qAX3S4Cv7/p1dmVVyJk9PIkQYG7jQX6m4QuVxLjPlkCwDV73CPOnvbqbEqc1CdPzGYMrpZlRavVLqPl7EQQTyOYpeZVIs3AKmJLeFlFeChWkyv3aPu3X5ZKg62azOjlWgQbB64yF3YsGVTf6Gwa8UCGQ1AsCj+J8fPNFJL5pH2kD3I0yJBh16aad3NYSOsosEwVfDJ52LUux/qFtnWDbYU+EydRD8W3rd7+DCCCtpi0G8pAgu27Bg7run+O95KCP4BR3NUJqWAFQJaIFuk9eWPbBptUNjlOVOSes8eoup/xV/+t2xFr0m+8F6TqNEWzTeFgcTDW2zGZRvyl4U9rHGSdL1w1OaxECsxXRjtTdL+VW9V+q56naECHTPjiEe90F3q8TWcXuKwaaBbXd3JKf/u5LKw26cwNqL7eZ8DoHq4txxK4BH1F97xjqVgCnCnxMwCA8wOYQA0Hqojua4woWQR...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 13:46:45,780 [ZVE01-202][Thread:212][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.205.195.163
+	Port: 41151
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)
+	ViewState: ghcH4tAxGUYitiD/WyBjB30RnImgMIXJimnOsUFO0pAbjkUf8MBHOojf8HuWYmsZpgLtpgy9o+mZ0xU7hOf3PnkF4gIsJy/4WROThaIYscCw3OIgSKDg2Kz0KhHw7b+ZkDjlbWR2fVxb+5kyvb5wxgmptM7cww57Yq0Qm7gslcmlUN7NtE90K4rgZ+1eJJPRHEi3vEHnL2CQ1Emu9z7MjLkGYaQPiDghERMD0tzTAq/O1uChx9f32CyJ3sNhh9Rx7SvI/2YlOg7BSeyL8LZP3mZHZyVhrA/4uaRZGnqrxHHr79sFFdmJ1oZSPo8piEBet5i4j33Ajq2rp+xaxKfV3RVd/L55hAvrwqf7U46bpwuol77XcK9oKufN0BAwSbyRyBgZgsW54UaJSb4lDSQh3YZpLFTfb9boX7BA8lvTKnLBjV553wEiImtE07zMGsLF830B2U/hWI7TwqfGFZRc263938ygc0tudPZQaauM7xIzu2TVOWH01QixHevBdnk7/95iQDZcjNKG2GrpmOxpElZ6Ehd/l1V8jHJtFLwdww4SHgt4Ew9bD97clEbh8I2Ovn24GrbJjIZMhTLa1GR5vOJ8OOOie8I3rd3GFXfhsgyIXaWFspKDSGtge8M7nll+66KLoOXTnqcSOt4cbc999kKxABv07Dl1xz8siT/YFr865OpxHqwNDmTBy8RXH/iCaJ64naWoDw7k93cGBCqAC+kkp8l1FPg75fhXhzRwN3EBA7N9ovjVouXTzoVx4EWwE1YqN43zqvCPgOIjbgntpNHQa1MwEEv+wN8S...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 13:46:45,796 [ZVE01-202][Thread:212][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=109&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.205.195.163
+	Port: 41151
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)
+	ViewState: ghcH4tAxGUYitiD/WyBjB30RnImgMIXJimnOsUFO0pAbjkUf8MBHOojf8HuWYmsZpgLtpgy9o+mZ0xU7hOf3PnkF4gIsJy/4WROThaIYscCw3OIgSKDg2Kz0KhHw7b+ZkDjlbWR2fVxb+5kyvb5wxgmptM7cww57Yq0Qm7gslcmlUN7NtE90K4rgZ+1eJJPRHEi3vEHnL2CQ1Emu9z7MjLkGYaQPiDghERMD0tzTAq/O1uChx9f32CyJ3sNhh9Rx7SvI/2YlOg7BSeyL8LZP3mZHZyVhrA/4uaRZGnqrxHHr79sFFdmJ1oZSPo8piEBet5i4j33Ajq2rp+xaxKfV3RVd/L55hAvrwqf7U46bpwuol77XcK9oKufN0BAwSbyRyBgZgsW54UaJSb4lDSQh3YZpLFTfb9boX7BA8lvTKnLBjV553wEiImtE07zMGsLF830B2U/hWI7TwqfGFZRc263938ygc0tudPZQaauM7xIzu2TVOWH01QixHevBdnk7/95iQDZcjNKG2GrpmOxpElZ6Ehd/l1V8jHJtFLwdww4SHgt4Ew9bD97clEbh8I2Ovn24GrbJjIZMhTLa1GR5vOJ8OOOie8I3rd3GFXfhsgyIXaWFspKDSGtge8M7nll+66KLoOXTnqcSOt4cbc999kKxABv07Dl1xz8siT/YFr865OpxHqwNDmTBy8RXH/iCaJ64naWoDw7k93cGBCqAC+kkp8l1FPg75fhXhzRwN3EBA7N9ovjVouXTzoVx4EWwE1YqN43zqvCPgOIjbgntpNHQa1MwEEv+wN8S...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 13:47:30,864 [ZVE01-202][Thread:210][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.205.195.163
+	Port: 41163
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)
+	ViewState: ghcH4tAxGUYitiD/WyBjB30RnImgMIXJimnOsUFO0pAbjkUf8MBHOojf8HuWYmsZpgLtpgy9o+mZ0xU7hOf3PnkF4gIsJy/4WROThaIYscCw3OIgSKDg2Kz0KhHw7b+ZkDjlbWR2fVxb+5kyvb5wxgmptM7cww57Yq0Qm7gslcmlUN7NtE90K4rgZ+1eJJPRHEi3vEHnL2CQ1Emu9z7MjLkGYaQPiDghERMD0tzTAq/O1uChx9f32CyJ3sNhh9Rx7SvI/2YlOg7BSeyL8LZP3mZHZyVhrA/4uaRZGnqrxHHr79sFFdmJ1oZSPo8piEBet5i4j33Ajq2rp+xaxKfV3RVd/L55hAvrwqf7U46bpwuol77XcK9oKufN0BAwSbyRyBgZgsW54UaJSb4lDSQh3YZpLFTfb9boX7BA8lvTKnLBjV553wEiImtE07zMGsLF830B2U/hWI7TwqfGFZRc263938ygc0tudPZQaauM7xIzu2TVOWH01QixHevBdnk7/95iQDZcjNKG2GrpmOxpElZ6Ehd/l1V8jHJtFLwdww4SHgt4Ew9bD97clEbh8I2Ovn24GrbJjIZMhTLa1GR5vOJ8OOOie8I3rd3GFXfhsgyIXaWFspKDSGtge8M7nll+66KLoOXTnqcSOt4cbc999kKxABv07Dl1xz8siT/YFr865OpxHqwNDmTBy8RXH/iCaJ64naWoDw7k93cGBCqAC+kkp8l1FPg75fhXhzRwN3EBA7N9ovjVouXTzoVx4EWwE1YqN43zqvCPgOIjbgntpNHQa1MwEEv+wN8S...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 13:47:30,864 [ZVE01-202][Thread:210][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=109&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.205.195.163
+	Port: 41163
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)
+	ViewState: ghcH4tAxGUYitiD/WyBjB30RnImgMIXJimnOsUFO0pAbjkUf8MBHOojf8HuWYmsZpgLtpgy9o+mZ0xU7hOf3PnkF4gIsJy/4WROThaIYscCw3OIgSKDg2Kz0KhHw7b+ZkDjlbWR2fVxb+5kyvb5wxgmptM7cww57Yq0Qm7gslcmlUN7NtE90K4rgZ+1eJJPRHEi3vEHnL2CQ1Emu9z7MjLkGYaQPiDghERMD0tzTAq/O1uChx9f32CyJ3sNhh9Rx7SvI/2YlOg7BSeyL8LZP3mZHZyVhrA/4uaRZGnqrxHHr79sFFdmJ1oZSPo8piEBet5i4j33Ajq2rp+xaxKfV3RVd/L55hAvrwqf7U46bpwuol77XcK9oKufN0BAwSbyRyBgZgsW54UaJSb4lDSQh3YZpLFTfb9boX7BA8lvTKnLBjV553wEiImtE07zMGsLF830B2U/hWI7TwqfGFZRc263938ygc0tudPZQaauM7xIzu2TVOWH01QixHevBdnk7/95iQDZcjNKG2GrpmOxpElZ6Ehd/l1V8jHJtFLwdww4SHgt4Ew9bD97clEbh8I2Ovn24GrbJjIZMhTLa1GR5vOJ8OOOie8I3rd3GFXfhsgyIXaWFspKDSGtge8M7nll+66KLoOXTnqcSOt4cbc999kKxABv07Dl1xz8siT/YFr865OpxHqwNDmTBy8RXH/iCaJ64naWoDw7k93cGBCqAC+kkp8l1FPg75fhXhzRwN3EBA7N9ovjVouXTzoVx4EWwE1YqN43zqvCPgOIjbgntpNHQa1MwEEv+wN8S...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 13:47:36,356 [ZVE01-202][Thread:212][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.205.195.163
+	Port: 41166
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)
+	ViewState: ghcH4tAxGUYitiD/WyBjB30RnImgMIXJimnOsUFO0pAbjkUf8MBHOojf8HuWYmsZpgLtpgy9o+mZ0xU7hOf3PnkF4gIsJy/4WROThaIYscCw3OIgSKDg2Kz0KhHw7b+ZkDjlbWR2fVxb+5kyvb5wxgmptM7cww57Yq0Qm7gslcmlUN7NtE90K4rgZ+1eJJPRHEi3vEHnL2CQ1Emu9z7MjLkGYaQPiDghERMD0tzTAq/O1uChx9f32CyJ3sNhh9Rx7SvI/2YlOg7BSeyL8LZP3mZHZyVhrA/4uaRZGnqrxHHr79sFFdmJ1oZSPo8piEBet5i4j33Ajq2rp+xaxKfV3RVd/L55hAvrwqf7U46bpwuol77XcK9oKufN0BAwSbyRyBgZgsW54UaJSb4lDSQh3YZpLFTfb9boX7BA8lvTKnLBjV553wEiImtE07zMGsLF830B2U/hWI7TwqfGFZRc263938ygc0tudPZQaauM7xIzu2TVOWH01QixHevBdnk7/95iQDZcjNKG2GrpmOxpElZ6Ehd/l1V8jHJtFLwdww4SHgt4Ew9bD97clEbh8I2Ovn24GrbJjIZMhTLa1GR5vOJ8OOOie8I3rd3GFXfhsgyIXaWFspKDSGtge8M7nll+66KLoOXTnqcSOt4cbc999kKxABv07Dl1xz8siT/YFr865OpxHqwNDmTBy8RXH/iCaJ64naWoDw7k93cGBCqAC+kkp8l1FPg75fhXhzRwN3EBA7N9ovjVouXTzoVx4EWwE1YqN43zqvCPgOIjbgntpNHQa1MwEEv+wN8S...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 13:47:36,356 [ZVE01-202][Thread:212][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=109&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.205.195.163
+	Port: 41166
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)
+	ViewState: ghcH4tAxGUYitiD/WyBjB30RnImgMIXJimnOsUFO0pAbjkUf8MBHOojf8HuWYmsZpgLtpgy9o+mZ0xU7hOf3PnkF4gIsJy/4WROThaIYscCw3OIgSKDg2Kz0KhHw7b+ZkDjlbWR2fVxb+5kyvb5wxgmptM7cww57Yq0Qm7gslcmlUN7NtE90K4rgZ+1eJJPRHEi3vEHnL2CQ1Emu9z7MjLkGYaQPiDghERMD0tzTAq/O1uChx9f32CyJ3sNhh9Rx7SvI/2YlOg7BSeyL8LZP3mZHZyVhrA/4uaRZGnqrxHHr79sFFdmJ1oZSPo8piEBet5i4j33Ajq2rp+xaxKfV3RVd/L55hAvrwqf7U46bpwuol77XcK9oKufN0BAwSbyRyBgZgsW54UaJSb4lDSQh3YZpLFTfb9boX7BA8lvTKnLBjV553wEiImtE07zMGsLF830B2U/hWI7TwqfGFZRc263938ygc0tudPZQaauM7xIzu2TVOWH01QixHevBdnk7/95iQDZcjNKG2GrpmOxpElZ6Ehd/l1V8jHJtFLwdww4SHgt4Ew9bD97clEbh8I2Ovn24GrbJjIZMhTLa1GR5vOJ8OOOie8I3rd3GFXfhsgyIXaWFspKDSGtge8M7nll+66KLoOXTnqcSOt4cbc999kKxABv07Dl1xz8siT/YFr865OpxHqwNDmTBy8RXH/iCaJ64naWoDw7k93cGBCqAC+kkp8l1FPg75fhXhzRwN3EBA7N9ovjVouXTzoVx4EWwE1YqN43zqvCPgOIjbgntpNHQa1MwEEv+wN8S...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 13:47:43,781 [ZVE01-202][Thread:254][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.205.195.163
+	Port: 41167
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)
+	ViewState: ghcH4tAxGUYitiD/WyBjB30RnImgMIXJimnOsUFO0pAbjkUf8MBHOojf8HuWYmsZpgLtpgy9o+mZ0xU7hOf3PnkF4gIsJy/4WROThaIYscCw3OIgSKDg2Kz0KhHw7b+ZkDjlbWR2fVxb+5kyvb5wxgmptM7cww57Yq0Qm7gslcmlUN7NtE90K4rgZ+1eJJPRHEi3vEHnL2CQ1Emu9z7MjLkGYaQPiDghERMD0tzTAq/O1uChx9f32CyJ3sNhh9Rx7SvI/2YlOg7BSeyL8LZP3mZHZyVhrA/4uaRZGnqrxHHr79sFFdmJ1oZSPo8piEBet5i4j33Ajq2rp+xaxKfV3RVd/L55hAvrwqf7U46bpwuol77XcK9oKufN0BAwSbyRyBgZgsW54UaJSb4lDSQh3YZpLFTfb9boX7BA8lvTKnLBjV553wEiImtE07zMGsLF830B2U/hWI7TwqfGFZRc263938ygc0tudPZQaauM7xIzu2TVOWH01QixHevBdnk7/95iQDZcjNKG2GrpmOxpElZ6Ehd/l1V8jHJtFLwdww4SHgt4Ew9bD97clEbh8I2Ovn24GrbJjIZMhTLa1GR5vOJ8OOOie8I3rd3GFXfhsgyIXaWFspKDSGtge8M7nll+66KLoOXTnqcSOt4cbc999kKxABv07Dl1xz8siT/YFr865OpxHqwNDmTBy8RXH/iCaJ64naWoDw7k93cGBCqAC+kkp8l1FPg75fhXhzRwN3EBA7N9ovjVouXTzoVx4EWwE1YqN43zqvCPgOIjbgntpNHQa1MwEEv+wN8S...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 13:47:43,781 [ZVE01-202][Thread:254][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=109&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.205.195.163
+	Port: 41167
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)
+	ViewState: ghcH4tAxGUYitiD/WyBjB30RnImgMIXJimnOsUFO0pAbjkUf8MBHOojf8HuWYmsZpgLtpgy9o+mZ0xU7hOf3PnkF4gIsJy/4WROThaIYscCw3OIgSKDg2Kz0KhHw7b+ZkDjlbWR2fVxb+5kyvb5wxgmptM7cww57Yq0Qm7gslcmlUN7NtE90K4rgZ+1eJJPRHEi3vEHnL2CQ1Emu9z7MjLkGYaQPiDghERMD0tzTAq/O1uChx9f32CyJ3sNhh9Rx7SvI/2YlOg7BSeyL8LZP3mZHZyVhrA/4uaRZGnqrxHHr79sFFdmJ1oZSPo8piEBet5i4j33Ajq2rp+xaxKfV3RVd/L55hAvrwqf7U46bpwuol77XcK9oKufN0BAwSbyRyBgZgsW54UaJSb4lDSQh3YZpLFTfb9boX7BA8lvTKnLBjV553wEiImtE07zMGsLF830B2U/hWI7TwqfGFZRc263938ygc0tudPZQaauM7xIzu2TVOWH01QixHevBdnk7/95iQDZcjNKG2GrpmOxpElZ6Ehd/l1V8jHJtFLwdww4SHgt4Ew9bD97clEbh8I2Ovn24GrbJjIZMhTLa1GR5vOJ8OOOie8I3rd3GFXfhsgyIXaWFspKDSGtge8M7nll+66KLoOXTnqcSOt4cbc999kKxABv07Dl1xz8siT/YFr865OpxHqwNDmTBy8RXH/iCaJ64naWoDw7k93cGBCqAC+kkp8l1FPg75fhXhzRwN3EBA7N9ovjVouXTzoVx4EWwE1YqN43zqvCPgOIjbgntpNHQa1MwEEv+wN8S...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 13:51:49,668 [ZVE01-202][Thread:215][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.82.150.170
+	Port: 42498
+	Referer: http://www.h-connexum.com/PORTAL/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.62 Safari/537.36
+	ViewState: bFS8Dosjvc1ftYss4MnHZp8H23BK3vmP/ZzCoEU2tkaI8aqkbQEC2Lc7xHRkPRdgrrVhhNHgVrrkyrmDTYUpXnAPPKKLPhJEFNjOiUeoJjmwKnTjqJnvqElFkuEZZ9zHC/0KN6m87q/AFUZk00D8RMlLhiMdzARMjuZVvyFILik/Im/VwM40muhjeaqJ7KK7zz0f23DWlfmGHEBZfIHKYbgF1KGdWXARBy0X1JWZ1JAuoKDKzJNREZ/QeZFkvmnN10i/7hrNXxlqLAKJJjnRKAz24IY1YIiegmMBrGhQ08H5i0vAEVvADq+BpihoKBLMQiJFiDITG0LZmc9+qzj8R2q4hkPJ4IT30PeOAanKVMls3VsTGk0jkYLlP9kn1jdoyCENgNdG4LcRRHLgeSQfmzDiHZkrMjuv0pZEd9YYvUHbQ8Oc3g2Cnpvv2lsrrAOce7CGbEtoRFEglaKpWtRQcencIPvTlMXuTnAvDvfYJXBGDabKi4r5J12ItKEqizxb5oj8EbGWesRVLvL6xVcXZRBp5AKJ8SRzykCLKmftlxjwgnKVLqhcK/D/MywyAbHh54tZqNAC+eas6qUCUEXp3aQ20cnPYz7v6f5tTCtXYENnaoXhRnBM/cu7DTfUdv4Kvq3PLGbPsQBLY26oivP5L1267CURaliX+oSsRXF4x1hl5ItyxR/i7RXkqUt6t7+PvhZlo+vXZrsULzCYxHFYwG8OTUwkpxXYxW9JxziI+RqaeI1...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 13:51:49,684 [ZVE01-202][Thread:215][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.82.150.170
+	Port: 42498
+	Referer: http://www.h-connexum.com/PORTAL/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.62 Safari/537.36
+	ViewState: bFS8Dosjvc1ftYss4MnHZp8H23BK3vmP/ZzCoEU2tkaI8aqkbQEC2Lc7xHRkPRdgrrVhhNHgVrrkyrmDTYUpXnAPPKKLPhJEFNjOiUeoJjmwKnTjqJnvqElFkuEZZ9zHC/0KN6m87q/AFUZk00D8RMlLhiMdzARMjuZVvyFILik/Im/VwM40muhjeaqJ7KK7zz0f23DWlfmGHEBZfIHKYbgF1KGdWXARBy0X1JWZ1JAuoKDKzJNREZ/QeZFkvmnN10i/7hrNXxlqLAKJJjnRKAz24IY1YIiegmMBrGhQ08H5i0vAEVvADq+BpihoKBLMQiJFiDITG0LZmc9+qzj8R2q4hkPJ4IT30PeOAanKVMls3VsTGk0jkYLlP9kn1jdoyCENgNdG4LcRRHLgeSQfmzDiHZkrMjuv0pZEd9YYvUHbQ8Oc3g2Cnpvv2lsrrAOce7CGbEtoRFEglaKpWtRQcencIPvTlMXuTnAvDvfYJXBGDabKi4r5J12ItKEqizxb5oj8EbGWesRVLvL6xVcXZRBp5AKJ8SRzykCLKmftlxjwgnKVLqhcK/D/MywyAbHh54tZqNAC+eas6qUCUEXp3aQ20cnPYz7v6f5tTCtXYENnaoXhRnBM/cu7DTfUdv4Kvq3PLGbPsQBLY26oivP5L1267CURaliX+oSsRXF4x1hl5ItyxR/i7RXkqUt6t7+PvhZlo+vXZrsULzCYxHFYwG8OTUwkpxXYxW9JxziI+RqaeI1...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 13:55:28,786 [ZVE01-202][Thread:254][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 201.243.155.224
+	Port: 2467
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:23.0) Gecko/20100101 Firefox/23.0
+	ViewState: HewT8OO3EjYch/4dSKz6tJ9e9vMFNfMQOxdUmoaacPlT1aHj4ed1mKZ7606aUt7Ys7e1+du+vR0vP2tIBiAHwSoTK8afohf7zufxdqYkBqk+OXsQWbvj++Ax/o8L3Hj/mXD+/Mhg9EqHUPyWgNfxGb6wRrwnhBjjP/w/2TMeYAv8/2uPk7rpF4MMarIDqR0ECfAmU/XSpO9ULUQKkbTlrxjNohFD+1omt54iLg26JL3Oat0nPBp38N0f+QSxXVc1/rZVDSj9duZVqlN2O6cCkqZ02l55K28HzRj8Q5b/tPEdZ2zu8LzhZA5X0lEdySm2Vj5a6P96XRWQjkF9483XIpsQz/BZj2Vs4nHUiQKOO2tISJ+78fBpf/YexXXEffDUnl/lNoTAetD4UltOp/R5FiPAQLGv0hcuX00jXztgrjtTN92IZ64Mm7f/sUi9tt/YVB4fZV21ACO88NJtwP6OWF/gr3YcgHOfNj4TPV9kv1gVPvCz93bkFneDGSIYhM/ceQjiWNGyM9nPk6nLpKSFzJ2/zVsbG/aBboLTCd2LuMrvP8b3EV63ucMN9rNFNiZEIjvib3VbVVu8nGfpce+MHmH/I9JApaLfwLmyB7E3cYzXjHFtLeFhhSFk+dH2o9irARtxl3lLmp0oXqROBrD36Hlg0uNKGTYsrGWEkTduhD8GYBZPnwMYMkbGTJAn4qwi/nmfa737J0H82vspYJXjh25SRMRDeWoFWoaKAyekxbWba2bHCWX4ZZmsW44ye2Ei0esLyD4UDnqVLNEa5kBxQuJZHXz39HLwfXT4+nOy1fU...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 13:55:28,786 [ZVE01-202][Thread:254][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=109&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 201.243.155.224
+	Port: 2467
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:23.0) Gecko/20100101 Firefox/23.0
+	ViewState: HewT8OO3EjYch/4dSKz6tJ9e9vMFNfMQOxdUmoaacPlT1aHj4ed1mKZ7606aUt7Ys7e1+du+vR0vP2tIBiAHwSoTK8afohf7zufxdqYkBqk+OXsQWbvj++Ax/o8L3Hj/mXD+/Mhg9EqHUPyWgNfxGb6wRrwnhBjjP/w/2TMeYAv8/2uPk7rpF4MMarIDqR0ECfAmU/XSpO9ULUQKkbTlrxjNohFD+1omt54iLg26JL3Oat0nPBp38N0f+QSxXVc1/rZVDSj9duZVqlN2O6cCkqZ02l55K28HzRj8Q5b/tPEdZ2zu8LzhZA5X0lEdySm2Vj5a6P96XRWQjkF9483XIpsQz/BZj2Vs4nHUiQKOO2tISJ+78fBpf/YexXXEffDUnl/lNoTAetD4UltOp/R5FiPAQLGv0hcuX00jXztgrjtTN92IZ64Mm7f/sUi9tt/YVB4fZV21ACO88NJtwP6OWF/gr3YcgHOfNj4TPV9kv1gVPvCz93bkFneDGSIYhM/ceQjiWNGyM9nPk6nLpKSFzJ2/zVsbG/aBboLTCd2LuMrvP8b3EV63ucMN9rNFNiZEIjvib3VbVVu8nGfpce+MHmH/I9JApaLfwLmyB7E3cYzXjHFtLeFhhSFk+dH2o9irARtxl3lLmp0oXqROBrD36Hlg0uNKGTYsrGWEkTduhD8GYBZPnwMYMkbGTJAn4qwi/nmfa737J0H82vspYJXjh25SRMRDeWoFWoaKAyekxbWba2bHCWX4ZZmsW44ye2Ei0esLyD4UDnqVLNEa5kBxQuJZHXz39HLwfXT4+nOy1fU...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 14:37:44,098 [ZVE01-202][Thread:7][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.199.88.227
+	Port: 49245
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.2) Gecko/20100101 Firefox/10.0.2
+	ViewState: yCNBQvuy9BC5aT0ScJ41dONaEDlfQiSQkNs5fK+Ofk++TW7OsQhMR5uAtWwiXzciVZF2SybQlvj/IdVgp8SJaPfAu8Bv7kk/X9p1eQibRGs8z9FXnq1fQz6tvXTDRs4DoncxkZ2osXH+UBHzUTTZmwmQ1MhUDC4QOSSEApio9GCFw9MzGb8Sg9JGKTxkBSbsT8HLQE5U+M93NmEGcfxoNBsc7zFeA2ZVky9jB8U8/rGrTpl2Ij+DlH63jTgtSpjhzdw9PTX1Evm0OsAUYpBWlFEw6dPAHKLAUrxcD/6bsdp2FYOlhUMF/xhd6YH5i57XSb8YUPs8HgOkotmo+OOWIZbh4J7fp2KgwKlNd6/9Us015uveU7Wm8fpJrxaa+garxgz5uNGztTy8n+WPlXzcbEr+wwhpb8bhbO3jYyDJNOML3D4SQvFt2sz4aJbYiGZr+fdwy3nfOhjeId2efzSR9kLvf7znQfaw9NCdR+FPHGnv5twMJmjv2RYGfJ4lFMWsDgqPI0Y6gct6QLyxX/Loo7yF1REEK3oLUVU81Tp1QPIoM51XqVQ488HqZ/VuyU8RQI52ecZnS8qN+zPCK+gkD847UwPWXiO26F/IHcMNYf94Pgdqd8HuIJ6v+K6SfG9tI7FY/x+x0ofmfdVHe/NSSsRFNal1mWqW/IIpqT0deTN+wCGVR6gUXN9KW0YGbb29XUcfRGdnuuu7xs0mk2koeQyHCgwq45OzeVT+OtXCc1Y3zO96xiCfUi4FEgrThFkkzWla8T2stwulZ5JTNHLiNCL9W6S05tlq...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 14:37:44,176 [ZVE01-202][Thread:7][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.199.88.227
+	Port: 49245
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.2) Gecko/20100101 Firefox/10.0.2
+	ViewState: yCNBQvuy9BC5aT0ScJ41dONaEDlfQiSQkNs5fK+Ofk++TW7OsQhMR5uAtWwiXzciVZF2SybQlvj/IdVgp8SJaPfAu8Bv7kk/X9p1eQibRGs8z9FXnq1fQz6tvXTDRs4DoncxkZ2osXH+UBHzUTTZmwmQ1MhUDC4QOSSEApio9GCFw9MzGb8Sg9JGKTxkBSbsT8HLQE5U+M93NmEGcfxoNBsc7zFeA2ZVky9jB8U8/rGrTpl2Ij+DlH63jTgtSpjhzdw9PTX1Evm0OsAUYpBWlFEw6dPAHKLAUrxcD/6bsdp2FYOlhUMF/xhd6YH5i57XSb8YUPs8HgOkotmo+OOWIZbh4J7fp2KgwKlNd6/9Us015uveU7Wm8fpJrxaa+garxgz5uNGztTy8n+WPlXzcbEr+wwhpb8bhbO3jYyDJNOML3D4SQvFt2sz4aJbYiGZr+fdwy3nfOhjeId2efzSR9kLvf7znQfaw9NCdR+FPHGnv5twMJmjv2RYGfJ4lFMWsDgqPI0Y6gct6QLyxX/Loo7yF1REEK3oLUVU81Tp1QPIoM51XqVQ488HqZ/VuyU8RQI52ecZnS8qN+zPCK+gkD847UwPWXiO26F/IHcMNYf94Pgdqd8HuIJ6v+K6SfG9tI7FY/x+x0ofmfdVHe/NSSsRFNal1mWqW/IIpqT0deTN+wCGVR6gUXN9KW0YGbb29XUcfRGdnuuu7xs0mk2koeQyHCgwq45OzeVT+OtXCc1Y3zO96xiCfUi4FEgrThFkkzWla8T2stwulZ5JTNHLiNCL9W6S05tlq...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 15:20:55,305 [ZVE01-202][Thread:251][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-09-02 15:32:35,901 [ZVE01-202][Thread:226][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.15.174.154
+	Port: 46977
+	Referer: http://www.h-connexum.com/portal/Inicio.aspx
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.62 Safari/537.36
+	ViewState: KklWeXMgNkz1SlMyF1XH+q9xh2x9iMJaPsEEv74IgkKOUWeSl5bWJB95D3owuBOVft1IOpKbSwS2HAJiGsCKR+wbySRDzGnWXeAP00TqXVo+SOQHE0m14XSpHEH8i2WW1lRuudbx9qoVRkWgzZ4yE7dI0RlEpj+te6qbgkDaTbLszj1Bx8DTZVnXVVyPluzO9+5Qlr5vrT0VquQPU4vZlJv+xPxxcgMkCTmpFmXJ/9SgTmQ81CNnCR9QQw/ROdWOU8Wd3WlhO35HnyjxfrY1zrzBTAoeCU5uXwxVhVYYvVTNq66lhwVOKXjFWoCZ0Tudk98o1qAjP64ZmrYUrEZ7Je322ulPTrumcrA90LjiJGEQlAu7ixvMwb/p6mCITuZCWB7Vagp6LutlnQpPNnjWQf1Z9yQgpZmQLr9Hq6GiPFeWQNKoVpFKadKLYL43LhpCEEFm3zyry65clECw38OptlwMD0p1HGJjMwen+junWNggF5fWM5QKRETsb380VJZNxuViF4Rc6a49UO/93tG9Yfz26cxyl3ynmRTQQje0ubp4WsCBxMNEDN+vUeSeMUbw39l6zQgOtlgDzT6WLQCrDuG2sWZwYCNWeDik+vE7obfbExgE97JVBceZ+8RtIrjFcJ3FqSPBp4l6E6OgyJbwRWt3giL/MZI0n95J5+vLR38D+ojULucngqF7iq8FS2FtQPM0jbBvoUTdpBZ8RxRdFVy3tug92n9eN9ATirQHkcn9zIzXDZg7JvDBg6Ba...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 15:32:35,916 [ZVE01-202][Thread:226][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=109&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.15.174.154
+	Port: 46977
+	Referer: http://www.h-connexum.com/portal/Inicio.aspx
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.62 Safari/537.36
+	ViewState: KklWeXMgNkz1SlMyF1XH+q9xh2x9iMJaPsEEv74IgkKOUWeSl5bWJB95D3owuBOVft1IOpKbSwS2HAJiGsCKR+wbySRDzGnWXeAP00TqXVo+SOQHE0m14XSpHEH8i2WW1lRuudbx9qoVRkWgzZ4yE7dI0RlEpj+te6qbgkDaTbLszj1Bx8DTZVnXVVyPluzO9+5Qlr5vrT0VquQPU4vZlJv+xPxxcgMkCTmpFmXJ/9SgTmQ81CNnCR9QQw/ROdWOU8Wd3WlhO35HnyjxfrY1zrzBTAoeCU5uXwxVhVYYvVTNq66lhwVOKXjFWoCZ0Tudk98o1qAjP64ZmrYUrEZ7Je322ulPTrumcrA90LjiJGEQlAu7ixvMwb/p6mCITuZCWB7Vagp6LutlnQpPNnjWQf1Z9yQgpZmQLr9Hq6GiPFeWQNKoVpFKadKLYL43LhpCEEFm3zyry65clECw38OptlwMD0p1HGJjMwen+junWNggF5fWM5QKRETsb380VJZNxuViF4Rc6a49UO/93tG9Yfz26cxyl3ynmRTQQje0ubp4WsCBxMNEDN+vUeSeMUbw39l6zQgOtlgDzT6WLQCrDuG2sWZwYCNWeDik+vE7obfbExgE97JVBceZ+8RtIrjFcJ3FqSPBp4l6E6OgyJbwRWt3giL/MZI0n95J5+vLR38D+ojULucngqF7iq8FS2FtQPM0jbBvoUTdpBZ8RxRdFVy3tug92n9eN9ATirQHkcn9zIzXDZg7JvDBg6Ba...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 15:32:57,694 [ZVE01-202][Thread:224][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): El cliente está desconectado. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.15.174.154
+	Port: 47425
+	Referer: http://www.h-connexum.com/portal/Inicio.aspx
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.62 Safari/537.36
+	ViewState: KklWeXMgNkz1SlMyF1XH+q9xh2x9iMJaPsEEv74IgkKOUWeSl5bWJB95D3owuBOVft1IOpKbSwS2HAJiGsCKR+wbySRDzGnWXeAP00TqXVo+SOQHE0m14XSpHEH8i2WW1lRuudbx9qoVRkWgzZ4yE7dI0RlEpj+te6qbgkDaTbLszj1Bx8DTZVnXVVyPluzO9+5Qlr5vrT0VquQPU4vZlJv+xPxxcgMkCTmpFmXJ/9SgTmQ81CNnCR9QQw/ROdWOU8Wd3WlhO35HnyjxfrY1zrzBTAoeCU5uXwxVhVYYvVTNq66lhwVOKXjFWoCZ0Tudk98o1qAjP64ZmrYUrEZ7Je322ulPTrumcrA90LjiJGEQlAu7ixvMwb/p6mCITuZCWB7Vagp6LutlnQpPNnjWQf1Z9yQgpZmQLr9Hq6GiPFeWQNKoVpFKadKLYL43LhpCEEFm3zyry65clECw38OptlwMD0p1HGJjMwen+junWNggF5fWM5QKRETsb380VJZNxuViF4Rc6a49UO/93tG9Yfz26cxyl3ynmRTQQje0ubp4WsCBxMNEDN+vUeSeMUbw39l6zQgOtlgDzT6WLQCrDuG2sWZwYCNWeDik+vE7obfbExgE97JVBceZ+8RtIrjFcJ3FqSPBp4l6E6OgyJbwRWt3giL/MZI0n95J5+vLR38D+ojULucngqF7iq8FS2FtQPM0jbBvoUTdpBZ8RxRdFVy3tug92n9eN9ATirQHkcn9zIzXDZg7JvDBg6Ba...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 15:32:57,694 [ZVE01-202][Thread:224][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=109&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): El cliente está desconectado. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.15.174.154
+	Port: 47425
+	Referer: http://www.h-connexum.com/portal/Inicio.aspx
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.62 Safari/537.36
+	ViewState: KklWeXMgNkz1SlMyF1XH+q9xh2x9iMJaPsEEv74IgkKOUWeSl5bWJB95D3owuBOVft1IOpKbSwS2HAJiGsCKR+wbySRDzGnWXeAP00TqXVo+SOQHE0m14XSpHEH8i2WW1lRuudbx9qoVRkWgzZ4yE7dI0RlEpj+te6qbgkDaTbLszj1Bx8DTZVnXVVyPluzO9+5Qlr5vrT0VquQPU4vZlJv+xPxxcgMkCTmpFmXJ/9SgTmQ81CNnCR9QQw/ROdWOU8Wd3WlhO35HnyjxfrY1zrzBTAoeCU5uXwxVhVYYvVTNq66lhwVOKXjFWoCZ0Tudk98o1qAjP64ZmrYUrEZ7Je322ulPTrumcrA90LjiJGEQlAu7ixvMwb/p6mCITuZCWB7Vagp6LutlnQpPNnjWQf1Z9yQgpZmQLr9Hq6GiPFeWQNKoVpFKadKLYL43LhpCEEFm3zyry65clECw38OptlwMD0p1HGJjMwen+junWNggF5fWM5QKRETsb380VJZNxuViF4Rc6a49UO/93tG9Yfz26cxyl3ynmRTQQje0ubp4WsCBxMNEDN+vUeSeMUbw39l6zQgOtlgDzT6WLQCrDuG2sWZwYCNWeDik+vE7obfbExgE97JVBceZ+8RtIrjFcJ3FqSPBp4l6E6OgyJbwRWt3giL/MZI0n95J5+vLR38D+ojULucngqF7iq8FS2FtQPM0jbBvoUTdpBZ8RxRdFVy3tug92n9eN9ATirQHkcn9zIzXDZg7JvDBg6Ba...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 15:35:40,839 [ZVE01-202][Thread:251][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 10.0.33.65
+	Port: 58021
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0
+	ViewState: xvGD2z4aqdbNKCLprmnI1MxqWYFIY1K0HGuFllMBsC3gxajUaEph3UrGdmVCjY/vOrupwNyBhmuLfeCCAj6GgWU+YbIseThf7lxV9/glPjnuojC9GfunSLnxSxEMUxWmcm5g95h/pJH0bvnNMOWC27m7PLwdF7igbJh0qa2BxKGmEHKomRBCDorusdsFYaNtPhmypwYomNXWmVdmfvaZupRY+02HQtUfi0gLzlxiEgzWlOMwp8fQugfIca/6rani0b8cBgIE3Te1SEPMeCr1Bsn6+TN1x0fTYcbs+4KYnhyJAIsecnCatSWnixwxeUHkcLAe5wbQkprs56e46iZBEcv5uX/uBtkwWMBJD/aYguy/t7pin5MgwXJBtuFkw6RbCls4woWsvmnkL+CfrRTJ4D52QcFEN3FNqT8LHrlNhrvRnnKwfLRUIlq7gNkVXfwO+h2vtACNvtNNXeEcnFj42WBGapLbc3pg0CwL19EMXd5UGJwzFdBGET06ZZ56YUorT/XkUh9ED5oAjqwI3qNHG5ShaUF5uMMF2tW6yerv6n3+ykU/nNk4zg5ZPo43Vorgez1bLfbheha/uS/dzlMszUgVX9wvGVTt9RqfF3sPZkyrJosQeoEOnVSh2re4jqtKEf4NDzoEHohsLULxwl6k9/m+HEYV01OsFTk5KNKvUBQ5bN4xN4Aohs+E8KyIDYSkjg98FqqfhBPPWTUbrtrK2FsMBf+I04mvos8Xq2Hb2cki0zneaOtd6YgjotO5UfB7u5DP9kW64OdDbfghbUVPCHiqLEjo1F3R2DunlZE1enfmF9L...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 15:35:40,839 [ZVE01-202][Thread:251][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=109&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 10.0.33.65
+	Port: 58021
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:23.0) Gecko/20100101 Firefox/23.0
+	ViewState: xvGD2z4aqdbNKCLprmnI1MxqWYFIY1K0HGuFllMBsC3gxajUaEph3UrGdmVCjY/vOrupwNyBhmuLfeCCAj6GgWU+YbIseThf7lxV9/glPjnuojC9GfunSLnxSxEMUxWmcm5g95h/pJH0bvnNMOWC27m7PLwdF7igbJh0qa2BxKGmEHKomRBCDorusdsFYaNtPhmypwYomNXWmVdmfvaZupRY+02HQtUfi0gLzlxiEgzWlOMwp8fQugfIca/6rani0b8cBgIE3Te1SEPMeCr1Bsn6+TN1x0fTYcbs+4KYnhyJAIsecnCatSWnixwxeUHkcLAe5wbQkprs56e46iZBEcv5uX/uBtkwWMBJD/aYguy/t7pin5MgwXJBtuFkw6RbCls4woWsvmnkL+CfrRTJ4D52QcFEN3FNqT8LHrlNhrvRnnKwfLRUIlq7gNkVXfwO+h2vtACNvtNNXeEcnFj42WBGapLbc3pg0CwL19EMXd5UGJwzFdBGET06ZZ56YUorT/XkUh9ED5oAjqwI3qNHG5ShaUF5uMMF2tW6yerv6n3+ykU/nNk4zg5ZPo43Vorgez1bLfbheha/uS/dzlMszUgVX9wvGVTt9RqfF3sPZkyrJosQeoEOnVSh2re4jqtKEf4NDzoEHohsLULxwl6k9/m+HEYV01OsFTk5KNKvUBQ5bN4xN4Aohs+E8KyIDYSkjg98FqqfhBPPWTUbrtrK2FsMBf+I04mvos8Xq2Hb2cki0zneaOtd6YgjotO5UfB7u5DP9kW64OdDbfghbUVPCHiqLEjo1F3R2DunlZE1enfmF9L...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 15:54:16,551 [ZVE01-202][Thread:233][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): El cliente está desconectado. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 201.242.42.237
+	Port: 47232
+	Referer: http://www.h-connexum.com/portal/
+	Path: /portal/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36
+	ViewState: SJ1H/9928HLzl9edfTpIKNJwp7/tDBw87GJ6lLgh4eeRftiBdHndXZQGRTXVhn14EMY6YBVfI8Sf7Jfqv0OhX8RAUUJv1BB3AxznxVKDajeYPJNAOgdsNIcJp7EzfrHMPB4aUhx1yjTpOGBrHQCPhASe6mS0vfFqtc3njQ642Oa8+MovmQ+ynTZjyt4h1LtrsDCFbwQO12YUeSpBdVtF7YFIlGrfpH/7Cy2d5jof5doAJBb4B0W4fwEVwoXdK32FZA8K5E+uUB3iTciQ5Vi0LEHxVe8Kfstd+8Qs/j88KJ5dHv9xbpLNofPIHZzAY8Qfg1ccidNcLgStrEF5SxIoqmC3H2P8NNHSGiyC0vX+IH/BdOZECWFpFMrW7yeSIro0Z8ANGT/UIcmUx1B/nb7qdiX5mqunyFxmdgZIW439+abzdvs/j5RZXP0SXpdYcQkYkSbGuLKHl2SBOEvaUV9II4Cq4tH+V15iKyZMa7zdyaNtEuzjtf8xYWc7zdyoLdSZ81l9aWhOqBStExceKVcb+cLRcpLFwwYqSposMZT/+OtT8l/NXzAwqQDf6Zyg6OsgtxbVin/YV26ifFoydF2HiXflwLwM7ZfpnnciSl/oi1PED66KH2zcg60ZPVnPy9aMm40IAehk/6/k9RO70rPUEMGHqC7lW1sVXqaITX7e//Hu4zpTx1+I0JBKeQ3DRlbp8H0tuS6Bsj6fPqv2Ow0lEnLoj3jlhmkrlJNU2mF9M99FlSwyNDxiM5MZ5ir7Uw5B...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 15:54:16,551 [ZVE01-202][Thread:233][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=109&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): El cliente está desconectado. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 201.242.42.237
+	Port: 47232
+	Referer: http://www.h-connexum.com/portal/
+	Path: /portal/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36
+	ViewState: SJ1H/9928HLzl9edfTpIKNJwp7/tDBw87GJ6lLgh4eeRftiBdHndXZQGRTXVhn14EMY6YBVfI8Sf7Jfqv0OhX8RAUUJv1BB3AxznxVKDajeYPJNAOgdsNIcJp7EzfrHMPB4aUhx1yjTpOGBrHQCPhASe6mS0vfFqtc3njQ642Oa8+MovmQ+ynTZjyt4h1LtrsDCFbwQO12YUeSpBdVtF7YFIlGrfpH/7Cy2d5jof5doAJBb4B0W4fwEVwoXdK32FZA8K5E+uUB3iTciQ5Vi0LEHxVe8Kfstd+8Qs/j88KJ5dHv9xbpLNofPIHZzAY8Qfg1ccidNcLgStrEF5SxIoqmC3H2P8NNHSGiyC0vX+IH/BdOZECWFpFMrW7yeSIro0Z8ANGT/UIcmUx1B/nb7qdiX5mqunyFxmdgZIW439+abzdvs/j5RZXP0SXpdYcQkYkSbGuLKHl2SBOEvaUV9II4Cq4tH+V15iKyZMa7zdyaNtEuzjtf8xYWc7zdyoLdSZ81l9aWhOqBStExceKVcb+cLRcpLFwwYqSposMZT/+OtT8l/NXzAwqQDf6Zyg6OsgtxbVin/YV26ifFoydF2HiXflwLwM7ZfpnnciSl/oi1PED66KH2zcg60ZPVnPy9aMm40IAehk/6/k9RO70rPUEMGHqC7lW1sVXqaITX7e//Hu4zpTx1+I0JBKeQ3DRlbp8H0tuS6Bsj6fPqv2Ow0lEnLoj3jlhmkrlJNU2mF9M99FlSwyNDxiM5MZ5ir7Uw5B...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 15:54:30,528 [ZVE01-202][Thread:195][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 10.0.28.22
+	Port: 53414
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0
+	ViewState: VC+4rlOYyQG8sup3wNVfVVc/JcvnIirsb+a2Jr21HDbgI1r1CiTfU9Ztq1pRc2Z5DJilV5BhrAlAbX/c+udo7iM9D8Up+pyZdetJsMdFtwMnSRNPFNQYygdL3gZt8SieKmojqiKrIX/OrsyoEQoM/7nXc766S2ibxMQczsTD97Ozm8gwGlBSDg0YueqXXTY8Kxn/QzIhGW993ueOrndVzUYFqzKIb/QNLnD7AG5TEzhgaUc1+h4/iC8VSFBGZoDfM2uXEVaMyMUkc2EVh1tgmf8qjfEaMzHgHgKejGbOTq1h/822n8gJDixvmK8Y0d03gIwih7tvo6hiRVwekUOcuwz1ElI2aDaBSSv29Imwsdoojvs2/3x+nZX3wFGoG6mcK/5RvSU/kYsFtPiaD2aBVCCFMqDe5t7Jj6yV27EMz8ufrhYgjxa3gd/hjLYjZMoAcDymJej85yPMCUlErWQ5GISCqQSqOWND8PWIyKvWF86ipIFzlXHfircCqdDqJLS98DgQcpNGj44xvWRzkJUteQJuRpFbybRT/gev9RNxEHpTfp5UsIXgcpOZ++pid85g5uks43+xVBzyBpDOzPfc+pxnx5GiLwCxwCA+BCBbIw2jJhCJvYlun2qMAezV6DMCeki2n0Z6kMEUXrVDxP+N9JRadhh8Ld7LdU8XgAq88xLkBqwEhjZZEwDhunEDbFVtV4n62a+X+jITM06VvLyhFHP7q3LDUeiI7xOm20VTHKHprs5bUXB7HRlymqa7mWRwR6H6DIzTrHTTRdv60VaheUnTa89inhVJ+draGXji0llt+GB...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 15:54:30,560 [ZVE01-202][Thread:195][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 10.0.28.22
+	Port: 53414
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0
+	ViewState: VC+4rlOYyQG8sup3wNVfVVc/JcvnIirsb+a2Jr21HDbgI1r1CiTfU9Ztq1pRc2Z5DJilV5BhrAlAbX/c+udo7iM9D8Up+pyZdetJsMdFtwMnSRNPFNQYygdL3gZt8SieKmojqiKrIX/OrsyoEQoM/7nXc766S2ibxMQczsTD97Ozm8gwGlBSDg0YueqXXTY8Kxn/QzIhGW993ueOrndVzUYFqzKIb/QNLnD7AG5TEzhgaUc1+h4/iC8VSFBGZoDfM2uXEVaMyMUkc2EVh1tgmf8qjfEaMzHgHgKejGbOTq1h/822n8gJDixvmK8Y0d03gIwih7tvo6hiRVwekUOcuwz1ElI2aDaBSSv29Imwsdoojvs2/3x+nZX3wFGoG6mcK/5RvSU/kYsFtPiaD2aBVCCFMqDe5t7Jj6yV27EMz8ufrhYgjxa3gd/hjLYjZMoAcDymJej85yPMCUlErWQ5GISCqQSqOWND8PWIyKvWF86ipIFzlXHfircCqdDqJLS98DgQcpNGj44xvWRzkJUteQJuRpFbybRT/gev9RNxEHpTfp5UsIXgcpOZ++pid85g5uks43+xVBzyBpDOzPfc+pxnx5GiLwCxwCA+BCBbIw2jJhCJvYlun2qMAezV6DMCeki2n0Z6kMEUXrVDxP+N9JRadhh8Ld7LdU8XgAq88xLkBqwEhjZZEwDhunEDbFVtV4n62a+X+jITM06VvLyhFHP7q3LDUeiI7xOm20VTHKHprs5bUXB7HRlymqa7mWRwR6H6DIzTrHTTRdv60VaheUnTa89inhVJ+draGXji0llt+GB...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 16:04:44,404 [ZVE01-202][Thread:173][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The length of the URL for this request exceeds the configured maxUrlLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2013-09-02 16:55:01,538 [ZVE01-202][Thread:229][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 39625
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 16:55:01,553 [ZVE01-202][Thread:229][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 39625
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 16:55:05,656 [ZVE01-202][Thread:7][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 56869
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 16:55:05,656 [ZVE01-202][Thread:7][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 56869
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 16:55:07,497 [ZVE01-202][Thread:173][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 57545
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 16:55:07,497 [ZVE01-202][Thread:173][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 57545
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 16:55:09,618 [ZVE01-202][Thread:224][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 45315
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 16:55:09,618 [ZVE01-202][Thread:224][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 45315
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 16:55:42,098 [ZVE01-202][Thread:226][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 42257
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 16:55:42,098 [ZVE01-202][Thread:226][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 42257
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 16:55:43,736 [ZVE01-202][Thread:203][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 37033
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 16:55:43,751 [ZVE01-202][Thread:203][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 37033
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 16:55:46,091 [ZVE01-202][Thread:229][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 43606
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 16:55:46,091 [ZVE01-202][Thread:229][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 43606
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 16:56:48,803 [ZVE01-202][Thread:173][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 41888
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 16:56:48,803 [ZVE01-202][Thread:173][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 41888
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 16:57:27,850 [ZVE01-202][Thread:19][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 38536
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 16:57:27,850 [ZVE01-202][Thread:19][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.8.152.174
+	Port: 38536
+	Referer: http://www.h-connexum.com/portal/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 1.1.4322)
+	ViewState: 2k+vOI96HqKUo7tlVxu5PL9bGpObOlJpqXee9L7u2rIA6ETKU2Zc3N7M268XSQqO64a1HX5JETUPDLX7f6AsZQZCSgalWKBLrP7XReNRRHU9M+S4eYzCnrviui0n3l/NXnb1/hSDr7LStin7P7k/PGmgNfcX9K2MTrZLIipy08I5YpqsB1zEGN4tLFIjK+xmCjtEh2dV8zafC5K6yxgluGG1FxI/uKa3g2mZm36SvKPSJiZ4NjiCIwucziMxAsiWkRADfFNXNU9jjxpgYO+hzjLyj8gbjl2z5SInswiXJh1RT0XfOSQr7TnyDPNDLKauM9jp4nvw0KnWm8IcgKO1njORYlNP55BlrlS4Uc4cF3ghP7YNzrXJgdEusAFC6VKbfkR+m40r7/Jb7g3azx0TdjuR1UHbgcak7xx+x8RONpzf24CiiiMcb1u+fHT9gpl3tQ24RaclzaHCR/4gVlQnRmTt85WJkBiogt0g8b/4+nVzblqJn/Y9Y3jMm/z6avgS5VO7HpTMJ/xDAT70LgtU81nl629WdmU/cd86NmrZ4CnoaCVcj4a6MANoVuilPz2f2A66VcUC1aOYXLdk+0gzFzH8w2o2JoXvGd2BhPzvQVVzALCGoRCIK6z6J6RS70vK2tW7PzxGnAExLupSv458U8dP/gnRuEPjAVsyAHhxmDSqGc+Q7iFBn4gBzGmDbAN/FKZ6I1IMV5EU5TSYBJPKuTuyGeubF7XWbb6c14JJmA7...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2013-09-02 17:23:08,880 [ZVE01-202][Thread:8][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): El cliente está desconectado. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.109.228.122
+	Port: 1323
+	Referer: http://www.h-connexum.com/PORTAL/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.57 Safari/537.36
+	ViewState: w+4a9S5UVi+cytKxcCpmZ8E9z77EIEA5VQt0bh3Act4JDiH0qp3ii9E7BrX30gAxOjPd
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 17:23:08,896 [ZVE01-202][Thread:8][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=110&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): El cliente está desconectado. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.109.228.122
+	Port: 1323
+	Referer: http://www.h-connexum.com/PORTAL/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.57 Safari/537.36
+	ViewState: w+4a9S5UVi+cytKxcCpmZ8E9z77EIEA5VQt0bh3Act4JDiH0qp3ii9E7BrX30gAxOjPd
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 17:31:17,176 [ZVE01-202][Thread:7][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.199.88.227
+	Port: 50007
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.2) Gecko/20100101 Firefox/10.0.2
+	ViewState: KhtyQ8Mr4pM1JchF1x3CWj8Rru2uNgyioQbVlcQRroAS31FmRgKCPP2s0h/FejvvVf+Lf63KMfZRiQ54yzHB+u2zfx9TPwyDRBfgsjOb78vGrMFeaWF5CXJw7em0Zj7YcODNUZdWbEyAAlEfWaaeoWwJu9RFrveM2cYMapiZ++nT+WgAeNN2jluTw4q+NiUpn06rJTNsJj7wYvmWinEiXjiafTFTqdydPL/LSrM+Tt3gC/GW+mRvtaQRJhOB2AyV6AmhmSWAarnnsuvWYOqGuh4dCaYXyXHpfZrSxACSKifuMWTTcY61WyiTLT7Mg9Wq7uG3bqyg9G2ZPQDFsnDRPWFBYZ0ZDRUbJ6g9hv8hONmwLiHtpFtqZyxE11536+nYb3CI7nfispKnJsvbCuJuzi3IATUD1KsiVmInxz557KGWHGHL8bhzpHVzPfyk36+QQf/BM+flgSr76kwYfr+ptTG49WvQ1QEdDPOTGsbtfgTKON90gR/xpLA7Gojcv0/iHWos4mXdVr9ARYj1rc9jUzvFw3O0RcIk+zdKDQ5EoAfGqKUW40M6ea8K5IfaWJgQVbuP+DXdCKVCmrQGbs8LpBU/IlatOp6oOlpMjnfHoXQeGYJ5pdY4f+fuN2YGQXq6ALTblxI1fxMWu50jF55XR3A7daVqqVkq1A6QfW/9ZI3jKbCInt1eS/6AyHGKMxeKApf41PlN5hn9zzlVamHgZQw5EembVC2nBmK85j2odQS0NK9IbZYTF0SlD+K0AP4a/+D2OG3AFr6Yni5gIZE1tmLoGu45lB22...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 17:31:17,176 [ZVE01-202][Thread:7][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=109&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.199.88.227
+	Port: 50007
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.2) Gecko/20100101 Firefox/10.0.2
+	ViewState: KhtyQ8Mr4pM1JchF1x3CWj8Rru2uNgyioQbVlcQRroAS31FmRgKCPP2s0h/FejvvVf+Lf63KMfZRiQ54yzHB+u2zfx9TPwyDRBfgsjOb78vGrMFeaWF5CXJw7em0Zj7YcODNUZdWbEyAAlEfWaaeoWwJu9RFrveM2cYMapiZ++nT+WgAeNN2jluTw4q+NiUpn06rJTNsJj7wYvmWinEiXjiafTFTqdydPL/LSrM+Tt3gC/GW+mRvtaQRJhOB2AyV6AmhmSWAarnnsuvWYOqGuh4dCaYXyXHpfZrSxACSKifuMWTTcY61WyiTLT7Mg9Wq7uG3bqyg9G2ZPQDFsnDRPWFBYZ0ZDRUbJ6g9hv8hONmwLiHtpFtqZyxE11536+nYb3CI7nfispKnJsvbCuJuzi3IATUD1KsiVmInxz557KGWHGHL8bhzpHVzPfyk36+QQf/BM+flgSr76kwYfr+ptTG49WvQ1QEdDPOTGsbtfgTKON90gR/xpLA7Gojcv0/iHWos4mXdVr9ARYj1rc9jUzvFw3O0RcIk+zdKDQ5EoAfGqKUW40M6ea8K5IfaWJgQVbuP+DXdCKVCmrQGbs8LpBU/IlatOp6oOlpMjnfHoXQeGYJ5pdY4f+fuN2YGQXq6ALTblxI1fxMWu50jF55XR3A7daVqqVkq1A6QfW/9ZI3jKbCInt1eS/6AyHGKMxeKApf41PlN5hn9zzlVamHgZQw5EembVC2nBmK85j2odQS0NK9IbZYTF0SlD+K0AP4a/+D2OG3AFr6Yni5gIZE1tmLoGu45lB22...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 19:52:35,003 [ZVE01-202][Thread:218][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 186.92.157.53
+	Port: 1842
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.57 Safari/537.36
+	ViewState: AeOj2x7xMKXMLd9wuKoM7YVCKtDJ6dXJt9cYp89ECtx+AFEVdjt9lUalHZ3wy/SbK8/qRb+h+TB2EOBVwBfdR4LOMXIDaYlrczo6I1kWb93nC2pE37BFTrW+/YByIh+4xk8WHmon1S0e/4MfG+bZYIcaj/BfhcrQXgoE9EzOHC5851yqoti4p4UKu+OTI4gOeMe0b6T2LR98B2RGa1LC2CTZbeokTNiTl3gDXmmEm+w9xjkW9nDA2CItttpPQCsRi3geEm5Zg2j14Y2etpF3FZQL6yLNEG2815EBPAiYcAZIYNWdIOmVIcqW8cOUh4NA15ieVN3dp0jIcUlBCSUVUXRhU4fCSQmwO6RNqAV3JCoYPLseYxMe5Dn3W6KUNQHUvOdMV+8dfyFwFYvsyAcMhtfIdxSYyTCkarajd/FaNf+VoNtVF9NFDPKr1EwTReJ03htWRv0znc2hVtieuJLW6rmceMcYRo72grWTzF2Q5Dtt+Xo9LLlLTbgYb0FSiQpf4UIz6iEKx3Ymz5vzCq7vn4lD3OJCTH0X8NbqJ9bE3LNw8JynOZZ/suDoiISfbK+x5S7sFEDnA230W2ssmyhV0Mz6atWiYptGwPbMjy/giQveQrmwLj56od6fwU7a6D65AYJKimRKHEdxE+5aFExppDmzgVaFPP/XFpG+DAm6hn82rHpwm7zq/3NeD3CGkt9gDw8FnKNq/S6yp3e7qmpLxP6X8vQ51XsalrZkUmpJ+Yw4Y45kzQ1vnPSRkiaLKV22V+OmuI7EI...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-02 19:52:35,018 [ZVE01-202][Thread:218][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 186.92.157.53
+	Port: 1842
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.57 Safari/537.36
+	ViewState: AeOj2x7xMKXMLd9wuKoM7YVCKtDJ6dXJt9cYp89ECtx+AFEVdjt9lUalHZ3wy/SbK8/qRb+h+TB2EOBVwBfdR4LOMXIDaYlrczo6I1kWb93nC2pE37BFTrW+/YByIh+4xk8WHmon1S0e/4MfG+bZYIcaj/BfhcrQXgoE9EzOHC5851yqoti4p4UKu+OTI4gOeMe0b6T2LR98B2RGa1LC2CTZbeokTNiTl3gDXmmEm+w9xjkW9nDA2CItttpPQCsRi3geEm5Zg2j14Y2etpF3FZQL6yLNEG2815EBPAiYcAZIYNWdIOmVIcqW8cOUh4NA15ieVN3dp0jIcUlBCSUVUXRhU4fCSQmwO6RNqAV3JCoYPLseYxMe5Dn3W6KUNQHUvOdMV+8dfyFwFYvsyAcMhtfIdxSYyTCkarajd/FaNf+VoNtVF9NFDPKr1EwTReJ03htWRv0znc2hVtieuJLW6rmceMcYRo72grWTzF2Q5Dtt+Xo9LLlLTbgYb0FSiQpf4UIz6iEKx3Ymz5vzCq7vn4lD3OJCTH0X8NbqJ9bE3LNw8JynOZZ/suDoiISfbK+x5S7sFEDnA230W2ssmyhV0Mz6atWiYptGwPbMjy/giQveQrmwLj56od6fwU7a6D65AYJKimRKHEdxE+5aFExppDmzgVaFPP/XFpG+DAm6hn82rHpwm7zq/3NeD3CGkt9gDw8FnKNq/S6yp3e7qmpLxP6X8vQ51XsalrZkUmpJ+Yw4Y45kzQ1vnPSRkiaLKV22V+OmuI7EI...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---

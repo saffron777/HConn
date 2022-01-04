@@ -1,0 +1,37 @@
+2015-05-04 10:45:25,444 [SVE02-111][Thread:25][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The client disconnected.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 10.0.116.73
+	Port: 3812
+	Referer: http://id-preqa-hconnexum/portal/loginhc2.aspx?popUp=true
+	Path: /Portal/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C; .NET4.0E; InfoPath.3)
+	ViewState: Zm5cjldhTWdIz0S+VvAIx2imblYjIRgTJOPe0uT8juTMrFdPvfok/dz2YXgiN8qSRGZkUJ/Dgx/+xtBSqvNm/YQWCExqcci4vhGQGIOKyUMYeHL4HF8ZcXaxKmVmfXgZf2D19C8V+zlW1cpJ7Ssiw/xskFIQ2qwxZ9oJIaR/ckMh18ScFLr4l84Q250aUNYuicqXH2d6ryVi5kByxWQsclQjpSAlztRu0UT3Lvr8Mt3OB6ekv71hPkI6rsqIbVImSoXRKPu45k9Hva8NtzlIUQHy4P1RaWfZFqatGxWyW760mjcXdiZ1KBDTJsS9uDJesygdjYCu8aAX7TaZVkQibQcY+U/ZI4VCfLRrwNi3XGtPNxHnbuPP5eV/tzf+gK6x1Yo2Ep8771H33f9u4uq1wDnk2D8TFLk+WsmgEXvQrmQY2wqCri+AJEhVM1Ww2DFDETnAoNpMdJNnzSMkgNe1Vh5yYHxckIW0XA9El+ZbvlrmBUg/9dVPAM40ESIxPlAT3ZlR0sET9Ct/W9GSyUuIlB3dqCr1k1MynNwPV9l7MThmKFfJ0vvpcKkVVHix6TEVnKGI6rND8OXpYniGKnj1WH4r1CCVCQsba/QspYYYa9hH0kGgA/2bgEIQyKPNAbx7bWdVEgEV3JUTai...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2015-05-04 10:45:25,600 [SVE02-111][Thread:25][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: The client disconnected.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.HttpException: The client disconnected.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 10.0.116.73
+	Port: 3812
+	Referer: http://id-preqa-hconnexum/portal/loginhc2.aspx?popUp=true
+	Path: /Portal/Default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C; .NET4.0E; InfoPath.3)
+	ViewState: Zm5cjldhTWdIz0S+VvAIx2imblYjIRgTJOPe0uT8juTMrFdPvfok/dz2YXgiN8qSRGZkUJ/Dgx/+xtBSqvNm/YQWCExqcci4vhGQGIOKyUMYeHL4HF8ZcXaxKmVmfXgZf2D19C8V+zlW1cpJ7Ssiw/xskFIQ2qwxZ9oJIaR/ckMh18ScFLr4l84Q250aUNYuicqXH2d6ryVi5kByxWQsclQjpSAlztRu0UT3Lvr8Mt3OB6ekv71hPkI6rsqIbVImSoXRKPu45k9Hva8NtzlIUQHy4P1RaWfZFqatGxWyW760mjcXdiZ1KBDTJsS9uDJesygdjYCu8aAX7TaZVkQibQcY+U/ZI4VCfLRrwNi3XGtPNxHnbuPP5eV/tzf+gK6x1Yo2Ep8771H33f9u4uq1wDnk2D8TFLk+WsmgEXvQrmQY2wqCri+AJEhVM1Ww2DFDETnAoNpMdJNnzSMkgNe1Vh5yYHxckIW0XA9El+ZbvlrmBUg/9dVPAM40ESIxPlAT3ZlR0sET9Ct/W9GSyUuIlB3dqCr1k1MynNwPV9l7MThmKFfJ0vvpcKkVVHix6TEVnKGI6rND8OXpYniGKnj1WH4r1CCVCQsba/QspYYYa9hH0kGgA/2bgEIQyKPNAbx7bWdVEgEV3JUTai...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---

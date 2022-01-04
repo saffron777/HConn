@@ -1,0 +1,1971 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{842BCA82-8842-4A37-A8ED-ACC6AA558A82}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HConnexum.Tramitador.Sitio</RootNamespace>
+    <AssemblyName>HConnexum.Tramitador.Sitio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>HC2KEY.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HConnexum.Infraestructura, Version=1.1.0.0, Culture=neutral, PublicKeyToken=ee75a6a24f8c4819, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\HConnexum.Infraestructura.dll</HintPath>
+    </Reference>
+    <Reference Include="HConnexum.ObjetoSessiones, Version=1.0.0.0, Culture=neutral, PublicKeyToken=85cb3df366f2a4e5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\HConnexum.ObjetoSessiones.dll</HintPath>
+    </Reference>
+    <Reference Include="HConnexum.Seguridad, Version=1.0.4644.30637, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\HConnexum.Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="HConnexum.Servicios.Cliente, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\HConnexum.Contingencia-Desarrollo\HConnexum.Contingencia\bin\HConnexum.Servicios.Cliente.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Farmacia_8030\8030\Servicios\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Telerik.Web.Design, Version=2013.2.717.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Web.UI, Version=2013.2.717.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Web.UI.Skins, Version=2013.2.717.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Reporting, Version=7.2.13.1016, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WebForms, Version=7.2.13.1016, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Tramitador.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Tramitador.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_Themes\HConnexumBlack\HConnexum.css" />
+    <Content Include="App_Themes\HConnexumSilver\HConnexum.css" />
+    <Content Include="App_Themes\HConnexum\HConnexum.css" />
+    <Content Include="App_Themes\HConnexum\TramitadorFugado.jpg" />
+    <Content Include="bin\HConnexum.Infraestructura.dll" />
+    <Content Include="bin\HConnexum.ObjetoSessiones.dll" />
+    <Content Include="bin\HConnexum.Seguridad.dll" />
+    <Content Include="bin\HConnexum.Servicios.Cliente.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="bin\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="bin\Microsoft.Practices.Unity.Configuration.dll" />
+    <Content Include="bin\Microsoft.Practices.Unity.dll" />
+    <Content Include="bin\Telerik.Reporting.dll" />
+    <Content Include="bin\Telerik.ReportViewer.WebForms.dll" />
+    <Content Include="bin\Telerik.Web.Design.dll" />
+    <Content Include="bin\Telerik.Web.UI.dll" />
+    <Content Include="bin\Telerik.Web.UI.Skins.dll" />
+    <Content Include="ContingenciaLogin.aspx" />
+    <Content Include="ControlesComunes\Alerta.ascx" />
+    <Content Include="ControlesComunes\Auditoria.ascx" />
+    <Content Include="ControlesComunes\ControlFooter.ascx" />
+    <Content Include="ControlesComunes\ControlHeader.ascx" />
+    <Content Include="ControlesComunes\FileUpload.ascx" />
+    <Content Include="ControlesComunes\HorasMinutosSegundos.ascx" />
+    <Content Include="ControlesComunes\LoginControl.ascx" />
+    <Content Include="ControlesComunes\Menu.ascx" />
+    <Content Include="ControlesComunes\MultilineCounter.ascx" />
+    <Content Include="ControlesComunes\Publicacion.ascx" />
+    <Content Include="ControlesComunes\TecladoNumericoRandom.ascx" />
+    <Content Include="ControlesComunes\Telefono.ascx" />
+    <Content Include="ControlesComunes\Toolbar.ascx" />
+    <Content Include="Error.aspx" />
+    <Content Include="Imagenes\Aceptar.gif" />
+    <Content Include="Imagenes\AddRecord.gif" />
+    <Content Include="Imagenes\ajax-loader.gif" />
+    <Content Include="Imagenes\Alert.png" />
+    <Content Include="Imagenes\alertIcon.png" />
+    <Content Include="Imagenes\bgLegend.png" />
+    <Content Include="Imagenes\bgLegend_HConnexum.png" />
+    <Content Include="Imagenes\bgLegend_Silver.png" />
+    <Content Include="Imagenes\collapsed.gif" />
+    <Content Include="Imagenes\Delete.gif" />
+    <Content Include="Imagenes\Edit.gif" />
+    <Content Include="Imagenes\error.png" />
+    <Content Include="Imagenes\expanded.gif" />
+    <Content Include="Imagenes\Filter.gif" />
+    <Content Include="Imagenes\HConnexumTramitador.jpg" />
+    <Content Include="Imagenes\icon_lupa18x18.png" />
+    <Content Include="Imagenes\ImagenesDefault\Default.jpg" />
+    <Content Include="Imagenes\ImagenesDefault\Distrito_Capitalpng.gif" />
+    <Content Include="Imagenes\ImagenesDefault\IRIS_QUIROZ.jpg" />
+    <Content Include="Imagenes\ImagenesDefault\LogoAltamira.jpg" />
+    <Content Include="Imagenes\ImagenesDefault\LogoConsultSalud.jpg" />
+    <Content Include="Imagenes\ImagenesDefault\LogoDefault.jpg" />
+    <Content Include="Imagenes\ImagenesDefault\LogoGDC.jpg" />
+    <Content Include="Imagenes\ImagenesDefault\LogoIberoamericana.jpg" />
+    <Content Include="Imagenes\ImagenesDefault\LogoMPPE.png" />
+    <Content Include="Imagenes\ImagenesDefault\LogoSegurosFederal.jpg" />
+    <Content Include="Imagenes\ImagenesDefault\LogoZumaSeguros.jpg" />
+    <Content Include="Imagenes\ImagenesDefault\No_Disponible.jpg" />
+    <Content Include="Imagenes\imgLoader.gif" />
+    <Content Include="Imagenes\info.png" />
+    <Content Include="Imagenes\keyboard-icon.gif" />
+    <Content Include="Imagenes\keyboard-icon_p.gif" />
+    <Content Include="Imagenes\L.gif" />
+    <Content Include="Imagenes\L.png" />
+    <Content Include="Imagenes\ImagenesDefault\LogoPrevisora.jpg" />
+    <Content Include="Imagenes\logo_nubise_fdo_negro.jpg" />
+    <Content Include="Imagenes\NoImage.png" />
+    <Content Include="Imagenes\NP.png" />
+    <Content Include="Imagenes\ok.png" />
+    <Content Include="Imagenes\P.png" />
+    <Content Include="Imagenes\PixelGradado.jpg" />
+    <Content Include="Imagenes\Refresh.gif" />
+    <Content Include="Imagenes\spinner.gif" />
+    <Content Include="Imagenes\T.gif" />
+    <Content Include="Imagenes\T.png" />
+    <Content Include="Imagenes\TP.gif" />
+    <Content Include="Imagenes\TP.png" />
+    <Content Include="Inicio.aspx" />
+    <Content Include="Modulos\Bloques\ActualizacionDatosMedico.ascx" />
+    <Content Include="Modulos\Bloques\ActualizacionDeContacto.ascx" />
+    <Content Include="Modulos\Bloques\AnulacionOM.ascx" />
+    <Content Include="Modulos\Bloques\AnulacionSM.ascx" />
+    <Content Include="Modulos\Bloques\AsistenciaCitaMedica.ascx" />
+    <Content Include="Modulos\Bloques\BlqNotRespInm.ascx" />
+    <Content Include="Modulos\Bloques\BlqNotRespInmBasico.ascx" />
+    <Content Include="Modulos\Bloques\BlqNotRespInmBasicoCAActivacion.ascx" />
+    <Content Include="Modulos\Bloques\BlqNotRespInmCAActivacion.ascx" />
+    <Content Include="Modulos\Bloques\CambioMedico.ascx" />
+    <Content Include="Modulos\Bloques\CasosPendientesMedico.ascx" />
+    <Content Include="Modulos\Bloques\ContactoAlMedico.ascx" />
+    <Content Include="Modulos\Bloques\ContactoInicial.ascx" />
+    <Content Include="Modulos\Bloques\DatosExpedientesCA.ascx" />
+    <Content Include="Modulos\Bloques\DatosExpedientesCE.ascx" />
+    <Content Include="Modulos\Bloques\DatosGenerales.ascx" />
+    <Content Include="Modulos\Bloques\DatosGeneralesCA.ascx" />
+    <Content Include="Modulos\Bloques\DatosGeneralesCE.ascx" />
+    <Content Include="Modulos\Bloques\DatosGeneralesMedico.ascx" />
+    <Content Include="Modulos\Bloques\Egreso.ascx" />
+    <Content Include="Modulos\Bloques\Imprimir.ascx" />
+    <Content Include="Modulos\Bloques\Ingreso.ascx" />
+    <Content Include="Modulos\Bloques\ListadoMovimientos.ascx" />
+    <Content Include="Modulos\Bloques\ListadoMovimientosCA.ascx" />
+    <Content Include="Modulos\Bloques\MedicoAsignado.ascx" />
+    <Content Include="Modulos\Bloques\MuestraChat.ascx" />
+    <Content Include="Modulos\Bloques\Observaciones.ascx" />
+    <Content Include="Modulos\Bloques\RegistrodeOpinionMedico.ascx" />
+    <Content Include="Modulos\Bloques\SeguimientoCita.ascx" />
+    <Content Include="Modulos\Bloques\SeleccionAsegurado.ascx" />
+    <Content Include="Modulos\Bloques\SeleccionAseguradoCA.ascx" />
+    <Content Include="Modulos\Bloques\SelectorCasos.ascx" />
+    <Content Include="Modulos\Bloques\SolicitudNuevoMovimiento_ExtEgr.ascx" />
+    <Content Include="Modulos\Bloques\SolicitudNuevoMovimiento_ExtEgrCA.ascx" />
+    <Content Include="Modulos\Bloques\SolicitudNuevoMovimiento_Ing.ascx" />
+    <Content Include="Modulos\Bloques\SolicitudNuevoMovimiento_IngCA.ascx" />
+    <Content Include="Modulos\Bloques\TestBloques.aspx" />
+    <Content Include="Modulos\Bloques\testEgreso.aspx" />
+    <Content Include="Modulos\Estadisticas\PantallaBusquedaFacturas.aspx" />
+    <Content Include="Modulos\Estadisticas\PantallaBusquedaRelaciones.aspx" />
+    <Content Include="Modulos\Estadisticas\PantallaConsolidadoMovimiento.aspx" />
+    <Content Include="Modulos\Estadisticas\PantallaDetalleFactura.aspx" />
+    <Content Include="Modulos\Estadisticas\PantallaDetalleMovimiento.aspx" />
+    <Content Include="Modulos\Estadisticas\PantallaDetalleMovimientoRemesa.aspx" />
+    <Content Include="Modulos\Estadisticas\PantallaDetalleRelacion.aspx" />
+    <Content Include="Modulos\Estadisticas\PantallaReporteCasos.aspx" />
+    <Content Include="Modulos\Estadisticas\PantallaReporteConsolidadoServicio.aspx" />
+    <Content Include="Modulos\Estadisticas\ReporteCasos.aspx" />
+    <Content Include="Modulos\Estadisticas\ReporteConsolidadoMovimientosUsuario.aspx" />
+    <Content Include="Modulos\Estadisticas\ReporteConsolidadoServicio.aspx" />
+    <Content Include="Modulos\Estadisticas\ReporteDetalleFactura.aspx" />
+    <Content Include="Modulos\Estadisticas\ReporteDetalleMovimiento.aspx" />
+    <Content Include="Modulos\Estadisticas\ReporteDetalleRemesa.aspx" />
+    <Content Include="Modulos\Estadisticas\ReporteDetalleSolicitud.aspx" />
+    <Content Include="Modulos\Estadisticas\ReporteFacturas.aspx" />
+    <Content Include="Modulos\Estadisticas\ReporteRelaciones.aspx" />
+    <Content Include="Modulos\Estructura\AgrupacionDetalle.aspx" />
+    <Content Include="Modulos\Estructura\AgrupacionLista.aspx" />
+    <Content Include="Modulos\Estructura\AgruparCasoLista.aspx" />
+    <Content Include="Modulos\Estructura\AnularSuspenderCasoLista.aspx" />
+    <Content Include="Modulos\Estructura\AnularSuspenderCasoMaestroDetalle.aspx" />
+    <Content Include="Modulos\Estructura\CasoAgrupacionDetalle.aspx" />
+    <Content Include="Modulos\Estructura\ConsultaCasos.aspx" />
+    <Content Include="Modulos\Estructura\ConsultaMovPorSus.aspx" />
+    <Content Include="Modulos\Estructura\GestionSupervisadosLista.aspx" />
+    <Content Include="Modulos\Estructura\MisActividades.aspx" />
+    <Content Include="Modulos\Estructura\MisActividadesDetalle.aspx" />
+    <Content Include="Modulos\Estructura\MisSolicitudes.aspx" />
+    <Content Include="Modulos\Estructura\PoteCasos.aspx" />
+    <Content Include="Modulos\Estructura\PriorizarCasoLista.aspx" />
+    <Content Include="Modulos\Estructura\SolicitudServicio.aspx" />
+    <Content Include="Modulos\Estructura\UsuarioSuscriptorLista.aspx" />
+    <Content Include="Modulos\Gat\ConsultaCasosAuditoria.aspx" />
+    <Content Include="Modulos\Orquestador\PantallaContenedora.aspx" />
+    <Content Include="Modulos\Orquestador\PantallaContenedora2.aspx" />
+    <Content Include="Modulos\Parametrizador\AccionesdelPasoDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\AccionesdelPasoLista.aspx" />
+    <Content Include="Modulos\Parametrizador\AlcanceGeograficoDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\AlcanceGeograficoLista.aspx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\AccionesdelPasoDetalle.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\AccionesdelPasoLista.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\AlcanceGeograficoDetalle.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\AlcanceGeograficoLista.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\BloqueDetalle.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\BloqueLista.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\ChadePasoDetalle.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\ChadePasoLista.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\ConfiguracionPaso.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\DocumentosPasoDetalle.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\DocumentosPasoLista.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\DocumentosServicioDetalle.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\DocumentosServicioLista.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\EtapaLista.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\EtapaMaestroDetalle.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\FlujosEjecucionDetalle.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\FlujosEjecucionLista.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\FlujosServicioLista.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\FlujosServicioMaestroDetalle.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\MensajesMetodosDestinatarioCorreoDetalle.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\MensajesMetodosDestinatarioDetalle.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\ParametrosAgendaDetalle.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\ParametrosAgendaLista.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\PasoMaestroDetalle.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\PasosBloqueDetalle.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\PasosRepuestaDetalle.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\ServicioSucursalDetalle.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\ServicioSucursalLista.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\SuscriptorLista.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\TipoPasoDetalle.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\App_LocalResources\TipoPasoLista.aspx.resx" />
+    <Content Include="Modulos\Parametrizador\BloqueDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\BloqueLista.aspx" />
+    <Content Include="Modulos\Parametrizador\ChadePasoDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\ChadePasoLista.aspx" />
+    <Content Include="Modulos\Parametrizador\ConfiguracionPaso.aspx" />
+    <Content Include="Modulos\Parametrizador\ConfiguracionPasosVinculaciones.aspx" />
+    <Content Include="Modulos\Parametrizador\ConfiguracionXmlGenerales.aspx" />
+    <Content Include="Modulos\Parametrizador\DocumentosPasoDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\DocumentosPasoLista.aspx" />
+    <Content Include="Modulos\Parametrizador\DocumentosServicioDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\DocumentosServicioLista.aspx" />
+    <Content Include="Modulos\Parametrizador\EtapaMaestroDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\FlujosEjecucionDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\FlujosEjecucionLista.aspx" />
+    <Content Include="Modulos\Parametrizador\FlujosServicioLista.aspx" />
+    <Content Include="Modulos\Parametrizador\FlujosServicioMaestroDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\MensajesMetodosDestinatarioCorreoDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\MensajesMetodosDestinatarioDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\ParametrosAgendaDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\ParametrosAgendaLista.aspx" />
+    <Content Include="Modulos\Parametrizador\PasoMaestroDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\PasoMaestroDetalleBloques.aspx" />
+    <Content Include="Modulos\Parametrizador\PasosBloqueDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\PasosRepuestaDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\ServiciosSimuladoDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\ServiciosSimuladoLista.aspx" />
+    <Content Include="Modulos\Parametrizador\ServicioSucursalDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\ServicioSucursalLista.aspx" />
+    <Content Include="Modulos\Parametrizador\SolicitudBloqueDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\SolicitudBloqueMaestroDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\SuscriptorLista.aspx" />
+    <Content Include="Modulos\Parametrizador\TipoPasoDetalle.aspx" />
+    <Content Include="Modulos\Parametrizador\TipoPasoLista.aspx" />
+    <Content Include="Modulos\Reportes\ComprobanteMovimientoCA.aspx" />
+    <Content Include="Modulos\Reportes\ComprobanteMovimientoCE.aspx" />
+    <Content Include="Modulos\Reportes\ConsultaCasosOpinionMedica.aspx" />
+    <Content Include="Modulos\Reportes\PagIntermediaBI.aspx" />
+    <Content Include="Modulos\Reportes\ReimpresionComprobanteMovimientos.aspx" />
+    <Content Include="Modulos\Reportes\ReporteCA.aspx" />
+    <Content Include="Modulos\Reportes\ReporteCartaAval.aspx" />
+    <Content Include="Modulos\Reportes\ReporteCartaAvalAltamira.aspx" />
+    <Content Include="Modulos\Reportes\ReporteCartaAvalConsultSalud.aspx" />
+    <Content Include="Modulos\Reportes\ReporteCartaAvalIbero.aspx" />
+    <Content Include="Modulos\Reportes\ReporteCartaAvalMI.aspx" />
+    <Content Include="Modulos\Reportes\ReporteCartaAvalSegurosFederal.aspx" />
+    <Content Include="Modulos\Reportes\ReporteCartaAvalZuma.aspx" />
+    <Content Include="Modulos\Reportes\ReporteOpMed.aspx" />
+    <Content Include="Modulos\Tracking\AuditoriaTabMovimiento.aspx" />
+    <Content Include="Modulos\Tracking\CasoDetalle.aspx" />
+    <Content Include="Modulos\Tracking\DatosGeneralesCasoDetalle.aspx" />
+    <Content Include="Modulos\Tracking\MensajeCasoLista.aspx" />
+    <Content Include="Modulos\Tracking\MovimientoCasoLista.aspx" />
+    <Content Include="Modulos\Tracking\MovimientoDetalle.aspx" />
+    <Content Include="Modulos\Tracking\ObservacionesTabMovimientoLista.aspx" />
+    <Content Include="Modulos\Tracking\RespuestaTabMovimiento.aspx" />
+    <Content Include="Modulos\Tracking\TiempoDelCasoDetalle.aspx" />
+    <Content Include="Modulos\Tracking\TiemposTabMovimiento.aspx" />
+    <Content Include="Modulos\Utilitarios\TransporteFlujoServicio.aspx" />
+    <Content Include="Scripts\DetalleRadScriptBlock1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery.coolfieldset.js" />
+    <Content Include="Scripts\jquery.maskedinput.js" />
+    <Content Include="Scripts\ListaRadScriptBlock1.js" />
+    <Content Include="Scripts\RadFilterScriptBlock.js" />
+    <Content Include="Scripts\Utilitarios.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Temas\Default.css" />
+    <Content Include="Temas\Site.css" />
+    <Content Include="Temas\SiteChrome.css" />
+    <Content Include="Temas\SiteIE10.css" />
+    <Content Include="Temas\SiteIE7.css" />
+    <Content Include="Temas\SiteIE8.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\RadAsyncUpload.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadAsyncUpload.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadComboBox.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadComboBox.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadDataPager.Main.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadDataPager.Main.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadEditor.Dialogs.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadEditor.Dialogs.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadEditor.Main.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadEditor.Main.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadEditor.Modules.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadEditor.Modules.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadEditor.Tools.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadEditor.Tools.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadFilter.Main.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadFilter.Main.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadFilter.Main.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadFilter.Main.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadGrid.Main.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadGrid.Main.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadGrid.Main.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadGrid.Main.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadImageEditor.Dialogs.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadImageEditor.Dialogs.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadImageEditor.Main.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadImageEditor.Main.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadListBox.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadListBox.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadProgressArea.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadProgressArea.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadScheduler.Main.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadScheduler.Main.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadSchedulerRecurrenceEditor.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadSchedulerRecurrenceEditor.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadSpell.Dialog.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadSpell.Dialog.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadTreeList.Main.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadTreeList.Main.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadUpload.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadUpload.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadWindow.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadWindow.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RadWindow.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadWindow.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Tramitador.designer.cs">
+      <DependentUpon>Tramitador.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Base\ControlPagina.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Base\NavegacionArbolPagina.cs" />
+    <Compile Include="Base\PaginaMaestroDetalleBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\PaginaDetalleBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContingenciaLogin.aspx.cs">
+      <DependentUpon>ContingenciaLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContingenciaLogin.aspx.designer.cs">
+      <DependentUpon>ContingenciaLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesComunes\Alerta.ascx.cs">
+      <DependentUpon>Alerta.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesComunes\Alerta.ascx.designer.cs">
+      <DependentUpon>Alerta.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesComunes\Auditoria.ascx.cs">
+      <DependentUpon>Auditoria.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesComunes\Auditoria.ascx.designer.cs">
+      <DependentUpon>Auditoria.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesComunes\ControlFooter.ascx.cs">
+      <DependentUpon>ControlFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesComunes\ControlFooter.ascx.designer.cs">
+      <DependentUpon>ControlFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesComunes\ControlHeader.ascx.cs">
+      <DependentUpon>ControlHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesComunes\ControlHeader.ascx.designer.cs">
+      <DependentUpon>ControlHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesComunes\ControlUsuarioEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlesComunes\FileUpload.ascx.cs">
+      <DependentUpon>FileUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesComunes\FileUpload.ascx.designer.cs">
+      <DependentUpon>FileUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesComunes\HorasMinutosSegundos.ascx.cs">
+      <DependentUpon>HorasMinutosSegundos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesComunes\HorasMinutosSegundos.ascx.designer.cs">
+      <DependentUpon>HorasMinutosSegundos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesComunes\LoginControl.ascx.cs">
+      <DependentUpon>LoginControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesComunes\LoginControl.ascx.designer.cs">
+      <DependentUpon>LoginControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesComunes\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesComunes\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesComunes\MultilineCounter.ascx.cs">
+      <DependentUpon>MultilineCounter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesComunes\MultilineCounter.ascx.designer.cs">
+      <DependentUpon>MultilineCounter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesComunes\Publicacion.ascx.cs">
+      <DependentUpon>Publicacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesComunes\Publicacion.ascx.designer.cs">
+      <DependentUpon>Publicacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesComunes\TecladoNumericoRandom.ascx.cs">
+      <DependentUpon>TecladoNumericoRandom.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesComunes\TecladoNumericoRandom.ascx.designer.cs">
+      <DependentUpon>TecladoNumericoRandom.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesComunes\Telefono.ascx.cs">
+      <DependentUpon>Telefono.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesComunes\Telefono.ascx.designer.cs">
+      <DependentUpon>Telefono.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlesComunes\Toolbar.ascx.cs">
+      <DependentUpon>Toolbar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlesComunes\Toolbar.ascx.designer.cs">
+      <DependentUpon>Toolbar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Base\PaginaBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\PaginaListaBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\ActualizacionDatosMedico.ascx.cs">
+      <DependentUpon>ActualizacionDatosMedico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\ActualizacionDatosMedico.ascx.designer.cs">
+      <DependentUpon>ActualizacionDatosMedico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\ActualizacionDeContacto.ascx.cs">
+      <DependentUpon>ActualizacionDeContacto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\ActualizacionDeContacto.ascx.designer.cs">
+      <DependentUpon>ActualizacionDeContacto.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\AnulacionOM.ascx.cs">
+      <DependentUpon>AnulacionOM.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\AnulacionOM.ascx.designer.cs">
+      <DependentUpon>AnulacionOM.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\AnulacionSM.ascx.cs">
+      <DependentUpon>AnulacionSM.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\AnulacionSM.ascx.designer.cs">
+      <DependentUpon>AnulacionSM.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\AsistenciaCitaMedica.ascx.cs">
+      <DependentUpon>AsistenciaCitaMedica.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\AsistenciaCitaMedica.ascx.designer.cs">
+      <DependentUpon>AsistenciaCitaMedica.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\BlqNotRespInm.ascx.cs">
+      <DependentUpon>BlqNotRespInm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\BlqNotRespInm.ascx.designer.cs">
+      <DependentUpon>BlqNotRespInm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\BlqNotRespInmBasico.ascx.cs">
+      <DependentUpon>BlqNotRespInmBasico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\BlqNotRespInmBasico.ascx.designer.cs">
+      <DependentUpon>BlqNotRespInmBasico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\BlqNotRespInmBasicoCAActivacion.ascx.cs">
+      <DependentUpon>BlqNotRespInmBasicoCAActivacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\BlqNotRespInmBasicoCAActivacion.ascx.designer.cs">
+      <DependentUpon>BlqNotRespInmBasicoCAActivacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\BlqNotRespInmCAActivacion.ascx.cs">
+      <DependentUpon>BlqNotRespInmCAActivacion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\BlqNotRespInmCAActivacion.ascx.designer.cs">
+      <DependentUpon>BlqNotRespInmCAActivacion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\CambioMedico.ascx.cs">
+      <DependentUpon>CambioMedico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\CambioMedico.ascx.designer.cs">
+      <DependentUpon>CambioMedico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\CasosPendientesMedico.ascx.cs">
+      <DependentUpon>CasosPendientesMedico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\CasosPendientesMedico.ascx.designer.cs">
+      <DependentUpon>CasosPendientesMedico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\ContactoAlMedico.ascx.cs">
+      <DependentUpon>ContactoAlMedico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\ContactoAlMedico.ascx.designer.cs">
+      <DependentUpon>ContactoAlMedico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\ContactoInicial.ascx.cs">
+      <DependentUpon>ContactoInicial.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\ContactoInicial.ascx.designer.cs">
+      <DependentUpon>ContactoInicial.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\DatosExpedientesCA.ascx.cs">
+      <DependentUpon>DatosExpedientesCA.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\DatosExpedientesCA.ascx.designer.cs">
+      <DependentUpon>DatosExpedientesCA.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\DatosExpedientesCE.ascx.cs">
+      <DependentUpon>DatosExpedientesCE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\DatosExpedientesCE.ascx.designer.cs">
+      <DependentUpon>DatosExpedientesCE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\DatosGenerales.ascx.cs">
+      <DependentUpon>DatosGenerales.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\DatosGenerales.ascx.designer.cs">
+      <DependentUpon>DatosGenerales.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\DatosGeneralesCA.ascx.cs">
+      <DependentUpon>DatosGeneralesCA.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\DatosGeneralesCA.ascx.designer.cs">
+      <DependentUpon>DatosGeneralesCA.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\DatosGeneralesCE.ascx.cs">
+      <DependentUpon>DatosGeneralesCE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\DatosGeneralesCE.ascx.designer.cs">
+      <DependentUpon>DatosGeneralesCE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\DatosGeneralesMedico.ascx.cs">
+      <DependentUpon>DatosGeneralesMedico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\DatosGeneralesMedico.ascx.designer.cs">
+      <DependentUpon>DatosGeneralesMedico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\Egreso.ascx.cs">
+      <DependentUpon>Egreso.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\Egreso.ascx.designer.cs">
+      <DependentUpon>Egreso.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\Imprimir.ascx.cs">
+      <DependentUpon>Imprimir.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\Imprimir.ascx.designer.cs">
+      <DependentUpon>Imprimir.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\Ingreso.ascx.cs">
+      <DependentUpon>Ingreso.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\Ingreso.ascx.designer.cs">
+      <DependentUpon>Ingreso.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\ListadoMovimientos.ascx.cs">
+      <DependentUpon>ListadoMovimientos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\ListadoMovimientos.ascx.designer.cs">
+      <DependentUpon>ListadoMovimientos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\ListadoMovimientosCA.ascx.cs">
+      <DependentUpon>ListadoMovimientosCA.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\ListadoMovimientosCA.ascx.designer.cs">
+      <DependentUpon>ListadoMovimientosCA.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\MedicoAsignado.ascx.cs">
+      <DependentUpon>MedicoAsignado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\MedicoAsignado.ascx.designer.cs">
+      <DependentUpon>MedicoAsignado.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\MuestraChat.ascx.cs">
+      <DependentUpon>MuestraChat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\MuestraChat.ascx.designer.cs">
+      <DependentUpon>MuestraChat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\Observaciones.ascx.cs">
+      <DependentUpon>Observaciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\Observaciones.ascx.designer.cs">
+      <DependentUpon>Observaciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\RegistrodeOpinionMedico.ascx.cs">
+      <DependentUpon>RegistrodeOpinionMedico.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\RegistrodeOpinionMedico.ascx.designer.cs">
+      <DependentUpon>RegistrodeOpinionMedico.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\SeguimientoCita.ascx.cs">
+      <DependentUpon>SeguimientoCita.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\SeguimientoCita.ascx.designer.cs">
+      <DependentUpon>SeguimientoCita.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\SeleccionAsegurado.ascx.cs">
+      <DependentUpon>SeleccionAsegurado.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\SeleccionAsegurado.ascx.designer.cs">
+      <DependentUpon>SeleccionAsegurado.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\SeleccionAseguradoCA.ascx.cs">
+      <DependentUpon>SeleccionAseguradoCA.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\SeleccionAseguradoCA.ascx.designer.cs">
+      <DependentUpon>SeleccionAseguradoCA.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\SelectorCasos.ascx.cs">
+      <DependentUpon>SelectorCasos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\SelectorCasos.ascx.designer.cs">
+      <DependentUpon>SelectorCasos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\SolicitudNuevoMovimiento_ExtEgr.ascx.cs">
+      <DependentUpon>SolicitudNuevoMovimiento_ExtEgr.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\SolicitudNuevoMovimiento_ExtEgr.ascx.designer.cs">
+      <DependentUpon>SolicitudNuevoMovimiento_ExtEgr.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\SolicitudNuevoMovimiento_ExtEgrCA.ascx.cs">
+      <DependentUpon>SolicitudNuevoMovimiento_ExtEgrCA.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\SolicitudNuevoMovimiento_ExtEgrCA.ascx.designer.cs">
+      <DependentUpon>SolicitudNuevoMovimiento_ExtEgrCA.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\SolicitudNuevoMovimiento_Ing.ascx.cs">
+      <DependentUpon>SolicitudNuevoMovimiento_Ing.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\SolicitudNuevoMovimiento_Ing.ascx.designer.cs">
+      <DependentUpon>SolicitudNuevoMovimiento_Ing.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\SolicitudNuevoMovimiento_IngCA.ascx.cs">
+      <DependentUpon>SolicitudNuevoMovimiento_IngCA.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\SolicitudNuevoMovimiento_IngCA.ascx.designer.cs">
+      <DependentUpon>SolicitudNuevoMovimiento_IngCA.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\TestBloques.aspx.cs">
+      <DependentUpon>TestBloques.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\TestBloques.aspx.designer.cs">
+      <DependentUpon>TestBloques.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\testEgreso.aspx.cs">
+      <DependentUpon>testEgreso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\testEgreso.aspx.designer.cs">
+      <DependentUpon>testEgreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Bloques\UserControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Bloques\UserControlListaBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteCasos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteCasos.Designer.cs">
+      <DependentUpon>DisenoReporteCasos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteConsolidadoMovimiento.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteConsolidadoMovimiento.Designer.cs">
+      <DependentUpon>DisenoReporteConsolidadoMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteConsolidadoServicio.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteConsolidadoServicio.Designer.cs">
+      <DependentUpon>DisenoReporteConsolidadoServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteDetalleFactura.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteDetalleFactura.Designer.cs">
+      <DependentUpon>DisenoReporteDetalleFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteDetalleMovimiento.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteDetalleMovimiento.Designer.cs">
+      <DependentUpon>DisenoReporteDetalleMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteDetalleRemesa.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteDetalleRemesa.Designer.cs">
+      <DependentUpon>DisenoReporteDetalleRemesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteDetalleSolicitud.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteDetalleSolicitud.Designer.cs">
+      <DependentUpon>DisenoReporteDetalleSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteFactura.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteFactura.Designer.cs">
+      <DependentUpon>DisenoReporteFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteRelaciones.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\DisenoReporteRelaciones.Designer.cs">
+      <DependentUpon>DisenoReporteRelaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaBusquedaFacturas.aspx.cs">
+      <DependentUpon>PantallaBusquedaFacturas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaBusquedaFacturas.aspx.designer.cs">
+      <DependentUpon>PantallaBusquedaFacturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaBusquedaRelaciones.aspx.cs">
+      <DependentUpon>PantallaBusquedaRelaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaBusquedaRelaciones.aspx.designer.cs">
+      <DependentUpon>PantallaBusquedaRelaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaConsolidadoMovimiento.aspx.cs">
+      <DependentUpon>PantallaConsolidadoMovimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaConsolidadoMovimiento.aspx.designer.cs">
+      <DependentUpon>PantallaConsolidadoMovimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaDetalleFactura.aspx.cs">
+      <DependentUpon>PantallaDetalleFactura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaDetalleFactura.aspx.designer.cs">
+      <DependentUpon>PantallaDetalleFactura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaDetalleMovimiento.aspx.cs">
+      <DependentUpon>PantallaDetalleMovimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaDetalleMovimiento.aspx.designer.cs">
+      <DependentUpon>PantallaDetalleMovimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaDetalleMovimientoRemesa.aspx.cs">
+      <DependentUpon>PantallaDetalleMovimientoRemesa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaDetalleMovimientoRemesa.aspx.designer.cs">
+      <DependentUpon>PantallaDetalleMovimientoRemesa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaDetalleRelacion.aspx.cs">
+      <DependentUpon>PantallaDetalleRelacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaDetalleRelacion.aspx.designer.cs">
+      <DependentUpon>PantallaDetalleRelacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaReporteCasos.aspx.cs">
+      <DependentUpon>PantallaReporteCasos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaReporteCasos.aspx.designer.cs">
+      <DependentUpon>PantallaReporteCasos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaReporteConsolidadoServicio.aspx.cs">
+      <DependentUpon>PantallaReporteConsolidadoServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\PantallaReporteConsolidadoServicio.aspx.designer.cs">
+      <DependentUpon>PantallaReporteConsolidadoServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteCasos.aspx.cs">
+      <DependentUpon>ReporteCasos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteCasos.aspx.designer.cs">
+      <DependentUpon>ReporteCasos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteConsolidadoMovimientosUsuario.aspx.cs">
+      <DependentUpon>ReporteConsolidadoMovimientosUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteConsolidadoMovimientosUsuario.aspx.designer.cs">
+      <DependentUpon>ReporteConsolidadoMovimientosUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteConsolidadoServicio.aspx.cs">
+      <DependentUpon>ReporteConsolidadoServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteConsolidadoServicio.aspx.designer.cs">
+      <DependentUpon>ReporteConsolidadoServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteDetalleFactura.aspx.cs">
+      <DependentUpon>ReporteDetalleFactura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteDetalleFactura.aspx.designer.cs">
+      <DependentUpon>ReporteDetalleFactura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteDetalleMovimiento.aspx.cs">
+      <DependentUpon>ReporteDetalleMovimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteDetalleMovimiento.aspx.designer.cs">
+      <DependentUpon>ReporteDetalleMovimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteDetalleRemesa.aspx.cs">
+      <DependentUpon>ReporteDetalleRemesa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteDetalleRemesa.aspx.designer.cs">
+      <DependentUpon>ReporteDetalleRemesa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteDetalleSolicitud.aspx.cs">
+      <DependentUpon>ReporteDetalleSolicitud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteDetalleSolicitud.aspx.designer.cs">
+      <DependentUpon>ReporteDetalleSolicitud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteFacturas.aspx.cs">
+      <DependentUpon>ReporteFacturas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteFacturas.aspx.designer.cs">
+      <DependentUpon>ReporteFacturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteRelaciones.aspx.cs">
+      <DependentUpon>ReporteRelaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estadisticas\ReporteRelaciones.aspx.designer.cs">
+      <DependentUpon>ReporteRelaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estructura\AgrupacionDetalle.aspx.cs">
+      <DependentUpon>AgrupacionDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estructura\AgrupacionDetalle.aspx.designer.cs">
+      <DependentUpon>AgrupacionDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estructura\AgrupacionLista.aspx.cs">
+      <DependentUpon>AgrupacionLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estructura\AgrupacionLista.aspx.designer.cs">
+      <DependentUpon>AgrupacionLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estructura\AgruparCasoLista.aspx.cs">
+      <DependentUpon>AgruparCasoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estructura\AgruparCasoLista.aspx.designer.cs">
+      <DependentUpon>AgruparCasoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estructura\AnularSuspenderCasoLista.aspx.cs">
+      <DependentUpon>AnularSuspenderCasoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estructura\AnularSuspenderCasoLista.aspx.designer.cs">
+      <DependentUpon>AnularSuspenderCasoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estructura\AnularSuspenderCasoMaestroDetalle.aspx.cs">
+      <DependentUpon>AnularSuspenderCasoMaestroDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estructura\AnularSuspenderCasoMaestroDetalle.aspx.designer.cs">
+      <DependentUpon>AnularSuspenderCasoMaestroDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estructura\CasoAgrupacionDetalle.aspx.cs">
+      <DependentUpon>CasoAgrupacionDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estructura\CasoAgrupacionDetalle.aspx.designer.cs">
+      <DependentUpon>CasoAgrupacionDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estructura\ConsultaCasos.aspx.cs">
+      <DependentUpon>ConsultaCasos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estructura\ConsultaCasos.aspx.designer.cs">
+      <DependentUpon>ConsultaCasos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estructura\ConsultaMovPorSus.aspx.cs">
+      <DependentUpon>ConsultaMovPorSus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estructura\ConsultaMovPorSus.aspx.designer.cs">
+      <DependentUpon>ConsultaMovPorSus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estructura\GestionSupervisadosLista.aspx.cs">
+      <DependentUpon>GestionSupervisadosLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estructura\GestionSupervisadosLista.aspx.designer.cs">
+      <DependentUpon>GestionSupervisadosLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estructura\MisActividades.aspx.cs">
+      <DependentUpon>MisActividades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estructura\MisActividades.aspx.designer.cs">
+      <DependentUpon>MisActividades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estructura\MisActividadesDetalle.aspx.cs">
+      <DependentUpon>MisActividadesDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estructura\MisActividadesDetalle.aspx.designer.cs">
+      <DependentUpon>MisActividadesDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estructura\MisSolicitudes.aspx.cs">
+      <DependentUpon>MisSolicitudes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estructura\MisSolicitudes.aspx.designer.cs">
+      <DependentUpon>MisSolicitudes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estructura\PoteCasos.aspx.cs">
+      <DependentUpon>PoteCasos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estructura\PoteCasos.aspx.designer.cs">
+      <DependentUpon>PoteCasos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estructura\PriorizarCasoLista.aspx.cs">
+      <DependentUpon>PriorizarCasoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estructura\PriorizarCasoLista.aspx.designer.cs">
+      <DependentUpon>PriorizarCasoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estructura\SolicitudServicio.aspx.cs">
+      <DependentUpon>SolicitudServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estructura\SolicitudServicio.aspx.designer.cs">
+      <DependentUpon>SolicitudServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Estructura\UsuarioSuscriptorLista.aspx.cs">
+      <DependentUpon>UsuarioSuscriptorLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Estructura\UsuarioSuscriptorLista.aspx.designer.cs">
+      <DependentUpon>UsuarioSuscriptorLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Gat\ConsultaCasosAuditoria.aspx.cs">
+      <DependentUpon>ConsultaCasosAuditoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Gat\ConsultaCasosAuditoria.aspx.designer.cs">
+      <DependentUpon>ConsultaCasosAuditoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Orquestador\PantallaContenedora.aspx.cs">
+      <DependentUpon>PantallaContenedora.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Orquestador\PantallaContenedora.aspx.designer.cs">
+      <DependentUpon>PantallaContenedora.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Orquestador\PantallaContenedora2.aspx.cs">
+      <DependentUpon>PantallaContenedora2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Orquestador\PantallaContenedora2.aspx.designer.cs">
+      <DependentUpon>PantallaContenedora2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\AccionesdelPasoDetalle.aspx.cs">
+      <DependentUpon>AccionesdelPasoDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\AccionesdelPasoDetalle.aspx.designer.cs">
+      <DependentUpon>AccionesdelPasoDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\AccionesdelPasoLista.aspx.cs">
+      <DependentUpon>AccionesdelPasoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\AccionesdelPasoLista.aspx.designer.cs">
+      <DependentUpon>AccionesdelPasoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\AlcanceGeograficoDetalle.aspx.cs">
+      <DependentUpon>AlcanceGeograficoDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\AlcanceGeograficoDetalle.aspx.designer.cs">
+      <DependentUpon>AlcanceGeograficoDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\AlcanceGeograficoLista.aspx.cs">
+      <DependentUpon>AlcanceGeograficoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\AlcanceGeograficoLista.aspx.designer.cs">
+      <DependentUpon>AlcanceGeograficoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\BloqueDetalle.aspx.cs">
+      <DependentUpon>BloqueDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\BloqueDetalle.aspx.designer.cs">
+      <DependentUpon>BloqueDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\BloqueLista.aspx.cs">
+      <DependentUpon>BloqueLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\BloqueLista.aspx.designer.cs">
+      <DependentUpon>BloqueLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ChadePasoDetalle.aspx.cs">
+      <DependentUpon>ChadePasoDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ChadePasoDetalle.aspx.designer.cs">
+      <DependentUpon>ChadePasoDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ChadePasoLista.aspx.cs">
+      <DependentUpon>ChadePasoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ChadePasoLista.aspx.designer.cs">
+      <DependentUpon>ChadePasoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ConfiguracionPaso.aspx.cs">
+      <DependentUpon>ConfiguracionPaso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ConfiguracionPaso.aspx.designer.cs">
+      <DependentUpon>ConfiguracionPaso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ConfiguracionPasosVinculaciones.aspx.cs">
+      <DependentUpon>ConfiguracionPasosVinculaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ConfiguracionPasosVinculaciones.aspx.designer.cs">
+      <DependentUpon>ConfiguracionPasosVinculaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ConfiguracionXmlGenerales.aspx.cs">
+      <DependentUpon>ConfiguracionXmlGenerales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ConfiguracionXmlGenerales.aspx.designer.cs">
+      <DependentUpon>ConfiguracionXmlGenerales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\DocumentosPasoDetalle.aspx.cs">
+      <DependentUpon>DocumentosPasoDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\DocumentosPasoDetalle.aspx.designer.cs">
+      <DependentUpon>DocumentosPasoDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\DocumentosPasoLista.aspx.cs">
+      <DependentUpon>DocumentosPasoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\DocumentosPasoLista.aspx.designer.cs">
+      <DependentUpon>DocumentosPasoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\DocumentosServicioDetalle.aspx.cs">
+      <DependentUpon>DocumentosServicioDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\DocumentosServicioDetalle.aspx.designer.cs">
+      <DependentUpon>DocumentosServicioDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\DocumentosServicioLista.aspx.cs">
+      <DependentUpon>DocumentosServicioLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\DocumentosServicioLista.aspx.designer.cs">
+      <DependentUpon>DocumentosServicioLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\EtapaMaestroDetalle.aspx.cs">
+      <DependentUpon>EtapaMaestroDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\EtapaMaestroDetalle.aspx.designer.cs">
+      <DependentUpon>EtapaMaestroDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\FlujosEjecucionDetalle.aspx.cs">
+      <DependentUpon>FlujosEjecucionDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\FlujosEjecucionDetalle.aspx.designer.cs">
+      <DependentUpon>FlujosEjecucionDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\FlujosEjecucionLista.aspx.cs">
+      <DependentUpon>FlujosEjecucionLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\FlujosEjecucionLista.aspx.designer.cs">
+      <DependentUpon>FlujosEjecucionLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\FlujosServicioLista.aspx.cs">
+      <DependentUpon>FlujosServicioLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\FlujosServicioLista.aspx.designer.cs">
+      <DependentUpon>FlujosServicioLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\FlujosServicioMaestroDetalle.aspx.cs">
+      <DependentUpon>FlujosServicioMaestroDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\FlujosServicioMaestroDetalle.aspx.designer.cs">
+      <DependentUpon>FlujosServicioMaestroDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\MensajesMetodosDestinatarioCorreoDetalle.aspx.cs">
+      <DependentUpon>MensajesMetodosDestinatarioCorreoDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\MensajesMetodosDestinatarioCorreoDetalle.aspx.designer.cs">
+      <DependentUpon>MensajesMetodosDestinatarioCorreoDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\MensajesMetodosDestinatarioDetalle.aspx.cs">
+      <DependentUpon>MensajesMetodosDestinatarioDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\MensajesMetodosDestinatarioDetalle.aspx.designer.cs">
+      <DependentUpon>MensajesMetodosDestinatarioDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ParametrosAgendaDetalle.aspx.cs">
+      <DependentUpon>ParametrosAgendaDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ParametrosAgendaDetalle.aspx.designer.cs">
+      <DependentUpon>ParametrosAgendaDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ParametrosAgendaLista.aspx.cs">
+      <DependentUpon>ParametrosAgendaLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ParametrosAgendaLista.aspx.designer.cs">
+      <DependentUpon>ParametrosAgendaLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\PasoMaestroDetalle.aspx.cs">
+      <DependentUpon>PasoMaestroDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\PasoMaestroDetalle.aspx.designer.cs">
+      <DependentUpon>PasoMaestroDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\PasoMaestroDetalleBloques.aspx.cs">
+      <DependentUpon>PasoMaestroDetalleBloques.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\PasoMaestroDetalleBloques.aspx.designer.cs">
+      <DependentUpon>PasoMaestroDetalleBloques.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\PasosBloqueDetalle.aspx.cs">
+      <DependentUpon>PasosBloqueDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\PasosBloqueDetalle.aspx.designer.cs">
+      <DependentUpon>PasosBloqueDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\PasosRepuestaDetalle.aspx.cs">
+      <DependentUpon>PasosRepuestaDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\PasosRepuestaDetalle.aspx.designer.cs">
+      <DependentUpon>PasosRepuestaDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ServiciosSimuladoDetalle.aspx.cs">
+      <DependentUpon>ServiciosSimuladoDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ServiciosSimuladoDetalle.aspx.designer.cs">
+      <DependentUpon>ServiciosSimuladoDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ServiciosSimuladoLista.aspx.cs">
+      <DependentUpon>ServiciosSimuladoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ServiciosSimuladoLista.aspx.designer.cs">
+      <DependentUpon>ServiciosSimuladoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ServicioSucursalDetalle.aspx.cs">
+      <DependentUpon>ServicioSucursalDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ServicioSucursalDetalle.aspx.designer.cs">
+      <DependentUpon>ServicioSucursalDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ServicioSucursalLista.aspx.cs">
+      <DependentUpon>ServicioSucursalLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\ServicioSucursalLista.aspx.designer.cs">
+      <DependentUpon>ServicioSucursalLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\SolicitudBloqueDetalle.aspx.cs">
+      <DependentUpon>SolicitudBloqueDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\SolicitudBloqueDetalle.aspx.designer.cs">
+      <DependentUpon>SolicitudBloqueDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\SolicitudBloqueMaestroDetalle.aspx.cs">
+      <DependentUpon>SolicitudBloqueMaestroDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\SolicitudBloqueMaestroDetalle.aspx.designer.cs">
+      <DependentUpon>SolicitudBloqueMaestroDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\SuscriptorLista.aspx.cs">
+      <DependentUpon>SuscriptorLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\SuscriptorLista.aspx.designer.cs">
+      <DependentUpon>SuscriptorLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\TipoPasoDetalle.aspx.cs">
+      <DependentUpon>TipoPasoDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\TipoPasoDetalle.aspx.designer.cs">
+      <DependentUpon>TipoPasoDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\TipoPasoLista.aspx.cs">
+      <DependentUpon>TipoPasoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Parametrizador\TipoPasoLista.aspx.designer.cs">
+      <DependentUpon>TipoPasoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\CartaAvalConsultSalud.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\CartaAvalConsultSalud.designer.cs">
+      <DependentUpon>CartaAvalConsultSalud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ComprobanteMovimientoCA.aspx.cs">
+      <DependentUpon>ComprobanteMovimientoCA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ComprobanteMovimientoCA.aspx.designer.cs">
+      <DependentUpon>ComprobanteMovimientoCA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ComprobanteMovimientoCE.aspx.cs">
+      <DependentUpon>ComprobanteMovimientoCE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ComprobanteMovimientoCE.aspx.designer.cs">
+      <DependentUpon>ComprobanteMovimientoCE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ConsultaCasosOpinionMedica.aspx.cs">
+      <DependentUpon>ConsultaCasosOpinionMedica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ConsultaCasosOpinionMedica.aspx.designer.cs">
+      <DependentUpon>ConsultaCasosOpinionMedica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\DisenoComprobanteMovCA.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\DisenoComprobanteMovCA.Designer.cs">
+      <DependentUpon>DisenoComprobanteMovCA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\DisenoComprobanteMovCE.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\DisenoComprobanteMovCE.Designer.cs">
+      <DependentUpon>DisenoComprobanteMovCE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\PagIntermediaBI.aspx.cs">
+      <DependentUpon>PagIntermediaBI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\PagIntermediaBI.aspx.designer.cs">
+      <DependentUpon>PagIntermediaBI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReimpresionComprobanteMovimientos.aspx.cs">
+      <DependentUpon>ReimpresionComprobanteMovimientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReimpresionComprobanteMovimientos.aspx.designer.cs">
+      <DependentUpon>ReimpresionComprobanteMovimientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\Report3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\Report3.Designer.cs">
+      <DependentUpon>Report3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCA.aspx.cs">
+      <DependentUpon>ReporteCA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCA.aspx.designer.cs">
+      <DependentUpon>ReporteCA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCAAltamira.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCAAltamira.Designer.cs">
+      <DependentUpon>ReporteCAAltamira.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCAIbero.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCAIbero.Designer.cs">
+      <DependentUpon>ReporteCAIbero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCAMI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCAMI.Designer.cs">
+      <DependentUpon>ReporteCAMI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCartaAval.aspx.cs">
+      <DependentUpon>ReporteCartaAval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCartaAval.aspx.designer.cs">
+      <DependentUpon>ReporteCartaAval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCartaAvalAltamira.aspx.cs">
+      <DependentUpon>ReporteCartaAvalAltamira.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCartaAvalAltamira.aspx.designer.cs">
+      <DependentUpon>ReporteCartaAvalAltamira.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCartaAvalConsultSalud.aspx.cs">
+      <DependentUpon>ReporteCartaAvalConsultSalud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCartaAvalConsultSalud.aspx.designer.cs">
+      <DependentUpon>ReporteCartaAvalConsultSalud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCartaAvalIbero.aspx.cs">
+      <DependentUpon>ReporteCartaAvalIbero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCartaAvalIbero.aspx.designer.cs">
+      <DependentUpon>ReporteCartaAvalIbero.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCartaAvalMI.aspx.cs">
+      <DependentUpon>ReporteCartaAvalMI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCartaAvalMI.aspx.designer.cs">
+      <DependentUpon>ReporteCartaAvalMI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCartaAvalSegurosFederal.aspx.cs">
+      <DependentUpon>ReporteCartaAvalSegurosFederal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCartaAvalSegurosFederal.aspx.designer.cs">
+      <DependentUpon>ReporteCartaAvalSegurosFederal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCartaAvalZuma.aspx.cs">
+      <DependentUpon>ReporteCartaAvalZuma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCartaAvalZuma.aspx.designer.cs">
+      <DependentUpon>ReporteCartaAvalZuma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCASegurosFederal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCASegurosFederal.designer.cs">
+      <DependentUpon>ReporteCASegurosFederal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCAZ.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteCAZ.Designer.cs">
+      <DependentUpon>ReporteCAZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteOpMed.aspx.cs">
+      <DependentUpon>ReporteOpMed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Reportes\ReporteOpMed.aspx.designer.cs">
+      <DependentUpon>ReporteOpMed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Tracking\AuditoriaTabMovimiento.aspx.cs">
+      <DependentUpon>AuditoriaTabMovimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Tracking\AuditoriaTabMovimiento.aspx.designer.cs">
+      <DependentUpon>AuditoriaTabMovimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Tracking\CasoDetalle.aspx.cs">
+      <DependentUpon>CasoDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Tracking\CasoDetalle.aspx.designer.cs">
+      <DependentUpon>CasoDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Tracking\DatosGeneralesCasoDetalle.aspx.cs">
+      <DependentUpon>DatosGeneralesCasoDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Tracking\DatosGeneralesCasoDetalle.aspx.designer.cs">
+      <DependentUpon>DatosGeneralesCasoDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Tracking\MensajeCasoLista.aspx.cs">
+      <DependentUpon>MensajeCasoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Tracking\MensajeCasoLista.aspx.designer.cs">
+      <DependentUpon>MensajeCasoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Tracking\MovimientoCasoLista.aspx.cs">
+      <DependentUpon>MovimientoCasoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Tracking\MovimientoCasoLista.aspx.designer.cs">
+      <DependentUpon>MovimientoCasoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Tracking\MovimientoDetalle.aspx.cs">
+      <DependentUpon>MovimientoDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Tracking\MovimientoDetalle.aspx.designer.cs">
+      <DependentUpon>MovimientoDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Tracking\ObservacionesTabMovimientoLista.aspx.cs">
+      <DependentUpon>ObservacionesTabMovimientoLista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Tracking\ObservacionesTabMovimientoLista.aspx.designer.cs">
+      <DependentUpon>ObservacionesTabMovimientoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Tracking\RespuestaTabMovimiento.aspx.cs">
+      <DependentUpon>RespuestaTabMovimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Tracking\RespuestaTabMovimiento.aspx.designer.cs">
+      <DependentUpon>RespuestaTabMovimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Tracking\TiempoDelCasoDetalle.aspx.cs">
+      <DependentUpon>TiempoDelCasoDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Tracking\TiempoDelCasoDetalle.aspx.designer.cs">
+      <DependentUpon>TiempoDelCasoDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Tracking\TiemposTabMovimiento.aspx.cs">
+      <DependentUpon>TiemposTabMovimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Tracking\TiemposTabMovimiento.aspx.designer.cs">
+      <DependentUpon>TiemposTabMovimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Utilitarios\TransporteFlujoServicio.aspx.cs">
+      <DependentUpon>TransporteFlujoServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Utilitarios\TransporteFlujoServicio.aspx.designer.cs">
+      <DependentUpon>TransporteFlujoServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Modulos\Alertas\" />
+    <Folder Include="Modulos\Comunidad\" />
+    <Folder Include="Modulos\Documentos\" />
+    <Folder Include="Modulos\Receptor\" />
+    <Folder Include="Modulos\Roles\" />
+    <Folder Include="Modulos\Usuarios\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HConnexum.Tramitador.Datos\HConnexum.Tramitador.Datos.csproj">
+      <Project>{5BC6857C-0821-4352-862D-B21A9C280883}</Project>
+      <Name>HConnexum.Tramitador.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HConnexum.Tramitador.Negocio\HConnexum.Tramitador.Negocio.csproj">
+      <Project>{7147D43F-B2FF-4FB2-8710-15364DD2899D}</Project>
+      <Name>HConnexum.Tramitador.Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HConnexum.Tramitador.Presentacion\HConnexum.Tramitador.Presentacion.csproj">
+      <Project>{D15013BE-ABF1-46E2-9619-84C715F12BA7}</Project>
+      <Name>HConnexum.Tramitador.Presentacion</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\RadAsyncUpload.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadAsyncUpload.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadComboBox.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadComboBox.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadDataPager.Main.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadDataPager.Main.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadEditor.Dialogs.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadEditor.Dialogs.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\RadEditor.Main.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadEditor.Main.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadEditor.Modules.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadEditor.Modules.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\RadEditor.Tools.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadEditor.Tools.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadFilter.Main.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadFilter.Main.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadFilter.Main.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadFilter.Main.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadGrid.Main.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadGrid.Main.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadGrid.Main.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadGrid.Main.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadImageEditor.Dialogs.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadImageEditor.Dialogs.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadImageEditor.Main.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadImageEditor.Main.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadListBox.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadListBox.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadProgressArea.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadProgressArea.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadScheduler.Main.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadScheduler.Main.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadSchedulerRecurrenceEditor.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadSchedulerRecurrenceEditor.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadSpell.Dialog.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadSpell.Dialog.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadTreeList.Main.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadTreeList.Main.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadUpload.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadUpload.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadWindow.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadWindow.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RadWindow.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RadWindow.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\HConnexumBlack\controls.skin" />
+    <Content Include="App_Themes\HConnexumSilver\controls.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\HConnexum\controls.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ListaValores.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HC2KEY.pfx" />
+    <None Include="Properties\PublishProfiles\HC-Tramitador.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modulos\Estadisticas\DisenoReporteCasos.resx">
+      <DependentUpon>DisenoReporteCasos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Estadisticas\DisenoReporteConsolidadoMovimiento.resx">
+      <DependentUpon>DisenoReporteConsolidadoMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Estadisticas\DisenoReporteConsolidadoServicio.resx">
+      <DependentUpon>DisenoReporteConsolidadoServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Estadisticas\DisenoReporteDetalleFactura.resx">
+      <DependentUpon>DisenoReporteDetalleFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Estadisticas\DisenoReporteDetalleMovimiento.resx">
+      <DependentUpon>DisenoReporteDetalleMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Estadisticas\DisenoReporteDetalleRemesa.resx">
+      <DependentUpon>DisenoReporteDetalleRemesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Estadisticas\DisenoReporteDetalleSolicitud.resx">
+      <DependentUpon>DisenoReporteDetalleSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Estadisticas\DisenoReporteFactura.resx">
+      <DependentUpon>DisenoReporteFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Estadisticas\DisenoReporteRelaciones.resx">
+      <DependentUpon>DisenoReporteRelaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Reportes\CartaAvalConsultSalud.resx">
+      <DependentUpon>CartaAvalConsultSalud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Reportes\DisenoComprobanteMovCA.resx">
+      <DependentUpon>DisenoComprobanteMovCA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Reportes\DisenoComprobanteMovCE.resx">
+      <DependentUpon>DisenoComprobanteMovCE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Reportes\Report3.resx">
+      <DependentUpon>Report3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Reportes\ReporteCAAltamira.resx">
+      <DependentUpon>ReporteCAAltamira.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Reportes\ReporteCAIbero.resx">
+      <DependentUpon>ReporteCAIbero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Reportes\ReporteCAMI.resx">
+      <DependentUpon>ReporteCAMI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Reportes\ReporteCASegurosFederal.resx">
+      <DependentUpon>ReporteCASegurosFederal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Reportes\ReporteCAZ.resx">
+      <DependentUpon>ReporteCAZ.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HC2KEY.pfx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59993</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Tramitador</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

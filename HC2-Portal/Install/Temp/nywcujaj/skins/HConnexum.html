@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link href="skin.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <div id="logo">
+                    <object id="Object1" codebase="LOGO" codetype="dotnetnuke/server"></object>
+                </div>
+            </div>
+            <div id="menu" class="menuBar centrar">
+            <div style="padding-left:10px; height: 28px;">
+                <object id="dnnNAV" codebase="NAV" codetype="dotnetnuke/server">
+                    <param name="ProviderName" value="DDRMenuNavigationProvider" />
+                    <param name="IndicateChildren" value="false" />
+                    <param name="ControlOrientation" value="Horizontal" />
+                    <param name="CSSControl" value="mainMenu" />
+                </object>
+             </div>
+            </div>
+            <div id="content">
+                <div id="BannerPane" runat="server"></div>
+                <div id="TopPane" runat="server"></div>
+                <div id="LeftPane" runat="server"></div>
+                <div id="RightPane" runat="server"></div>
+                <div id="ContentPane" runat="server"></div>
+                <div id="BottomPane" runat="server"></div>
+            </div>
+            <div id="Social">
+                <div class="bgSocialPane">
+                    <table style="width: 430px;" align="center">
+                        <tr>
+                            <td style="width: 83px;"><a href="https://www.facebook.com/hconnexum" target="_blank"><img alt="" src="/portal/portals/_default/skins/hconnexum/images/imgFacebookHC.png" border="0" /></a></td>
+                            <td style="width: 15px;"></td>
+                            <td style="width: 83px;"><a href="https://twitter.com/hconnexum" target="_blank"><img alt="" src="/portal/portals/_default/skins/hconnexum/images/imgTwitterHC.png" border="0" /></a></td>
+                            <td style="width: 15px;"></td>
+                            <td style="width: 83px;"><a href="http://www.youtube.com/user/hconnexum" target="_blank"><img alt="" src="/portal/portals/_default/skins/hconnexum/Images/imgYouTube.png" border="0" /></a></td>
+                        </tr>
+                    </table>
+                </div>
+
+				<div id="footer" class="footer_style" runat="server">
+					<table>
+						<tr>
+							<td style="padding-left: 10px;">
+								<object id="dnnCOPYRIGHT" codetype="dotnetnuke/server" codebase="COPYRIGHT">
+									<param name="CssClass" value="links" />
+								</object>
+							</td>
+							<td style="text-align: right;">
+								<img alt="" src="images/imgPoweredByNubise.png" />
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>

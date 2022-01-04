@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BC6857C-0821-4352-862D-B21A9C280883}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HConnexum.Tramitador.Datos</RootNamespace>
+    <AssemblyName>HConnexum.Tramitador.Datos</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>HC2KEY.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HConnexum.Infraestructura, Version=1.0.4925.29767, Culture=neutral, PublicKeyToken=ee75a6a24f8c4819, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HConnexum.Tramitador.Sitio\bin\HConnexum.Infraestructura.dll</HintPath>
+    </Reference>
+    <Reference Include="HConnexum.Seguridad, Version=1.0.4507.14882, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HConnexum.Tramitador.Sitio\bin\HConnexum.Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HConnexum.Tramitador.Negocio\HConnexum.Tramitador.Negocio.csproj">
+      <Project>{7147D43F-B2FF-4FB2-8710-15364DD2899D}</Project>
+      <Name>HConnexum.Tramitador.Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgrupacionRepositorio.cs" />
+    <Compile Include="AlcanceGeograficoRepositorio.cs" />
+    <Compile Include="BloqueRepositorio.cs" />
+    <Compile Include="BuzonChatRepositorio.cs" />
+    <Compile Include="BuzonMensajeRepositorio.cs" />
+    <Compile Include="CasoAgrupacionRepositorio.cs" />
+    <Compile Include="CasoRepositorio.cs" />
+    <Compile Include="ChadePasoRepositorio.cs" />
+    <Compile Include="ComprobanteMovimientoCADTO.cs" />
+    <Compile Include="PantallaBusquedaFacturasRepositorio.cs" />
+    <Compile Include="ServiciosSimuladoRepositorio.cs" />
+    <Compile Include="UsuarioSuscriptorRepositorio.cs" />
+    <Compile Include="ServicioRepositorio.cs" />
+    <Compile Include="ServicioSuscriptorRepositorio.cs" />
+    <Compile Include="DocumentoRepositorio.cs" />
+    <Compile Include="DocumentosPasoRepositorio.cs" />
+    <Compile Include="DocumentosServicioRepositorio.cs" />
+    <Compile Include="EtapaRepositorio.cs" />
+    <Compile Include="FlujosEjecucionRepositorio.cs" />
+    <Compile Include="FlujosServicioRepositorio.cs" />
+    <Compile Include="ListaRepositorio.cs" />
+    <Compile Include="ListasValorRepositorio.cs" />
+    <Compile Include="MensajesMetodosDestinatarioRepositorio.cs" />
+    <Compile Include="MovimientoRepositorio.cs" />
+    <Compile Include="ObservacionesMovimientoRepositorio.cs" />
+    <Compile Include="ParametrosAgendaRepositorio.cs" />
+    <Compile Include="PasoRepositorio.cs" />
+    <Compile Include="PasosBloqueRepositorio.cs" />
+    <Compile Include="PasosRepuestaRepositorio.cs" />
+    <Compile Include="RespuestaMovimientoRepositorio.cs" />
+    <Compile Include="ServicioSucursalRepositorio.cs" />
+    <Compile Include="SolicitanteRepositorio.cs" />
+    <Compile Include="SolicitudBloqueRepositorio.cs" />
+    <Compile Include="SolicitudRepositorio.cs" />
+    <Compile Include="SuscriptorRepositorio.cs" />
+    <Compile Include="UtilidadesGlobales\ExtensionesEntityFramework.cs" />
+    <Compile Include="UtilidadesGlobales\IRepositorio.cs" />
+    <Compile Include="UtilidadesGlobales\IUnidadDeTrabajo.cs" />
+    <Compile Include="UtilidadesGlobales\PaginasModuloRepositorio.cs" />
+    <Compile Include="UtilidadesGlobales\PredicateBuilder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UtilidadesGlobales\RepositorioBase.cs" />
+    <Compile Include="UtilidadesGlobales\TomadoRepositorio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UtilidadesGlobales\TraModAppPagModAppTraModAppRepositorio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UtilidadesGlobales\UnidadDeTrabajo.cs" />
+    <Compile Include="UtilidadesGlobales\UnidadDeTrabajoLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UtilidadesGlobales\UsuarioRepositorio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UtilidadesGlobales\UtilidadesDTO.cs" />
+    <Compile Include="UtilidadesGlobales\UtilidadesExpresiones.cs" />
+    <Compile Include="TipoPasoRepositorio.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HC2KEY.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

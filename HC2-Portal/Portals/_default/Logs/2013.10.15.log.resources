@@ -1,0 +1,330 @@
+2013-10-15 10:19:09,993 [ZVE01-202][Thread:16][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=109&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.82.175.188
+	Port: 37632
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)
+	ViewState: PkEf2MT0La9hhhC/7kIfF4CeyXBmbvtLUZqUV+W+hPpGFiHI7XnU5ZRwjs9xyWV+2NJBQN+RniLrlJkmzrj15Jw13fufhQ+lG7ZvuafzTazEhgU9zBsGdT9I6PHYq4vUlZiBFcQ2UDCu6sGcf290Y4PA4glcAPIpL4vxxnJhRVg8l2LYQyNtr2WfzaxHzCILNm4GLeJ0jC25HgCR8CGvuEdvAXEhuFpjIJ4wyXXvx4FrmUvg8WtZF1Xp31bh0HC3fHsXXRG+akOXaw65YUtyCVuHidMcqjhYlWixfZHh6bBr3f5JwpbTMiWrP97DhmdltjO8S7y5JndrzwNywIi100F8gPcH35fiUmr3K3+8pCc2/gPn4qyL/XKnfKB5cICA+acbFcGd3mZWLCZYdkBTR4sQx59Zm/ogHmc7NxG2l2uc/r4lf0shIQrWklfkKKmmr8IOe+2jRek/p3vMlxETyloH0qd9bUE2m+UqiVr2gvKMPligk+jdKaweWqz6BvwtPP+MQ8voDMQmzZ2cKGsYXZHInWMUs640NVAocb7B/O8MUS4dwEfj0LnbWDhsGVc2eKxVnAxjVtkatS5UkNqOgsnD4x1qSpYE3stQPNLWN/lY7vBGVubag+iXycQWZMKhRFXHMbMmnVTekw93ejuJ+Z1wKwqC0C028moJbI6tnVj0qaEZCqK2G9l+jOvOXgYvbJXLLEF8EtWYzusb7VZYt2CsKx...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-10-15 11:57:23,111 [ZVE01-202][Thread:75][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.206.176.121
+	Port: 2731
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; InfoPath.2; .NET CLR 2.0.50727; OfficeLiveConnector.1.3; OfficeLivePatch.0.0)
+	ViewState: b+0P9NBG6QWtP7u/yYgiM7OOsguBc4nsK8aoFdKANqMlTeS7MjMrDnrwUBKETT/P8zjfjO2IJdpAiBRDUECfIDcNw4Qj1FXngJgqz36cQFMGQ7FINUZ3wn2BtXlaRz8nFVFRpp4WxDzx9NeUOJdDGJqgbDKpbIFdB9wZHDP+z6FueZhRnT4aHuOH6shH+34xHtcFTzTFWOyqZ4wDiulGagBd/WZ4TfnJpoT7q3i3uQai5ZqrVInYk83rFmyANMoWn6kGcDzUks7LgngB9XsBg86tm56oKfTaGV5DFBhQh+dVg1X5/G62KlDImzPv2Mg1nsgumKWNa8mA9RkrgmlEhdSH3Kw1aSEg9jJ+DVPZksAtFqjpFBMQdhrWE+Qq2vJZQYGpscwQW813cAy1ryeJkb+gAwkxKVck399K4uuRfLm2iEyHwAOZmKOLXk0JROo9MScoR9g5zmwQJWr6KoNL715tDECxjrX9TseIO1+x8Nx0u6byN7RPlTcGxptgxeH0mZGToFrCfhvjZjYZsF3dsGSdIB0X/xlCspWyhfVLXVk7a2Wb18y6QCSEG1IOFTEdmkbtG4sk5AC+Ks16BEiLc/22BLqocKh64JeceyODHGoRqSy2SPhBr/isOGQHJu7d0UVm28qTqOjFlZCugZ8C3FolSdlou9WXSajnMb29oNX7qqXWjv/L7cquPUB8I7cx0c9wYtnj/vypCyYMXjtB2XccmkQ+QFzQTUCy62+D4Ppz...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-10-15 11:57:23,189 [ZVE01-202][Thread:75][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=109&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.206.176.121
+	Port: 2731
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; InfoPath.2; .NET CLR 2.0.50727; OfficeLiveConnector.1.3; OfficeLivePatch.0.0)
+	ViewState: b+0P9NBG6QWtP7u/yYgiM7OOsguBc4nsK8aoFdKANqMlTeS7MjMrDnrwUBKETT/P8zjfjO2IJdpAiBRDUECfIDcNw4Qj1FXngJgqz36cQFMGQ7FINUZ3wn2BtXlaRz8nFVFRpp4WxDzx9NeUOJdDGJqgbDKpbIFdB9wZHDP+z6FueZhRnT4aHuOH6shH+34xHtcFTzTFWOyqZ4wDiulGagBd/WZ4TfnJpoT7q3i3uQai5ZqrVInYk83rFmyANMoWn6kGcDzUks7LgngB9XsBg86tm56oKfTaGV5DFBhQh+dVg1X5/G62KlDImzPv2Mg1nsgumKWNa8mA9RkrgmlEhdSH3Kw1aSEg9jJ+DVPZksAtFqjpFBMQdhrWE+Qq2vJZQYGpscwQW813cAy1ryeJkb+gAwkxKVck399K4uuRfLm2iEyHwAOZmKOLXk0JROo9MScoR9g5zmwQJWr6KoNL715tDECxjrX9TseIO1+x8Nx0u6byN7RPlTcGxptgxeH0mZGToFrCfhvjZjYZsF3dsGSdIB0X/xlCspWyhfVLXVk7a2Wb18y6QCSEG1IOFTEdmkbtG4sk5AC+Ks16BEiLc/22BLqocKh64JeceyODHGoRqSy2SPhBr/isOGQHJu7d0UVm28qTqOjFlZCugZ8C3FolSdlou9WXSajnMb29oNX7qqXWjv/L7cquPUB8I7cx0c9wYtnj/vypCyYMXjtB2XccmkQ+QFzQTUCy62+D4Ppz...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-10-15 13:24:18,082 [ZVE01-202][Thread:34][ERROR] DotNetNuke.Services.Exceptions.Exceptions - HConnexum.Infraestructura.CustomException: Error al desencriptar la cadena: [hconnexum36159763832749]. ---> System.FormatException: Longitud no válida para una matriz de caracteres Base-64.
+   en System.Convert.FromBase64String(String s)
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   en Usuarios.UsuarioCMS.ExtraerDeViewStateOQueryString(String propiedad)
+   en Usuarios.UsuarioCMS.Page_Init(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   en DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   en DotNetNuke.UI.Containers.Container.ProcessModule()
+   en DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+2013-10-15 13:24:18,113 [ZVE01-202][Thread:34][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.ModuleLoadException: Error inesperado al añadir el módulo a ContentPane ---> HConnexum.Infraestructura.CustomException: Error al desencriptar la cadena: [hconnexum36159763832749]. ---> System.FormatException: Longitud no válida para una matriz de caracteres Base-64.
+   en System.Convert.FromBase64String(String s)
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   en Usuarios.UsuarioCMS.ExtraerDeViewStateOQueryString(String propiedad)
+   en Usuarios.UsuarioCMS.Page_Init(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   en DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   en DotNetNuke.UI.Containers.Container.ProcessModule()
+   en DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   en DotNetNuke.UI.Skins.Skin.InjectModule(Pane pane, ModuleInfo module)
+2013-10-15 13:24:18,175 [ZVE01-202][Thread:34][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+HConnexum.Infraestructura.CustomException: Error al desencriptar la cadena: [hconnexum36159763832749]. ---> System.FormatException: Longitud no válida para una matriz de caracteres Base-64.
+   en System.Convert.FromBase64String(String s)
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   en Usuarios.UsuarioCMS.ExtraerDeViewStateOQueryString(String propiedad)
+   en Usuarios.UsuarioCMS.Page_Init(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   en DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-10-15 13:24:18,175 [ZVE01-202][Thread:34][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=112&error=An unexpected error has occurred&content=0
+HConnexum.Infraestructura.CustomException: Error al desencriptar la cadena: [hconnexum36159763832749]. ---> System.FormatException: Longitud no válida para una matriz de caracteres Base-64.
+   en System.Convert.FromBase64String(String s)
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   en Usuarios.UsuarioCMS.ExtraerDeViewStateOQueryString(String propiedad)
+   en Usuarios.UsuarioCMS.Page_Init(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   en DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-10-15 17:16:12,845 [ZVE01-202][Thread:70][ERROR] DotNetNuke.Services.Exceptions.Exceptions - HConnexum.Infraestructura.CustomException: Error al desencriptar la cadena: [hconnexum3694741352004]. ---> System.FormatException: Longitud no válida para una matriz de caracteres Base-64.
+   en System.Convert.FromBase64String(String s)
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   en Usuarios.UsuarioCMS.ExtraerDeViewStateOQueryString(String propiedad)
+   en Usuarios.UsuarioCMS.Page_Init(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   en DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   en DotNetNuke.UI.Containers.Container.ProcessModule()
+   en DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+2013-10-15 17:16:12,845 [ZVE01-202][Thread:70][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.ModuleLoadException: Error inesperado al añadir el módulo a ContentPane ---> HConnexum.Infraestructura.CustomException: Error al desencriptar la cadena: [hconnexum3694741352004]. ---> System.FormatException: Longitud no válida para una matriz de caracteres Base-64.
+   en System.Convert.FromBase64String(String s)
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   en Usuarios.UsuarioCMS.ExtraerDeViewStateOQueryString(String propiedad)
+   en Usuarios.UsuarioCMS.Page_Init(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   en DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   en DotNetNuke.UI.Containers.Container.ProcessModule()
+   en DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   en DotNetNuke.UI.Skins.Skin.InjectModule(Pane pane, ModuleInfo module)
+2013-10-15 17:16:13,079 [ZVE01-202][Thread:70][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+HConnexum.Infraestructura.CustomException: Error al desencriptar la cadena: [hconnexum3694741352004]. ---> System.FormatException: Longitud no válida para una matriz de caracteres Base-64.
+   en System.Convert.FromBase64String(String s)
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   en Usuarios.UsuarioCMS.ExtraerDeViewStateOQueryString(String propiedad)
+   en Usuarios.UsuarioCMS.Page_Init(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   en DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-10-15 17:16:13,079 [ZVE01-202][Thread:70][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=112&error=An unexpected error has occurred&content=0
+HConnexum.Infraestructura.CustomException: Error al desencriptar la cadena: [hconnexum3694741352004]. ---> System.FormatException: Longitud no válida para una matriz de caracteres Base-64.
+   en System.Convert.FromBase64String(String s)
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   en Usuarios.UsuarioCMS.ExtraerDeViewStateOQueryString(String propiedad)
+   en Usuarios.UsuarioCMS.Page_Init(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   en DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-10-15 17:17:11,860 [ZVE01-202][Thread:92][ERROR] DotNetNuke.Services.Exceptions.Exceptions - HConnexum.Infraestructura.CustomException: Error al desencriptar la cadena: [hconnexum3694741352004]. ---> System.FormatException: Longitud no válida para una matriz de caracteres Base-64.
+   en System.Convert.FromBase64String(String s)
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   en Usuarios.UsuarioCMS.ExtraerDeViewStateOQueryString(String propiedad)
+   en Usuarios.UsuarioCMS.Page_Init(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   en DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   en DotNetNuke.UI.Containers.Container.ProcessModule()
+   en DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+2013-10-15 17:17:11,860 [ZVE01-202][Thread:92][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.ModuleLoadException: Error inesperado al añadir el módulo a ContentPane ---> HConnexum.Infraestructura.CustomException: Error al desencriptar la cadena: [hconnexum3694741352004]. ---> System.FormatException: Longitud no válida para una matriz de caracteres Base-64.
+   en System.Convert.FromBase64String(String s)
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   en Usuarios.UsuarioCMS.ExtraerDeViewStateOQueryString(String propiedad)
+   en Usuarios.UsuarioCMS.Page_Init(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   en DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   en DotNetNuke.UI.Containers.Container.ProcessModule()
+   en DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   en DotNetNuke.UI.Skins.Skin.InjectModule(Pane pane, ModuleInfo module)
+2013-10-15 17:17:11,875 [ZVE01-202][Thread:92][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+HConnexum.Infraestructura.CustomException: Error al desencriptar la cadena: [hconnexum3694741352004]. ---> System.FormatException: Longitud no válida para una matriz de caracteres Base-64.
+   en System.Convert.FromBase64String(String s)
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   en Usuarios.UsuarioCMS.ExtraerDeViewStateOQueryString(String propiedad)
+   en Usuarios.UsuarioCMS.Page_Init(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   en DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-10-15 17:17:11,875 [ZVE01-202][Thread:92][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=112&error=An unexpected error has occurred&content=0
+HConnexum.Infraestructura.CustomException: Error al desencriptar la cadena: [hconnexum3694741352004]. ---> System.FormatException: Longitud no válida para una matriz de caracteres Base-64.
+   en System.Convert.FromBase64String(String s)
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en HConnexum.Infraestructura.ExtensionesString.Desencriptar(String CadenaEncriptada)
+   en Usuarios.UsuarioCMS.ExtraerDeViewStateOQueryString(String propiedad)
+   en Usuarios.UsuarioCMS.Page_Init(Object sender, EventArgs e)
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.InitRecursive(Control namingContainer)
+   en System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   en DotNetNuke.UI.Modules.ModuleHost.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-10-15 22:31:28,920 [ZVE01-202][Thread:66][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 186.95.3.118
+	Port: 2974
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; InfoPath.2)
+	ViewState: mysRBuvXyWvw6+kI5uGDXUx4i2/FFekhMKvMVIp8iwlR1XAwSTdK5SAxf4mCtZbPnRL4Jk/nwZJF2TSgtMHerGXZLsY9TZeX4VYv1NGxQ8Je5FVANlCCUtfQ6mybVCUEz/KqGaY+hkzhIaYb8/4shtB7+2kBkwxVSTykYvBWrwSDuPRReIT/wQ257dgFjfgQrmY7o9bI6HOS4//OcYooSZEmTIVtJzBRAcqRIMv40xAOnow4oLmcMhFCnQnPAYVsQORIQTbm/9AUueITWfMbNz1mDzu/bvDq/H+1ShrDDTCl8wvlA16zNjcvhQPuJwXvmJuuppPwcxsqE02VifR2eMcIZErAsDUr+zhKXumMvq5Ghx4XhHY3PAwCAyTtv29+nZwWQjmYCbrJ7Ycn1TAcuSrbbKv1VJo18YPcIj25/V0zI6kI6nAkffTcOPpFcNJ+1osjt1y+GeIBIabM9Dcj7OG/xgI8ayPGboKzwaKY25zcvczMEG9p+7P8sLaCFP92EeKySqTOPOBk6r2eGHomavWfzPQUMtqpuMhqJ/MayMXMU7bf7OZIpvl5C4aOhSAt9NJTFqsOQA7teGEGal7/qf/jUGPCKVztyDHGvO7i3MAQSV8+sVcL8DruA0e2LYBXv+2VqqMPao8gaVCOFYVsL0Nsmoa0IqOeL8/7AQMWtIs1E9TMy0YX2NQVNwYCM...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-10-15 22:31:29,014 [ZVE01-202][Thread:66][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=109&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 186.95.3.118
+	Port: 2974
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; InfoPath.2)
+	ViewState: mysRBuvXyWvw6+kI5uGDXUx4i2/FFekhMKvMVIp8iwlR1XAwSTdK5SAxf4mCtZbPnRL4Jk/nwZJF2TSgtMHerGXZLsY9TZeX4VYv1NGxQ8Je5FVANlCCUtfQ6mybVCUEz/KqGaY+hkzhIaYb8/4shtB7+2kBkwxVSTykYvBWrwSDuPRReIT/wQ257dgFjfgQrmY7o9bI6HOS4//OcYooSZEmTIVtJzBRAcqRIMv40xAOnow4oLmcMhFCnQnPAYVsQORIQTbm/9AUueITWfMbNz1mDzu/bvDq/H+1ShrDDTCl8wvlA16zNjcvhQPuJwXvmJuuppPwcxsqE02VifR2eMcIZErAsDUr+zhKXumMvq5Ghx4XhHY3PAwCAyTtv29+nZwWQjmYCbrJ7Ycn1TAcuSrbbKv1VJo18YPcIj25/V0zI6kI6nAkffTcOPpFcNJ+1osjt1y+GeIBIabM9Dcj7OG/xgI8ayPGboKzwaKY25zcvczMEG9p+7P8sLaCFP92EeKySqTOPOBk6r2eGHomavWfzPQUMtqpuMhqJ/MayMXMU7bf7OZIpvl5C4aOhSAt9NJTFqsOQA7teGEGal7/qf/jUGPCKVztyDHGvO7i3MAQSV8+sVcL8DruA0e2LYBXv+2VqqMPao8gaVCOFYVsL0Nsmoa0IqOeL8/7AQMWtIs1E9TMy0YX2NQVNwYCM...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

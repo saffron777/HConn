@@ -1,0 +1,15 @@
+2013-09-23 18:09:15,898 [ZVE01-202][Thread:96][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=110&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.94.202.170
+	Port: 2077
+	Referer: http://www.h-connexum.com/PORTAL/LoginHC2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:23.0) Gecko/20100101 Firefox/23.0
+	ViewState: lHk0cvI1ilHfC+sS9Ikdu8DwFEUwo8vuHhwqDb7rXIefeLwDO7cdStKC+WmU2SrOffwC9y+DBY3ysrqUdmvkjr2xwCI00NXw6AcJQS6OZ6Z+amqC7sNKrgWMHkM7j0HvWbBn4oN/5k2w6Qx9UD2gvuliGgW6SV/CgKEKLy3JUYJaWv5ErZX9hJndUfkhdjiv6e18Jd8uTaA+FOg0xmCUAfu8vzgJBk41KLmN48RQ/oXp3hIBYuzsDohQ0Pe4UiPHAudiCSQvNCk0qQBobf5JZgyBWgpkNvULz4UXlx7f9OroG9ZP4j7Mdmlf3M2NpAD8DtIYsBYGwF5N0a3nUgSS3S9p5Z19vCGzj0dQuVySuPDx1pLjAfJcz8hDaSMi5VH8707c0/JgM4wiT1xQi2qIjrJ5gAnERFodvYy6MGCBYnzWku4hIs6CN56/PsqHExEP9+Z2CscG/hNh2c7tCobMIsBGkTNpRuhz08VxaWWhXY5A/1clSpiby108fNGfypiPdqeo+KD7Tn8oP5Q9p+YqzdX6jYL0qjIeFqO55ajgwUZ/MK+Jo37vXB7k4TqMxADFMUxOSlfPZtgYvjBSloY9/XqMBB/9gV0zJmdrgoe56Y5+31qv1Sj0Lpi2ewwHuz2b1wbziDQnl9soNCVyU0h2OIJf2WUdAqfYqEmf2rlcfK5IdXGwuKjqUr6Z40RmFXdyAOQ62lD2Q010AEgKqTY1hLEu2m5ERiBvPCKtDmzurruuiOiG5l4olWhuxeufBfyEwnZXYhrkenm9kYdzX4a7...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

@@ -1,0 +1,8 @@
+2014-01-31 23:57:02,242 [ZVE01-202][Thread:69][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=114&error=An unexpected error has occurred&content=0
+System.FormatException: La cadena de entrada no tiene el formato correcto.
+   en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en SeleccionSuscriptorDetalle.SeleccionSuscriptorDetalle.ddlUsuarioSuscriptor_SelectedIndexChanged(Object sender, RadComboBoxSelectedIndexChangedEventArgs e)
+   en Telerik.Web.UI.RadComboBox.OnSelectedIndexChanged()
+   en System.Web.UI.Page.RaiseChangedEvents()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

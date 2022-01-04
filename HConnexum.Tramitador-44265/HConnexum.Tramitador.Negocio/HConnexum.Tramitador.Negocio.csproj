@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7147D43F-B2FF-4FB2-8710-15364DD2899D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HConnexum.Tramitador.Negocio</RootNamespace>
+    <AssemblyName>HConnexum.Tramitador.Negocio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>HC2KEY.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HConnexum.Infraestructura, Version=1.0.4925.29767, Culture=neutral, PublicKeyToken=ee75a6a24f8c4819, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HConnexum.Tramitador.Sitio\bin\HConnexum.Infraestructura.dll</HintPath>
+    </Reference>
+    <Reference Include="HConnexum.Servicios.Cliente, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HConnexum.Tramitador.Sitio\bin\HConnexum.Servicios.Cliente.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <HintPath>..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.ComponentModel.DataAnnotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <HintPath>..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security">
+      <HintPath>..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <HintPath>..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <HintPath>..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.DataSetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data">
+      <HintPath>..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.XML.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgrupacionBuddy.cs" />
+    <Compile Include="AgrupacionDTO.cs" />
+    <Compile Include="AlcanceGeograficoBuddy.cs" />
+    <Compile Include="AlcanceGeograficoDTO.cs" />
+    <Compile Include="BloqueBuddy.cs" />
+    <Compile Include="BloqueDTO.cs" />
+    <Compile Include="BuzonChatBuddy.cs" />
+    <Compile Include="BuzonChatDTO.cs" />
+    <Compile Include="BuzonMensajeBuddy.cs" />
+    <Compile Include="BuzonMensajeDTO.cs" />
+    <Compile Include="CasoAgrupacionBuddy.cs" />
+    <Compile Include="CasoAgrupacionDTO.cs" />
+    <Compile Include="CasoBuddy.cs" />
+    <Compile Include="CasoDTO.cs" />
+    <Compile Include="ChadePasoBuddy.cs" />
+    <Compile Include="ChadePasoDTO.cs" />
+    <Compile Include="ComprobanteMovimientoCEDTO.cs" />
+    <Compile Include="ConsultaCartaAvalDTO.cs" />
+    <Compile Include="ConsultaOpinionMedicaDTO.cs" />
+    <Compile Include="DetalleFacturaDTO.cs" />
+    <Compile Include="FacturasDTO.cs" />
+    <Compile Include="ServicioDTO.cs" />
+    <Compile Include="PolizasDTO.cs" />
+    <Compile Include="ListaMovimientosDTO.cs" />
+    <Compile Include="PoteCasoDTO.cs" />
+    <Compile Include="ReporteCartaAvalSegurosFederalDTO.cs" />
+    <Compile Include="DatosSolicitudDTO.cs" />
+    <Compile Include="DetalleRemesaDTO.cs" />
+    <Compile Include="DatosTitularDTO.cs" />
+    <Compile Include="DocumentoBuddy.cs" />
+    <Compile Include="DocumentoDTO.cs" />
+    <Compile Include="DocumentosPasoBuddy.cs" />
+    <Compile Include="DocumentosPasoDTO.cs" />
+    <Compile Include="DocumentosServicioBuddy.cs" />
+    <Compile Include="DocumentosServicioDTO.cs" />
+    <Compile Include="EntidadesGlobales\LogBuddy.cs" />
+    <Compile Include="EntidadesGlobales\LogDTO.cs" />
+    <Compile Include="EntidadesGlobales\SesionesUsuarioBuddy.cs" />
+    <Compile Include="EntidadesGlobales\SesionesUsuarioDTO.cs" />
+    <Compile Include="EntidadesGlobales\TomadoBuddy.cs" />
+    <Compile Include="EntidadesGlobales\UsuarioBuddy.cs" />
+    <Compile Include="EntidadesGlobales\UsuarioDTO.cs" />
+    <Compile Include="EtapaBuddy.cs" />
+    <Compile Include="EtapaDTO.cs" />
+    <Compile Include="FlujosServicioBuddy.cs" />
+    <Compile Include="FlujosServicioDTO.cs" />
+    <Compile Include="FlujosEjecucionBuddy.cs" />
+    <Compile Include="FlujosEjecucionDTO.cs" />
+    <Compile Include="HC_Tramitador_Modelo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HC_Tramitador_Modelo.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaBuddy.cs" />
+    <Compile Include="ListaDTO.cs" />
+    <Compile Include="ListasValorBuddy.cs" />
+    <Compile Include="ListasValorDTO.cs" />
+    <Compile Include="MensajesMetodosDestinatarioBuddy.cs" />
+    <Compile Include="MensajesMetodosDestinatarioDTO.cs" />
+    <Compile Include="MovimientoBuddy.cs" />
+    <Compile Include="MovimientoDTO.cs" />
+    <Compile Include="ObservacionesMovimientosDTO.cs" />
+    <Compile Include="ParametrosAgendaBuddy.cs" />
+    <Compile Include="ParametrosAgendaDTO.cs" />
+    <Compile Include="PasoBuddy.cs" />
+    <Compile Include="PasoDTO.cs" />
+    <Compile Include="PasosBloqueBuddy.cs" />
+    <Compile Include="PasosBloqueDTO.cs" />
+    <Compile Include="PasosRepuestaBuddy.cs" />
+    <Compile Include="PasosRepuestaDTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EntidadesGlobales\Tomado.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntidadesGlobales\UsuariosSucriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReporteCartaAvalConsultSaludDTO.cs" />
+    <Compile Include="RelacionesDTO.cs" />
+    <Compile Include="ReporteCartaAvalAltamiraDTO.cs" />
+    <Compile Include="ReporteCartaAvalMIDTO.cs" />
+    <Compile Include="ReporteCartaAvalIberoDTO.cs" />
+    <Compile Include="ReporteCartaAvalZumaDTO.cs" />
+    <Compile Include="ReporteCasosDTO.cs" />
+    <Compile Include="ReporteMovimientoAreaDTO.cs" />
+    <Compile Include="ReporteMovimientoDTO.cs" />
+    <Compile Include="ReporteConsolidadoServicioDTO.cs" />
+    <Compile Include="ReporteOpMedDTO.cs" />
+    <Compile Include="RespuestaMovimientoDTO.cs" />
+    <Compile Include="ServiciosSimuladoBuddy.cs" />
+    <Compile Include="ServiciosSimuladoDTO.cs" />
+    <Compile Include="ServicioSucursalBuddy.cs" />
+    <Compile Include="ServicioSucursalDTO.cs" />
+    <Compile Include="SolicitanteBuddy.cs" />
+    <Compile Include="SolicitanteDTO.cs" />
+    <Compile Include="SolicitudBloqueBuddy.cs" />
+    <Compile Include="SolicitudBloqueDTO.cs" />
+    <Compile Include="SolicitudBuddy.cs" />
+    <Compile Include="SolicitudDTO.cs" />
+    <Compile Include="SuscriptorBuddy.cs" />
+    <Compile Include="SuscriptorDTO.cs" />
+    <Compile Include="TipoPasoBuddy.cs" />
+    <Compile Include="TipoPasoDTO.cs" />
+    <Compile Include="UsuariosSucriptorDTO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="HC_Tramitador_Modelo.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HC_Tramitador_Modelo.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="HC2KEY.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

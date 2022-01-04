@@ -1,0 +1,20 @@
+2014-10-28 18:25:47,550 [ZVE01-202][Thread:91][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.59.188.46
+	Port: 33327
+	Referer: http://www.h-connexum.com/portal/loginhc2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)
+	ViewState: nlTiYCtDpSoWksLF8umvevGIQuE0MhS+LBGSMeiTz+S4Bxq/pj472eMyn6N5sHDOEb3xTFnwNKENAYVxleoHhvh0ZPQOU/bWz14i+NLsWYPlK6Jj1uZLV0OWtnozdSQi0J6vogr+o72MbgeJcbSP4UI5wlhcAnE4XROIUxg5O7v3TydHDTwmAGvyCSlsagqmC4/g1TiSQ/p7JOUE7a1xAM3D4eQJZ5q/Bs1jp85fUHu7vLs0LaQFymaRw2LLIJO7OfOLUTfHvRBA7Tg0y0Paq2e2Ba1Tmnlno81k1oXAirJI6aoVoeE3lvPeneOUs9xCSUVPDU9HKId4Mclkzs7NuDQx1nkpJ62196hn6QYp0sIeGUyYhAHv2vHwqdXqeFFHI0Q2va4AVn5laDsC8GWKGDEfkd6D4Nq3To/kz3HmBoZWKzClHmeSV8bzbw0gviiGqZn7Fu0zz4pG1ubYwjUbrt5xbFUhiNd+0IkJIx0ssCnlzUr7ZzQJUbCNBNaNnYkVX5gsyaPBvwTvKIdZskZrpDIuThT1RUlmLwmB3G28eZO3tmp0T6VmWT5nyILzqq2KvL9lKmqqmusjxDyAOtzY2qGid3oWxIKl1yRNXxTel6bMv7DIA9cKv4I4FmE/Fc/wG7BOQyiMFiu1Dfd/AWkvO4gJq+MPJ4lHKqfh7Ja6DJ6d2MNUHjJje7i6tMFReoW/Z1cF43bkZZesP4js7rPNNn4vnIxjmzIBScxMqOD6Ax62Of+hyHoMtM3rrWw3cBMOznKmui6kxqk5oL...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---

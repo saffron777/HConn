@@ -1,0 +1,34 @@
+.texto { font-family: Verdana;  font-size: 8pt; color:#8F8D8D; }
+  
+A:link { font-size: 10px; text-decoration: none; }
+A:visited { font-size: 10px }
+A:hover { font-size: 10px }
+
+ul li { list-style-type: none; }
+.RadDock .rdTable { padding-bottom: 5px;}
+.RadDock { padding-bottom: 5px;}
+	
+div.RadDock .rdTop .rdCenter, .RadDock_MainGadgets .rdTop .rdCenter, .RadDock .rdTop .rdCenter
+{
+	background-image: url("images/dock_titleBar_images_02.png"); 
+	height: 40px;
+	background-position: 0 0;
+}
+.RadDock_MainGadgets .rdTop .rdLeft, .RadDock .rdTop .rdLeft, div.RadDock .rdTop .rdLeft
+{
+	background-image: url("images/dock_titleBar_images_01.png");
+	background-repeat:repeat-y;
+	height: 40px;
+	width: 12px;
+}
+div.RadDock .rdTop .rdRight { height: 40px; width: 12px; background-repeat:repeat-y; }
+.RadDock_MainGadgets .rdTop .rdRight, .RadDock .rdTop .rdRight { background-image: url("images/dock_titleBar_images_03.png"); background-repeat:repeat-y; }
+.RadDock_MainGadgets .rdBottom .rdLeft , .RadDock .rdBottom .rdLeft{ background-color: #e4e4e4; background-position: -2px 0px; }
+.RadDock_MainGadgets .rdBottom .rdMiddle , .RadDock .rdBottom .rdMiddle { background-position: -2px 0px; background-color: #e4e4e4;}
+.RadDock_MainGadgets .rdBottom .rdRight, .RadDock .rdBottom .rdRight{ background-color: #e4e4e4; background-position: -2px 0px; }
+.RadDock_MainGadgets .rdContent { background-color: #e4e4e4; }
+.RadDock_MainGadgets .rdBottom .rdCenter, .RadDock .rdBottom .rdCenter  { background-color: #e4e4e4;}
+.RadDock_MainGadgets .rdCenter .rdCommands a span { background-image: url('Dock_MainGadgets/CommandSprite.gif'); }
+div.RadDock  { background-color: #e4e4e4; }
+.RadDock_HConnexum .rdMiddle .rdLeft,
+

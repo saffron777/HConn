@@ -1,0 +1,1 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="UsuarioCMS.ascx.cs" Inherits="Usuarios.UsuarioCMS" %>

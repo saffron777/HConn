@@ -1,0 +1,24 @@
+2014-06-14 23:33:53,228 [ZVE01-202][Thread:284][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: El cliente está desconectado.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.HttpException: El cliente está desconectado.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 200.82.180.109
+	Port: 62722
+	Referer: http://www.h-connexum.com/PORTAL/loginhc2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36
+	ViewState: Aaa1Nf0tA7CJpJQweGXwqlb27thACR64W/qTLmEUPB2vfAR1JZkc75HGXGllhC5/y9euYuKLeSlpEyk2JghohRkBcrsVglzGGXiPTKuyLgdwYUFUqTZv6g3ND0lH584R6e7nhkHmnb5kilQjcOnTcWiaXfIcctlQNd2U6ahxKg442uRczoOoZCy989w6Bg5YS38MDtZ6qTVZkz5omJacy1TQIivYEQgEtr0LhVHOXjiGbOMr96NtmyT/mgkktcCGLqbc3nrZsOJPoYOks2r2qeK7LJyxxwWCZNUmBKsQaf6770X8ChMBtaErEUscvQp1Q2EGrUnue+pJ7N/wpqqxdZ5KwOtTI7WoKNK7dlfgmHNWc8dSbSDwC85usIahx5nznA1uXNFZTXWd3weGwG/w8O7P5t5vhKUfZV1OsGqFoX3PLWhzTHdu5Z6KnIUqffxPMUattf30nOqfO4f55DlKV2euCiAx++B4kOmQozcRaTQrs7NU+Au4J9gE+YNLruNHGRJli3JgHxwqDfGdSg0NEmsRj3ls70P1uu2WS4Lh5xzfBqLBnP8lTyNAvHX5pS8/Pgw/WTUu3rsYqJu4a7f5jJZVYZNvaws1mWmM4E5jnpw09ApNTtVNSfPA6q8f2QvBDCK1F0BFd6ObsDyYoiYSxQtTS2W7+k48iUqxitbSq8hDmVBdJR1Jc9kUYtHnx6D2AlAVBo4WcOORmiOuYVFpeLP9SZYb8HUQnGUtLwk8aXeH65...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2014-06-14 23:56:22,580 [ZVE01-202][Thread:10][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

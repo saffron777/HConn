@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="HConnexum.Base.Datos.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="HConnexumBaseDatosStoreContainer">
+          <EntitySet Name="TB_Log" EntityType="HConnexum.Base.Datos.Store.TB_Log" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_Tomado" EntityType="HConnexum.Base.Datos.Store.TB_Tomado" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="TB_Log">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdSesion" Type="nvarchar" MaxLength="88" />
+          <Property Name="FechaLog" Type="datetime" Nullable="false" />
+          <Property Name="SpEjecutado" Type="varchar" MaxLength="255" />
+          <Property Name="Tabla" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="Accion" Type="varchar" MaxLength="40" />
+          <Property Name="IdRegistro" Type="varchar" MaxLength="10" />
+          <Property Name="RegistroXML" Type="varchar(max)" />
+          <Property Name="TransaccionExitosa" Type="bit" Nullable="false" />
+          <Property Name="Mensaje" Type="varchar" MaxLength="4000" />
+          <Property Name="IpUsuario" Type="varchar" Nullable="false" MaxLength="30" />
+          <Property Name="HostName" Type="varchar(max)" />
+          <Property Name="HostProcess" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="TB_Tomado">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdPaginaModulo" Type="int" Nullable="false" />
+          <Property Name="Tabla" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="IdRegistro" Type="int" Nullable="false" />
+          <Property Name="IdSesionUsuario" Type="nvarchar" Nullable="false" MaxLength="88" />
+          <Property Name="FechaTomado" Type="datetime" Nullable="false" />
+          <Property Name="LoginUsuario" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <Function Name="pa_verificacioneliminacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="nombreTabla" Type="varchar" Mode="In" />
+          <Parameter Name="idRegistro" Type="int" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HConnexum.Base.Datos" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="BD_HC_Tomado_Log" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TB_Log" EntityType="HConnexum.Base.Datos.TB_Log" />
+          <EntitySet Name="TB_Tomado" EntityType="HConnexum.Base.Datos.TB_Tomado" />
+          <FunctionImport Name="VerificacionEliminacion" ReturnType="Collection(Boolean)">
+            <Parameter Name="nombreTabla" Mode="In" Type="String" />
+            <Parameter Name="idRegistro" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="TB_Log">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdSesion" Type="String" Nullable="true" />
+          <Property Name="FechaLog" Type="DateTime" Nullable="false" />
+          <Property Name="SpEjecutado" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Tabla" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Accion" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="IdRegistro" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="RegistroXML" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="TransaccionExitosa" Type="Boolean" Nullable="false" />
+          <Property Name="Mensaje" Type="String" MaxLength="4000" Unicode="false" FixedLength="false" />
+          <Property Name="IpUsuario" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="HostName" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="HostProcess" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TB_Tomado">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdPaginaModulo" Type="Int32" Nullable="false" />
+          <Property Name="Tabla" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IdRegistro" Type="Int32" Nullable="false" />
+          <Property Name="IdSesionUsuario" Type="String" Nullable="false" />
+          <Property Name="FechaTomado" Type="DateTime" Nullable="false" />
+          <Property Type="String" Name="LoginUsuario" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HConnexumBaseDatosStoreContainer" CdmEntityContainer="BD_HC_Tomado_Log">
+          <EntitySetMapping Name="TB_Log"><EntityTypeMapping TypeName="HConnexum.Base.Datos.TB_Log"><MappingFragment StoreEntitySet="TB_Log">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="IdSesion" ColumnName="IdSesion" />
+            <ScalarProperty Name="FechaLog" ColumnName="FechaLog" />
+            <ScalarProperty Name="SpEjecutado" ColumnName="SpEjecutado" />
+            <ScalarProperty Name="Tabla" ColumnName="Tabla" />
+            <ScalarProperty Name="Accion" ColumnName="Accion" />
+            <ScalarProperty Name="IdRegistro" ColumnName="IdRegistro" />
+            <ScalarProperty Name="RegistroXML" ColumnName="RegistroXML" />
+            <ScalarProperty Name="TransaccionExitosa" ColumnName="TransaccionExitosa" />
+            <ScalarProperty Name="Mensaje" ColumnName="Mensaje" />
+            <ScalarProperty Name="IpUsuario" ColumnName="IpUsuario" />
+            <ScalarProperty Name="HostName" ColumnName="HostName" />
+            <ScalarProperty Name="HostProcess" ColumnName="HostProcess" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="TB_Tomado"><EntityTypeMapping TypeName="HConnexum.Base.Datos.TB_Tomado"><MappingFragment StoreEntitySet="TB_Tomado">
+                <ScalarProperty Name="LoginUsuario" ColumnName="LoginUsuario" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="IdPaginaModulo" ColumnName="IdPaginaModulo" />
+            <ScalarProperty Name="Tabla" ColumnName="Tabla" />
+            <ScalarProperty Name="IdRegistro" ColumnName="IdRegistro" />
+            <ScalarProperty Name="IdSesionUsuario" ColumnName="IdSesionUsuario" />
+            <ScalarProperty Name="FechaTomado" ColumnName="FechaTomado" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="VerificacionEliminacion" FunctionName="HConnexum.Base.Datos.Store.pa_verificacioneliminacion" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="HC_Tomado_Log">
+        <EntityTypeShape EntityType="HConnexum.Base.Datos.TB_Log" Width="1.5" PointX="0.75" PointY="0.75" Height="3.5186979166666665" IsExpanded="true" />
+        <EntityTypeShape EntityType="HConnexum.Base.Datos.TB_Tomado" Width="1.5" PointX="2.75" PointY="0.75" Height="2.3648893229166665" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,15 @@
+﻿#sliderContainer { width: 920px; height: 280px; position: relative; margin: 0 auto; }
+.slideContent {  background:url("imagenes/contentBg.png") repeat scroll 0 0 transparent; position: absolute; bottom:0px; right:0px; padding: 10px; width: 920px; }
+.slide h3 {  font: 26px/1em 'Rokkitt', serif; color: #FFF;  margin: 0 0 5px 0; }
+.slide p { font-size: 14px; color: #FFF; margin: 0; }
+.jFlowSlideContainer { overflow: hidden; }
+.jFlowSlideContainer a { color: #F90; text-decoration: none; font-style: italic; }
+.jFlowSlideContainer a:hover { text-decoration: none; }
+.jFlowSlideContainer a:focus { position: relative; top: 1px; }
+.jFlowPrev:hover { background-position: -84px -235px; }
+.jFlowNext:hover { background-position: 0px -235px; }
+/* controller pagination */
+#myController {position: absolute; top: 15px; right: 15px; }
+.jFlowControl { background:url('bullet.png') no-repeat 0px 0px; float: left; width: 15px; height: 15px; }
+.jFlowControl:hover { background-position: -32px 0px; cursor: pointer; }
+.jFlowSelected, .jFlowSelected:hover {background-position: -15px 0px; }

@@ -1,0 +1,903 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Publicar\HC-Tramitador</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_GlobalResources/RadAsyncUpload.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadComboBox.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadDataPager.Main.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadEditor.Dialogs.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadEditor.Main.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadEditor.Modules.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadEditor.Tools.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadFilter.Main.en-US.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadFilter.Main.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadGrid.Main.en-US.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadGrid.Main.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadImageEditor.Dialogs.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadImageEditor.Main.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadListBox.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadProgressArea.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadScheduler.Main.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadSchedulerRecurrenceEditor.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadSpell.Dialog.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadTreeList.Main.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadUpload.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadWindow.en-US.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/RadWindow.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Tramitador.resx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_Themes/HConnexum/controls.skin">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_Themes/HConnexum/HConnexum.css">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_Themes/HConnexum/TramitadorFugado.jpg">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_Themes/HConnexumBlack/controls.skin">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_Themes/HConnexumBlack/HConnexum.css">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_Themes/HConnexumSilver/controls.skin">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="App_Themes/HConnexumSilver/HConnexum.css">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="bin/HConnexum.Infraestructura.dll">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="bin/HConnexum.ObjetoSessiones.dll">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="bin/HConnexum.Seguridad.dll">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="bin/HConnexum.Servicios.Cliente.dll">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="bin/HConnexum.Tramitador.Datos.dll">
+      <publishTime>07/27/2015 10:19:38</publishTime>
+    </File>
+    <File Include="bin/HConnexum.Tramitador.Negocio.dll">
+      <publishTime>07/27/2015 10:19:24</publishTime>
+    </File>
+    <File Include="bin/HConnexum.Tramitador.Presentacion.dll">
+      <publishTime>07/27/2015 10:19:51</publishTime>
+    </File>
+    <File Include="bin/HConnexum.Tramitador.Sitio.dll">
+      <publishTime>07/27/2015 10:20:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Configuration.dll">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.dll">
+      <publishTime>06/10/2015 11:47:31</publishTime>
+    </File>
+    <File Include="bin/Telerik.Reporting.dll">
+      <publishTime>06/10/2015 11:47:32</publishTime>
+    </File>
+    <File Include="bin/Telerik.ReportViewer.WebForms.dll">
+      <publishTime>06/10/2015 11:47:32</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.Design.dll">
+      <publishTime>06/10/2015 11:47:32</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.dll">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.Skins.dll">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="ContingenciaLogin.aspx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="ControlesComunes/Alerta.ascx">
+      <publishTime>06/10/2015 11:47:32</publishTime>
+    </File>
+    <File Include="ControlesComunes/Auditoria.ascx">
+      <publishTime>06/10/2015 11:47:32</publishTime>
+    </File>
+    <File Include="ControlesComunes/ControlFooter.ascx">
+      <publishTime>06/10/2015 11:47:32</publishTime>
+    </File>
+    <File Include="ControlesComunes/ControlHeader.ascx">
+      <publishTime>06/10/2015 11:47:32</publishTime>
+    </File>
+    <File Include="ControlesComunes/FileUpload.ascx">
+      <publishTime>06/10/2015 11:47:32</publishTime>
+    </File>
+    <File Include="ControlesComunes/HorasMinutosSegundos.ascx">
+      <publishTime>06/10/2015 11:47:32</publishTime>
+    </File>
+    <File Include="ControlesComunes/LoginControl.ascx">
+      <publishTime>06/10/2015 11:47:32</publishTime>
+    </File>
+    <File Include="ControlesComunes/Menu.ascx">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="ControlesComunes/MultilineCounter.ascx">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="ControlesComunes/Publicacion.ascx">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="ControlesComunes/TecladoNumericoRandom.ascx">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="ControlesComunes/Telefono.ascx">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="ControlesComunes/Toolbar.ascx">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="Error.aspx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="Imagenes/Aceptar.gif">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/AddRecord.gif">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/ajax-loader.gif">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/Alert.png">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/alertIcon.png">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/bgLegend.png">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/bgLegend_HConnexum.png">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/bgLegend_Silver.png">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/collapsed.gif">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/Delete.gif">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/Edit.gif">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/error.png">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/expanded.gif">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/Filter.gif">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/HConnexumTramitador.jpg">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/icon_lupa18x18.png">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/ImagenesDefault/Default.jpg">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/ImagenesDefault/Distrito_Capitalpng.gif">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/ImagenesDefault/IRIS_QUIROZ.jpg">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/ImagenesDefault/LogoAltamira.jpg">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/ImagenesDefault/LogoConsultSalud.jpg">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/ImagenesDefault/LogoDefault.jpg">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/ImagenesDefault/LogoGDC.jpg">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/ImagenesDefault/LogoIberoamericana.jpg">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/ImagenesDefault/LogoMPPE.png">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/ImagenesDefault/LogoPrevisora.jpg">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/ImagenesDefault/LogoSegurosFederal.jpg">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/ImagenesDefault/LogoZumaSeguros.jpg">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/ImagenesDefault/No_Disponible.jpg">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/imgLoader.gif">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/info.png">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/keyboard-icon.gif">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/keyboard-icon_p.gif">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/L.gif">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/L.png">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/logo_nubise_fdo_negro.jpg">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/NoImage.png">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/NP.png">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/ok.png">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/P.png">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/PixelGradado.jpg">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/Refresh.gif">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/spinner.gif">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/T.gif">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/T.png">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/TP.gif">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Imagenes/TP.png">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Inicio.aspx">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="ListaValores.config">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+    <File Include="Master/Site.Master">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/ActualizacionDatosMedico.ascx">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/ActualizacionDeContacto.ascx">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/AnulacionOM.ascx">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/AnulacionSM.ascx">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/AsistenciaCitaMedica.ascx">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/BlqNotRespInm.ascx">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/BlqNotRespInmBasico.ascx">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/BlqNotRespInmBasicoCAActivacion.ascx">
+      <publishTime>06/10/2015 11:47:33</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/BlqNotRespInmCAActivacion.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/CambioMedico.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/CasosPendientesMedico.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/ContactoAlMedico.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/ContactoInicial.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/DatosExpedientesCA.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/DatosExpedientesCE.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/DatosGenerales.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/DatosGeneralesCA.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/DatosGeneralesCE.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/DatosGeneralesMedico.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/Egreso.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/Imprimir.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/Ingreso.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/ListadoMovimientos.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/ListadoMovimientosCA.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/MedicoAsignado.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/MuestraChat.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/Observaciones.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/RegistrodeOpinionMedico.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/SeguimientoCita.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/SeleccionAsegurado.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/SeleccionAseguradoCA.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/SelectorCasos.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/SolicitudNuevoMovimiento_ExtEgr.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/SolicitudNuevoMovimiento_ExtEgrCA.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/SolicitudNuevoMovimiento_Ing.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/SolicitudNuevoMovimiento_IngCA.ascx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/TestBloques.aspx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Bloques/testEgreso.aspx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/PantallaBusquedaFacturas.aspx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/PantallaBusquedaRelaciones.aspx">
+      <publishTime>07/27/2015 13:38:39</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/PantallaConsolidadoMovimiento.aspx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/PantallaDetalleFactura.aspx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/PantallaDetalleMovimiento.aspx">
+      <publishTime>06/10/2015 11:47:34</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/PantallaDetalleMovimientoRemesa.aspx">
+      <publishTime>06/10/2015 11:47:35</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/PantallaDetalleRelacion.aspx">
+      <publishTime>06/10/2015 11:47:35</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/PantallaReporteCasos.aspx">
+      <publishTime>06/10/2015 11:47:35</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/PantallaReporteConsolidadoServicio.aspx">
+      <publishTime>06/10/2015 11:47:35</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/ReporteCasos.aspx">
+      <publishTime>06/10/2015 11:47:35</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/ReporteConsolidadoMovimientosUsuario.aspx">
+      <publishTime>06/10/2015 11:47:35</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/ReporteConsolidadoServicio.aspx">
+      <publishTime>06/10/2015 11:47:35</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/ReporteDetalleFactura.aspx">
+      <publishTime>06/10/2015 11:47:35</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/ReporteDetalleMovimiento.aspx">
+      <publishTime>06/10/2015 11:47:35</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/ReporteDetalleRemesa.aspx">
+      <publishTime>06/10/2015 11:47:35</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/ReporteDetalleSolicitud.aspx">
+      <publishTime>06/10/2015 11:47:35</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/ReporteFacturas.aspx">
+      <publishTime>06/10/2015 11:47:35</publishTime>
+    </File>
+    <File Include="Modulos/Estadisticas/ReporteRelaciones.aspx">
+      <publishTime>06/10/2015 11:47:35</publishTime>
+    </File>
+    <File Include="Modulos/Estructura/AgrupacionDetalle.aspx">
+      <publishTime>06/10/2015 11:47:35</publishTime>
+    </File>
+    <File Include="Modulos/Estructura/AgrupacionLista.aspx">
+      <publishTime>06/10/2015 11:47:35</publishTime>
+    </File>
+    <File Include="Modulos/Estructura/AgruparCasoLista.aspx">
+      <publishTime>06/10/2015 11:47:36</publishTime>
+    </File>
+    <File Include="Modulos/Estructura/AnularSuspenderCasoLista.aspx">
+      <publishTime>06/10/2015 11:47:36</publishTime>
+    </File>
+    <File Include="Modulos/Estructura/AnularSuspenderCasoMaestroDetalle.aspx">
+      <publishTime>06/10/2015 11:47:36</publishTime>
+    </File>
+    <File Include="Modulos/Estructura/CasoAgrupacionDetalle.aspx">
+      <publishTime>06/10/2015 11:47:36</publishTime>
+    </File>
+    <File Include="Modulos/Estructura/ConsultaCasos.aspx">
+      <publishTime>06/10/2015 11:47:36</publishTime>
+    </File>
+    <File Include="Modulos/Estructura/ConsultaMovPorSus.aspx">
+      <publishTime>06/10/2015 11:47:36</publishTime>
+    </File>
+    <File Include="Modulos/Estructura/GestionSupervisadosLista.aspx">
+      <publishTime>06/10/2015 11:47:36</publishTime>
+    </File>
+    <File Include="Modulos/Estructura/MisActividades.aspx">
+      <publishTime>06/10/2015 11:47:36</publishTime>
+    </File>
+    <File Include="Modulos/Estructura/MisActividadesDetalle.aspx">
+      <publishTime>06/10/2015 11:47:36</publishTime>
+    </File>
+    <File Include="Modulos/Estructura/MisSolicitudes.aspx">
+      <publishTime>06/10/2015 11:47:36</publishTime>
+    </File>
+    <File Include="Modulos/Estructura/PoteCasos.aspx">
+      <publishTime>06/10/2015 11:47:36</publishTime>
+    </File>
+    <File Include="Modulos/Estructura/PriorizarCasoLista.aspx">
+      <publishTime>06/10/2015 11:47:36</publishTime>
+    </File>
+    <File Include="Modulos/Estructura/SolicitudServicio.aspx">
+      <publishTime>06/10/2015 11:47:36</publishTime>
+    </File>
+    <File Include="Modulos/Estructura/UsuarioSuscriptorLista.aspx">
+      <publishTime>06/10/2015 11:47:36</publishTime>
+    </File>
+    <File Include="Modulos/Gat/ConsultaCasosAuditoria.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Orquestador/PantallaContenedora.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Orquestador/PantallaContenedora2.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/AccionesdelPasoDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/AccionesdelPasoLista.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/AlcanceGeograficoDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/AlcanceGeograficoLista.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/AccionesdelPasoDetalle.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/AccionesdelPasoLista.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/AlcanceGeograficoDetalle.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/AlcanceGeograficoLista.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/BloqueDetalle.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/BloqueLista.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/ChadePasoDetalle.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/ChadePasoLista.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/ConfiguracionPaso.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/DocumentosPasoDetalle.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/DocumentosPasoLista.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/DocumentosServicioDetalle.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/DocumentosServicioLista.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/EtapaLista.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/EtapaMaestroDetalle.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/FlujosEjecucionDetalle.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/FlujosEjecucionLista.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/FlujosServicioLista.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/FlujosServicioMaestroDetalle.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/MensajesMetodosDestinatarioCorreoDetalle.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/MensajesMetodosDestinatarioDetalle.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/ParametrosAgendaDetalle.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/ParametrosAgendaLista.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/PasoMaestroDetalle.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/PasosBloqueDetalle.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/PasosRepuestaDetalle.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/ServicioSucursalDetalle.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/ServicioSucursalLista.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/SuscriptorLista.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/TipoPasoDetalle.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/App_LocalResources/TipoPasoLista.aspx.resx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/BloqueDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/BloqueLista.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/ChadePasoDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/ChadePasoLista.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/ConfiguracionPaso.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/ConfiguracionPasosVinculaciones.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/ConfiguracionXmlGenerales.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/DocumentosPasoDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/DocumentosPasoLista.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/DocumentosServicioDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/DocumentosServicioLista.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/EtapaMaestroDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/FlujosEjecucionDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/FlujosEjecucionLista.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/FlujosServicioLista.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/FlujosServicioMaestroDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/MensajesMetodosDestinatarioCorreoDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/MensajesMetodosDestinatarioDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/ParametrosAgendaDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/ParametrosAgendaLista.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/PasoMaestroDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/PasoMaestroDetalleBloques.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/PasosBloqueDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/PasosRepuestaDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/ServiciosSimuladoDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/ServiciosSimuladoLista.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/ServicioSucursalDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/ServicioSucursalLista.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/SolicitudBloqueDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/SolicitudBloqueMaestroDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/SuscriptorLista.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/TipoPasoDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Parametrizador/TipoPasoLista.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Reportes/ComprobanteMovimientoCA.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Reportes/ComprobanteMovimientoCE.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Reportes/ConsultaCasosOpinionMedica.aspx">
+      <publishTime>07/22/2015 15:58:46</publishTime>
+    </File>
+    <File Include="Modulos/Reportes/PagIntermediaBI.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Reportes/ReimpresionComprobanteMovimientos.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Reportes/ReporteCA.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Reportes/ReporteCartaAval.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Reportes/ReporteCartaAvalAltamira.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Reportes/ReporteCartaAvalConsultSalud.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Reportes/ReporteCartaAvalIbero.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Reportes/ReporteCartaAvalMI.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Reportes/ReporteCartaAvalSegurosFederal.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Reportes/ReporteCartaAvalZuma.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Reportes/ReporteOpMed.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Tracking/AuditoriaTabMovimiento.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Tracking/CasoDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Tracking/DatosGeneralesCasoDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Tracking/MensajeCasoLista.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Tracking/MovimientoCasoLista.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Tracking/MovimientoDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Tracking/ObservacionesTabMovimientoLista.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Tracking/RespuestaTabMovimiento.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Tracking/TiempoDelCasoDetalle.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Tracking/TiemposTabMovimiento.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Modulos/Utilitarios/TransporteFlujoServicio.aspx">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Scripts/DetalleRadScriptBlock1.js">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.min.js">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Scripts/jquery.coolfieldset.js">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Scripts/jquery.maskedinput.js">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Scripts/ListaRadScriptBlock1.js">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Scripts/RadFilterScriptBlock.js">
+      <publishTime>06/10/2015 11:47:37</publishTime>
+    </File>
+    <File Include="Scripts/Utilitarios.js">
+      <publishTime>06/10/2015 11:47:38</publishTime>
+    </File>
+    <File Include="Temas/Default.css">
+      <publishTime>06/10/2015 11:47:38</publishTime>
+    </File>
+    <File Include="Temas/Site.css">
+      <publishTime>06/10/2015 11:47:38</publishTime>
+    </File>
+    <File Include="Temas/SiteChrome.css">
+      <publishTime>06/10/2015 11:47:38</publishTime>
+    </File>
+    <File Include="Temas/SiteIE10.css">
+      <publishTime>06/10/2015 11:47:38</publishTime>
+    </File>
+    <File Include="Temas/SiteIE7.css">
+      <publishTime>06/10/2015 11:47:38</publishTime>
+    </File>
+    <File Include="Temas/SiteIE8.css">
+      <publishTime>06/10/2015 11:47:38</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/27/2015 10:20:11</publishTime>
+    </File>
+    <File Include="Web.sitemap">
+      <publishTime>06/10/2015 11:47:30</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

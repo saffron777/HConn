@@ -1,0 +1,40 @@
+2013-09-21 08:37:54,144 [ZVE01-202][Thread:116][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-09-21 23:14:54,100 [ZVE01-202][Thread:129][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentException: Argumento de devolución o de devolución de llamadas no válido. La validación de eventos se habilita usando <pages enableEventValidation="true"/> en la configuración o <%@ Page EnableEventValidation="true" %> en una página. Por motivos de seguridad, esta característica comprueba que los argumentos pasados a eventos de devolución o de devolución de llamadas se origina desde el control del servidor que inicialmente los procesó. Si los datos son válidos y son los que se esperaba, utilice el método ClientScriptManager.RegisterForEventValidation para registrar los datos de devolución o de devolución de llamadas para su validación.
+   en System.Web.UI.ClientScriptManager.ValidateEvent(String uniqueId, String argument)
+   en System.Web.UI.WebControls.TextBox.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   en System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-21 23:14:54,193 [ZVE01-202][Thread:129][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=110&error=An unexpected error has occurred&content=0
+System.ArgumentException: Argumento de devolución o de devolución de llamadas no válido. La validación de eventos se habilita usando <pages enableEventValidation="true"/> en la configuración o <%@ Page EnableEventValidation="true" %> en una página. Por motivos de seguridad, esta característica comprueba que los argumentos pasados a eventos de devolución o de devolución de llamadas se origina desde el control del servidor que inicialmente los procesó. Si los datos son válidos y son los que se esperaba, utilice el método ClientScriptManager.RegisterForEventValidation para registrar los datos de devolución o de devolución de llamadas para su validación.
+   en System.Web.UI.ClientScriptManager.ValidateEvent(String uniqueId, String argument)
+   en System.Web.UI.WebControls.TextBox.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   en System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-21 23:15:01,370 [ZVE01-202][Thread:30][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentException: Argumento de devolución o de devolución de llamadas no válido. La validación de eventos se habilita usando <pages enableEventValidation="true"/> en la configuración o <%@ Page EnableEventValidation="true" %> en una página. Por motivos de seguridad, esta característica comprueba que los argumentos pasados a eventos de devolución o de devolución de llamadas se origina desde el control del servidor que inicialmente los procesó. Si los datos son válidos y son los que se esperaba, utilice el método ClientScriptManager.RegisterForEventValidation para registrar los datos de devolución o de devolución de llamadas para su validación.
+   en System.Web.UI.ClientScriptManager.ValidateEvent(String uniqueId, String argument)
+   en System.Web.UI.WebControls.TextBox.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   en System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-21 23:15:01,370 [ZVE01-202][Thread:30][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=110&error=An unexpected error has occurred&content=0
+System.ArgumentException: Argumento de devolución o de devolución de llamadas no válido. La validación de eventos se habilita usando <pages enableEventValidation="true"/> en la configuración o <%@ Page EnableEventValidation="true" %> en una página. Por motivos de seguridad, esta característica comprueba que los argumentos pasados a eventos de devolución o de devolución de llamadas se origina desde el control del servidor que inicialmente los procesó. Si los datos son válidos y son los que se esperaba, utilice el método ClientScriptManager.RegisterForEventValidation para registrar los datos de devolución o de devolución de llamadas para su validación.
+   en System.Web.UI.ClientScriptManager.ValidateEvent(String uniqueId, String argument)
+   en System.Web.UI.WebControls.TextBox.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   en System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-21 23:15:02,228 [ZVE01-202][Thread:149][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentException: Argumento de devolución o de devolución de llamadas no válido. La validación de eventos se habilita usando <pages enableEventValidation="true"/> en la configuración o <%@ Page EnableEventValidation="true" %> en una página. Por motivos de seguridad, esta característica comprueba que los argumentos pasados a eventos de devolución o de devolución de llamadas se origina desde el control del servidor que inicialmente los procesó. Si los datos son válidos y son los que se esperaba, utilice el método ClientScriptManager.RegisterForEventValidation para registrar los datos de devolución o de devolución de llamadas para su validación.
+   en System.Web.UI.ClientScriptManager.ValidateEvent(String uniqueId, String argument)
+   en System.Web.UI.WebControls.TextBox.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   en System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-09-21 23:15:02,228 [ZVE01-202][Thread:149][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=110&error=An unexpected error has occurred&content=0
+System.ArgumentException: Argumento de devolución o de devolución de llamadas no válido. La validación de eventos se habilita usando <pages enableEventValidation="true"/> en la configuración o <%@ Page EnableEventValidation="true" %> en una página. Por motivos de seguridad, esta característica comprueba que los argumentos pasados a eventos de devolución o de devolución de llamadas se origina desde el control del servidor que inicialmente los procesó. Si los datos son válidos y son los que se esperaba, utilice el método ClientScriptManager.RegisterForEventValidation para registrar los datos de devolución o de devolución de llamadas para su validación.
+   en System.Web.UI.ClientScriptManager.ValidateEvent(String uniqueId, String argument)
+   en System.Web.UI.WebControls.TextBox.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   en System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

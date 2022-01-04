@@ -1,0 +1,30 @@
+2013-10-13 08:48:54,169 [ZVE01-202][Thread:283][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.74.81.185
+	Port: 49799
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; es-AR; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7
+	ViewState: CrQr59KAbnJ2QL7WB9L3Vk9104fIlYgoN2afZ8pwwbrXfnSwi61uH+qWgRJ4jIxjCtgJ34Vq+F2QNLNIhsxWVNE3MEf0wQw5617KVVZE6xh7DwUWpSQyYPm2ukBb3DeXNM3he8Vj0NbAwWxDpYDXbGPjFsMxQOtmbpaqoxADihtvoCT5696im29qHxVu483+c0OWtJcTNOnru4itIQN6p0Gcb/VRZP3aFaNdlrmGVB5nyXWTKiIk3pkPhBxEIo48C+QW9KUMqvEHSVVsG3FO6GWgqfVKO8GoMc3UtnpykWdXagHZHNjd51FSBX6llr8OMov/twlkPT72yLXxgCbF17V6MftlUFUY9UNudwnHAgTOit9VwIGmRQUpSkUmcX8HWzhGpF/Z2Kj7N3KSj9tfLwEV5/lZnZ2pdoqqTJ1XvYKL3s7QNYyzsbyg/sQ6dgjv4BsYnN0uaXXvqQZ2yzTtv4HDB10cTF7RD3c1D9la09+Q+FXu6sWwKpCV3eHCiwFOFgm8VKdBsTUS+hquPuP1S9kbK9qdtdBaIYjW2sGhIyt5WTvtreKDaJQOLWVbFw4B1VwAOh5WTZFt8rkYSzQjUTj9lM5ZRqw+SMPEERDA322YoA9E4FYsRO1YLxO46/QWZkOh8r8oLBFYpQ8keKNx/rMnolFX8VayXk2IUMhlCjnuay3DhhIWWvQiswRqGnlUGjFuHqVwMyO6Hu+1ccYGw7EKzXeSyGCdQ4Xxj5z4LtEcw5EeqU44qRMTIPUTYiNfcPkCAcw8EQwIq+MHnV8...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-10-13 08:48:54,231 [ZVE01-202][Thread:283][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=109&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.74.81.185
+	Port: 49799
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; es-AR; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7
+	ViewState: CrQr59KAbnJ2QL7WB9L3Vk9104fIlYgoN2afZ8pwwbrXfnSwi61uH+qWgRJ4jIxjCtgJ34Vq+F2QNLNIhsxWVNE3MEf0wQw5617KVVZE6xh7DwUWpSQyYPm2ukBb3DeXNM3he8Vj0NbAwWxDpYDXbGPjFsMxQOtmbpaqoxADihtvoCT5696im29qHxVu483+c0OWtJcTNOnru4itIQN6p0Gcb/VRZP3aFaNdlrmGVB5nyXWTKiIk3pkPhBxEIo48C+QW9KUMqvEHSVVsG3FO6GWgqfVKO8GoMc3UtnpykWdXagHZHNjd51FSBX6llr8OMov/twlkPT72yLXxgCbF17V6MftlUFUY9UNudwnHAgTOit9VwIGmRQUpSkUmcX8HWzhGpF/Z2Kj7N3KSj9tfLwEV5/lZnZ2pdoqqTJ1XvYKL3s7QNYyzsbyg/sQ6dgjv4BsYnN0uaXXvqQZ2yzTtv4HDB10cTF7RD3c1D9la09+Q+FXu6sWwKpCV3eHCiwFOFgm8VKdBsTUS+hquPuP1S9kbK9qdtdBaIYjW2sGhIyt5WTvtreKDaJQOLWVbFw4B1VwAOh5WTZFt8rkYSzQjUTj9lM5ZRqw+SMPEERDA322YoA9E4FYsRO1YLxO46/QWZkOh8r8oLBFYpQ8keKNx/rMnolFX8VayXk2IUMhlCjnuay3DhhIWWvQiswRqGnlUGjFuHqVwMyO6Hu+1ccYGw7EKzXeSyGCdQ4Xxj5z4LtEcw5EeqU44qRMTIPUTYiNfcPkCAcw8EQwIq+MHnV8...
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

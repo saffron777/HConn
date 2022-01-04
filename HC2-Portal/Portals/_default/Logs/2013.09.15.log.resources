@@ -1,0 +1,16 @@
+2013-09-15 14:53:43,513 [ZVE01-202][Thread:67][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster. ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 190.36.228.174
+	Port: 61015
+	Referer: http://www.h-connexum.com/PORTAL/
+	Path: /PORTAL/default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36
+	ViewState: 89dwHHQ88T6M7PnOysH1p4N63XNlS3lKsfbXtklr80aT6wrpGYNW7JjWex24RVV1f3DScMQUx5zuZ1XCt13ZVfmmVXLj3QVo8jtawBFc5CkdYiPJQA9mONq4paJG+H9mq9VQWI63W7RynNXTEpJOiVZjT3s7tN88u83LkUElNPa+lw4RAJrMHI9sA+kY/0zuspBaUnsERULABNx171Q8Ozwad6FFCGmRMLrv81n6VhgcdKvhftczVrUY/3kKqD6QyY1D8noHOVGA92PnA9nuU0HB6icrIVi1rzKZUJUhLX0Mt3fn/NA4zPxiEtZvIWCoAXo3ZqMzc6hkWlbWu7NW7e2Zu6w3jQTZ8wSnIHPjcH/qUc37gw1/HkF2Tf9gUGknhTzp3Ma9mwddjKlg+E1pVDHqxvZLnvILiiqpC08cEPWzrKWtfDg1HTWSMoNjuw7JuLvsNt7vElUdrky2xCTSIZ81ajLay7QDIRliHJ720erbQ+hGgyi89CKoVK3IujQbqMTPLG7DxViN5A8kYi7r+54HPkOgnEgZFTmPCE+MgS39UQKB12L5W62VkFi13M0k0Lio46uKYqaqS61Ipt6qpKuNUio6Knuk3z7MnBiAp9mswsGzHVVbpnxuaFjdYqONDvH9zxBX2I7WvE2sw8FcWv8OOii7cIu4odmUGlqbHytnujFOXXu48llag4Qfm5jnAlm1qp0B/zbLbrOBdusFMhdMEZxMysj+lZvmhDDPm3v+1+53FOH9LTI/ZYMa4wTyl+MlpGa...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---

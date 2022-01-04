@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <modules>
+    <module name="RadEditorStatistics" dockingZone="Bottom"/>
+    <module name="RadEditorDomInspector" />
+    <module name="RadEditorNodeInspector" />
+    <module name="RadEditorHtmlInspector" visible="false" />
+  </modules>
+  <tools name="Portapapeles" tab="Formato">
+    <tool name="Copy" size="medium" shortcut="CTRL+C" text="Copiar"/>
+    <tool name="Cut" size="medium" shortcut="CTRL+X" text="Cortar"/>
+    <tool name="Print" size="medium" shortcut="CTRL+P" text="Imprimir"/>
+    <tool name="Paste" size="large" shortcut="CTRL+V" text="Pegar"/>
+  </tools>
+  <tools name="Fuente" tab="Formato">
+    <tool name="FontName" shortcut="CTRL+SHIFT+F" text="Fuente"/>
+    <tool name="RealFontSize" shortcut="CTRL+SHIFT+P" width="80px" text="Tamaño"/>
+    <tool name="ConvertToLower" strip="FontDropDowns" text="Minúscula" />
+    <tool name="ConvertToUpper" strip="FontDropDowns" text="Mayúscula" />
+    <tool name="Bold" strip="FontBasicTools" shortcut="CTRL+B" text="Negrita"/>
+    <tool name="Italic" strip="FontBasicTools" shortcut="CTRL+I" text="Cursiva"/>
+    <tool name="Underline" strip="FontBasicTools" shortcut="CTRL+U" text="Subrayar"/>
+    <tool name="StrikeThrough" strip="FontBasicTools1" text="Tachar"/>
+    <tool name="Superscript" strip="FontBasicTools1" text="Súperindice"/>
+    <tool name="Subscript" strip="FontBasicTools1" text="Subindice"/>
+    <tool name="FormatStripper" strip="FontDropDowns" text="Copiar formato" />
+    <tool name="ForeColor" text="Color fuente"/>
+    <tool name="BackColor" text="Color fondo"/>
+  </tools>
+  <tools name="Párrafo" tab="Formato">
+    <tool name="InsertUnorderedList" strip="ListsAndIndention" text="Viñetas"/>
+    <tool name="InsertOrderedList" strip="ListsAndIndention" text="Numeración"/>
+    <tool name="Indent" strip="ListsAndIndention" text="Disminuir sangría"/>
+    <tool name="Outdent" strip="ListsAndIndention" text="Aumetar sangría"/>
+    <tool name="InsertParagraph" strip="ListsAndIndention" text="Morcar todo"/>
+    <tool name="JustifyLeft" strip="Align" text="Alinea texto a la izquierda"/>
+    <tool name="JustifyCenter" strip="Align" text="Centra texto"/>
+    <tool name="JustifyRight" strip="Align" text="Alinea texto a la derecha"/>
+    <tool name="JustifyFull" strip="Align" text="Justificar"/>
+    <tool name="JustifyNone" strip="Align" text="Quitar justificación"/>
+  </tools>
+  <tools name="Estilos" tab="Formato">
+    <tool name="ApplyClass" text="Aplicar estilo" width="90" />
+    <tool name="FormatBlock" text="Estilo de párrafo" width="90"/>
+  </tools>
+  <tools name="Editar" tab="Formato">
+    <tool name="Undo" shortcut="CTRL+Z" text="Deshacer"/>
+    <tool name="FindAndReplace" shortcut="CTRL+F" text="Buscar y reemplazar"/>
+    <tool name="SelectAll" shortcut="CTRL+A" text="Seleccionar todo"/>
+    <tool name="Redo" shortcut="CTRL+Y" text="Rehacer"/>
+  </tools>
+  <tools name="Tabla" tab="Insertar">
+    <tool name="InsertTableLight" size="large" text="Insertar tabla"/>
+    <tool name="InsertTable" text="Insertar tabla" />
+  </tools>
+  <tools name="Media" tab="Insertar">
+    <tool name="ImageManager" size="large" shortcut="CTRL+G" text="Imagen"/>
+    <tool name="MediaManager" size="medium" text="Archivo Windows Media" />
+    <tool name="FlashManager" size="medium" text="Archivo Flash"/>
+    <tool name="SilverlightManager" size="medium" text="Silverligth"/>
+  </tools>
+  <tools name="Enlaces" tab="Insertar">
+    <tool name="LinkManager" size="large" shortcut="CTRL+K" text="Insertar enlace"/>
+    <tool name="Unlink" strip="LinksStrip" shortcut="CTRL+SHIFT+K" text="Quitar enlace"/>
+    <tool name="DocumentManager" strip="LinksStrip" text="Documentos"/>
+    <tool name="ImageMapDialog" strip="LinksStrip" text="SiteMap"/>
+    <tool name="InsertCustomLink" shortcut="CTRL+ALT+K" text="Enlace personalizado" width="120"/>
+  </tools>
+  <tools name="Contenido" tab="Insertar">
+    <tool name="InsertSymbol" text="Símbolo"/>
+    <tool name="InsertFormElement" text="Formulario" />
+    <tool name="TemplateManager" text="Plantillas"/>
+    <tool name="FormatCodeBlock" text="Código del formato del bloque"/>
+    <tool name="InsertGroupbox" text="Marco"/>
+    <tool name="InsertHorizontalRule" text="Línea horizontal"/>
+    <tool name="InsertDate" text="Fecha"/>
+    <tool name="InsertTime" text="Hora" />
+    <tool name="FindAndReplace" shortcut="CTRL+F" text="Buscar y reemplazar"/>
+  </tools>
+  <tools name="Zoom" tab="Vista">
+    <tool name="Zoom"/>
+  </tools>
+  <tools name="Preferencias" tab="Vista">
+    <tool name="ToggleTableBorder" size="medium" text="Mostrar/Ocultar borde" />
+    <tool name="ToggleScreenMode" size="medium" shortcut="F11" text="Activar modo de pantalla"/>
+    <tool name="ModuleManager" text="Módulos"/>
+  </tools>
+  <tools name="Revisión" tab="Vista">
+    <tool name="AjaxSpellCheck" size="large" text="Corrector ortográfico"/>
+    <tool name="XhtmlValidator" size="large" text="Validador HTML"/>
+  </tools>
+</root>

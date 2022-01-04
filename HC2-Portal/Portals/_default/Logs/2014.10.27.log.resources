@@ -1,0 +1,24 @@
+2014-10-27 23:01:48,266 [ZVE01-202][Thread:47][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.HttpException: Error de la validación del estado de vista MAC. Si un clúster o una granja de servidores Web alojan esta aplicación, asegúrese de que la configuración <machineKey> especifica la misma validationKey y el mismo algoritmo de validación. AutoGenerate no se puede utilizar en un clúster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Estado de vista no válido. 
+	Client IP: 186.95.227.23
+	Port: 41219
+	Referer: http://www.h-connexum.com/portal/loginhc2.aspx?popUp=true
+	Path: /PORTAL/Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:33.0) Gecko/20100101 Firefox/33.0
+	ViewState: DX7lzRe/tEtxnmQq3C5TyNzOQGR7YPb4O5209Sb5ccfeq/yyJN20EGAS1sqfvPLO80OdKTKqIXq2FVGyJ7Yg1t3w2n8LLbJj2vaQB/RGJmhrBPHSrRFc1sXTYPsiVYXCgtYxJNN4BnNtHUcwL+Vdt46bWK8XXLgCXJ2SDlt2osK1cXmYH2tnuFJeHs/EQaDTU4JdwisHSZeWu1g/3i8bYshPRS50EDY/erdAOogaf/FWn3iDaFqlujtuV/6Wg/pnnsZqmAzI008X4ilZxvD5JSn1UA+KZyDo7ze1V5zIlBo3hFV3KfImfZU0pJkZnTzkhy2vBVMXsdd/tcmcgQTDhrTHL1NLkhpjTgwXSCCP43tNDt8dC0O6klP/5sK7gblqqqgBi3LOrGMgjd9RF3/QL6mDQVXoHHqWtyHo7umSuqUkhwC/YUl0WVG96LBvd0ahliH0v9Psda6dB08e5SV/I52P9VfAe4H80z6LPUof2hm62GL8LfqfVt9Hw4De2xIdSRTtJWlrhWbDmJaQRO5dgWg0xKK8+2GLIeWZFkfg9NmlkGF7LX+B/7KPZ1y0bP441nx/3szQkM/EaQRddtzlT7xjS78/bPk2L6tflwNM6huy5yodUGW7ICcir+I06UXLDc2ZLylmwezHHcVtk6p2Hafwng0KH2yDTj+u3z49gsuyH8Lp1LmHzkyYjq6YYR6Gw/4KLvq+2Skn/LGBcgpVVBnoTNrthVFrQVrXlUf9x7pld25MJiUczrvaqX8JK5yDv9iEQt9a04CVEHcJXbPA...
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   en System.Web.UI.ObjectStateFormatter.Deserialize(String inputString)
+   en System.Web.UI.Util.DeserializeWithAssert(IStateFormatter formatter, String serializedState)
+   en System.Web.UI.HiddenFieldPageStatePersister.Load()
+   en System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   en System.Web.UI.Page.LoadAllState()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+2014-10-27 23:51:33,127 [ZVE01-202][Thread:75][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

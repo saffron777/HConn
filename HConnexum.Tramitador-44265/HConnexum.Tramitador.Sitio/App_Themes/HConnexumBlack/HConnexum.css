@@ -1,0 +1,94 @@
+﻿.master-body { background-color:#a0a0a0; font-family:segoe ui,arial,sans-serif;font-size: 12px; }
+
+/* ..:: [ LA SIGUIENTE CLASE EVITA EL CAMBIO DE TAMAÑO DE LAS CAJAS DE TEXTO EN MOZILLA FIREFOX ] ::..*/
+textarea { resize:none; font-family: Segoe Marker UI,arial,sans-serif;font-size: 12px; }
+
+.tabla
+{ 
+    background-color:#6F6F6F; font-family: Segoe ui, Arial,sans-serif;font-size: 12px;
+    -moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+span, input[type=text] { font-family: segoe ui, Arial,sans-serif;font-size: 12px; }
+input[type=button]  
+{
+    font-family: Segoe UI, Arial, Sans-Serif; font-size: 12px;
+    background-image: url('/imagenes/bgLegend.png');
+    border: 1px solid  #C0C0C0;
+	-moz-border-radius: 4px; 
+    border-radius: 4px; 
+    -webkit-border-radius: 4px;
+    height: 25px;
+}
+
+input[type=button]:hover 
+{
+    cursor: pointer;
+    font-family: Segoe ui,arial,sans-serif;font-size: 12px;
+    -moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+
+    background: #F7D677 url(grad-orange-hover.svg) 0 0 no-repeat;
+    -moz-box-shadow: 0 0 3px #f7c331;
+	box-shadow: 0 0 3px #f7c331; 
+
+    background-image: linear-gradient(top, rgb(250,225,133) 15%, rgb(255,255,255) 100%, rgb(250,225,133) 68%);
+    background-image: -o-linear-gradient(top, rgb(250,225,133) 15%, rgb(255,255,255) 100%, rgb(250,225,133) 68%);
+    background-image: -moz-linear-gradient(top, rgb(250,225,133) 15%, rgb(255,255,255) 100%, rgb(250,225,133) 68%);
+    background-image: -webkit-linear-gradient(top, rgb(250,225,133) 15%, rgb(255,255,255) 100%, rgb(250,225,133) 68%);
+    background-image: -ms-linear-gradient(top, rgb(250,225,133) 15%, rgb(255,255,255) 100%, rgb(250,225,133) 68%);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.15, rgb(250,225,133)),color-stop(1, rgb(255,255,255)),color-stop(0.68, rgb(250,225,133)));
+}
+
+legend
+{
+    font-family: Segoe UI, Arial, Sans-Serif; font-size: 12px;
+    padding: 2px 12px 2px 12px;
+    background-image: url('../../imagenes/bgLegend.png');
+    border:1px solid White;
+    color:Black;
+    text-align:left;
+    -moz-border-radius:5px; 
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+fieldset
+{
+    border:1px solid White;
+    text-align:left;
+    -moz-border-radius:5px; 
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.control-auditoria-seccion { background-color:#a0a0a0; }
+.control-publicacion-seccion { background-color:#a0a0a0; }
+div#cphBody_PanelMaster { background-color:#a0a0a0; }
+
+.cssMigas  
+{
+    font-family: Segoe UI, Arial, Sans-Serif; font-size: 12px;
+    background-image: url('../../imagenes/bgLegend.png');
+    padding-top: 5px;
+    padding-left: 5px;
+    border: 1px solid White;
+    -moz-border-radius:5px; 
+    border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.RadToolBar { text-align: right; }
+.cssRadMultiPage { background-color: #cacaca; height:50%; }
+.cssRadMultiPageViewHeight { height: 50%; }
+
+.RadButton_Office2010Blue.rbSkinnedButton, .RadButton_Office2010Blue .rbDecorated, 
+.RadButton_Office2010Blue.rbVerticalButton, .RadButton_Office2010Blue.rbVerticalButton .rbDecorated, 
+.RadButton_Office2010Blue .rbSplitRight, .RadButton_Office2010Blue .rbSplitLeft 
+{
+    background-image: none;
+}
